@@ -2,7 +2,7 @@
 layout: post
 title: "Software Engineering is a Restaurant!"
 author: "Naser"
-categories: Post
+categories: post
 tags: [Post]
 image: hans-vivek-D3l1y9tPVso-unsplash.jpg
 ---
