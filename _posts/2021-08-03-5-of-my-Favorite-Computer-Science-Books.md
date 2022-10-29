@@ -1,8 +1,13 @@
 ---
-published: true
 layout: post
-title: My Favorite Computer Science Books
+title: "My Favorite Computer Science Books"
+author: "Naser"
+categories: Post
+tags: [Post]
+image: thought-catalog-o0Qqw21-0NI-unsplash.jpg
 ---
+
+
 I would like to share five of my favorite computer science books.  Almost all of these books are available online in one shape or form, and I am happy to lend them if you can't find them online.  Also, I will continue to make updates to this list when I find more interesting books.  Feel free to email me with a book suggestion if you have a favorite.
 
 
