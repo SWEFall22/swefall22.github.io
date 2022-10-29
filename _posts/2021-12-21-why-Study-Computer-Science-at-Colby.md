@@ -36,4 +36,4 @@ The next 10 years are very important for humanity as we approach an important ph
 # Great CS Faculty at Colby
 I exclude myself since I can’t compliment myself (hence the blocked lower left corner in the image) 😄.  The Computer Science Department at Colby has great faculty who are knowledgeable in their respective fields and also very kind.  Faculty care about students and they will dedicate the time and effort to help students succeed.
 
-![faculty]({{site.baseurl}}/images/faculty.jpg)
+![faculty]({{site.baseurl}}/assets/img/faculty.jpg)
