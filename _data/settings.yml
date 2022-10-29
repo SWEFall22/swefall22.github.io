@@ -9,7 +9,7 @@ google-ID: ''
 menu:
 - {name: 'Posts',      url: 'Posts'}
 - {name: 'Interviews', url: 'Interviews'}
-- {name: 'About',      url: 'https://cs.colby.edu/nsalmadi/'}
+- {name: 'About',      link: 'https://cs.colby.edu/nsalmadi/'}
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
 social:
