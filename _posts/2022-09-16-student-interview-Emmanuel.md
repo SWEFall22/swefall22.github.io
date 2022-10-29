@@ -1,7 +1,10 @@
 ---
-published: true
 layout: post
-title: Student Spotlight - Emmanuel Assumang ‘25 (Microsoft)
+title: "Student Spotlight - Emmanuel Assumang ‘25 (Microsoft)"
+author: "Naser"
+categories: Interview
+tags: [Interview, student]
+image: micro.jpg
 ---
 
 ![Emmanuel]({{site.baseurl}}/images/micro.jpg)
