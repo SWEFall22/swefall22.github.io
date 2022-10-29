@@ -1,8 +1,13 @@
 ---
-published: true
 layout: post
-title: Why CS at Colby?
+title: "Why CS at Colby?"
+author: "Naser"
+categories: Post
+tags: [Post]
+image: Miller.jpg
 ---
+
+
 When asked about career paths, I always mention the purpose equation which consists of:
 
 ```math
