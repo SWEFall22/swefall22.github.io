@@ -2,7 +2,8 @@
 layout: default
 title: Home
 ---
-
+<p> {{ site.details }} </p>
+<br>
 {% for post in paginator.posts %}
   {% include featured-post.html %}
 {% endfor %}
