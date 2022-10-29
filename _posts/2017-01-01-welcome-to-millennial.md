@@ -1,42 +1,45 @@
 ---
 layout: post
-title: "Welcome to Millennial!"
-author: "Paul Le"
-categories: documentation
-tags: [documentation,sample]
-image: cuba-1.jpg
+title: "Student Spotlight - Emmanuel Assumang ‘25 (Microsoft)"
+author: "Naser"
+categories: Interview
+tags: [Interview, student]
+image: micro.jpg
 ---
 
-Millennial is a minimalist Jekyll theme. The purpose of this theme is to provide a simple, clean, content-focused blogging platform for your personal site or blog. Below you can find everything you need to get started.
+This post is part of a student spotlight series highlighting the work of exceptional students.  The series aims to facilitate knowledge sharing among students on topics such as internships, jobs, and graduate school.  Today, I have the pleasure of talking to Emmanuel Assumang ‘25, a rising sophomore who will tell us about his internship experience at Microsoft this summer.
 
-## Getting Started
+**Naser: Can you tell us about the internship you had this summer?  What kind of internship was it?**
 
-[Getting Started]({{ site.github.url }}{% post_url 2016-10-10-getting-started %}): getting started with installing Millennial, whether you are completely new to using Jekyll, or simply just migrating to a new Jekyll theme.
 
-## Example Content
+Emmanuel: Explore Microsoft is a 12-week summer internship program for first and second-year college students. It is rotational and allows you to gain experience in SWE and PM roles. For my part, I worked with the Azure Machine Learning team under the AI Platform Team management, and it was such a great learning experience, and I am proud of the work I completed with my pod (since you are placed in a team of 3). Rotating between PM and SWE roles, not only did I learn new technologies and skills, I had a perfect, educational, and fascinating time working on the project. 
 
-[Text and Formatting]({{ site.github.url }}{% post_url 2016-09-09-text-formatting %})
 
-## Questions?
+**Naser: How did you find this internship?  And why did you select it?**
 
-This theme is completely free and open source software. You may use it however you want, as it is distributed under the [MIT License](http://choosealicense.com/licenses/mit/). If you are having any problems, any questions or suggestions, feel free to [tweet at me](https://twitter.com/intent/tweet?text=My%20question%20about%20Millennial;via=paululele), or [file a GitHub issue](https://github.com/lenpaul/Millennial/issues/new).
 
-## More Jekyll!
+Emmanuel: I searched Reddit and LinkedIn for opportunities geared toward first-year college students in tech. I also had friends already interning in big tech who directed me to various sources!
 
-### Lagrange
 
-Lagrange is a minimalist Jekyll blog theme that I built from scratch. The purpose of this theme is to provide a simple, clean, content-focused blogging platform for your personal site or blog.
+**Naser: Can you tell us about the interview process?  And how did you prepare for it?**
 
-Feel free to check out <a href="https://lenpaul.github.io/Lagrange/" target="_blank">the demo</a>, where you’ll also find instructions on <a href="https://lenpaul.github.io/Lagrange/journal/getting-started.html">how to use install</a> and use the theme.
 
-### Portfolio Jekyll Theme
+Emmanuel: My internship specifically was pretty straightforward about the application. After sending in your resume and applying through Microsoft’s career portal, if shortlisted/selected, a recruiter will reach out to you for the first round of interviews, which is a 30 mins behavioral phone call. The first round was pretty informal. If you pass, you’ll be contacted again to schedule a 90 mins (45-45 mins) back-to-back technical interview with two separate software developers. So it was three interviews! And the technical interview was based on problem-solving and taking the interviewer through your thought process.
 
-This is a Jekyll theme built using the [DevTips Starter Kit](http://devtipsstarterkit.com/) as a foundation for starting, and following closely the amazing tutorial by [Travis Neilson over at DevTips](https://www.youtube.com/watch?v=T6jKLsxbFg4&list=PL0CB3OvPhDA_STygmp3sDenx3UpdOMk7P). The purpose of this theme is to provide a clean and simple website for your portfolio. Emphasis is placed on your projects, which are shown front and center on the home page.
 
-Everything that you will ever need to know about this Jekyll theme is included in [the repository](https://github.com/LeNPaul/portfolio-jekyll-theme), which you can also find in [the demo site](https://lenpaul.github.io/portfolio-jekyll-theme/).
+**Naser: What kind of activities were you involved in during your internship?  And what aspects did you find most interesting?**
 
-### Jekyll Starter Kit
 
-The Jekyll Starter Kit is a simple framework for starting your own Jekyll project using all of the best practices that I learned from building my other Jekyll themes.
+Emmanuel: Over the course of my internship, there were many fun and educational activities so I will mention a few. The biggest was the intern day event, packed with social gatherings and lots of fun things. Aside from that, we had engineering boot camps, meet and greet with full-timers, intern-cohort events, and presentation days! These were actually great and gave us the opportunity to network and learn more in a fun way.
 
-Feel free to check out <a href="https://github.com/LeNPaul/jekyll-starter-kit" target="_blank">the GitHub repository</a>, where you’ll also find instructions on how to use install and use the theme.
+
+**Naser: What tips would you give students interested in doing an internship in the future? You can mention any details that you like, including websites and other resources.**
+
+
+Emmanuel: One thing people mostly overlook is creating a good LinkedIn and GitHub profile and keeping it up to date with your projects and achievements. Also, working on personal projects (like even a simple game ) and contributing to open source projects go a long way when placed on your resume and profiles. Try to connect to people as much as possible. Do not be scared to reach out! Start your internship search early.
+
+
+**Naser: Thank you for sharing your experience, Emmanuel.  It was great hearing about your internship, and I am sure others will find your experience motivating and beneficial in their journey.**
+
+
+Emmanuel: Thank you!
