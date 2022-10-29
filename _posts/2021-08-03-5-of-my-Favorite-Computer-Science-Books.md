@@ -2,7 +2,7 @@
 layout: post
 title: "My Favorite Computer Science Books"
 author: "Naser"
-categories: Post
+categories: post
 tags: [Post]
 image: thought-catalog-o0Qqw21-0NI-unsplash.jpg
 ---
