@@ -1,8 +1,4 @@
 ---
-published: true
-title: My Favorite CS YouTube Channels
----
----
 layout: post
 title: "My Favorite CS YouTube Channels"
 author: "Naser"
