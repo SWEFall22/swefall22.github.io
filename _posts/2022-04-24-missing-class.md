@@ -2,7 +2,7 @@
 layout: post
 title: "The Mind Trick to Never Miss a Class"
 author: "Naser"
-categories: Post
+categories: post
 tags: [Post]
 image: andisheh-a-8yKPxJ9d-pU-unsplash.jpg
 ---
