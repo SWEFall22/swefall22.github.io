@@ -2,7 +2,7 @@
 layout: post
 title: "My Favorite CS YouTube Channels"
 author: "Naser"
-categories: Post
+categories: post
 tags: [Post]
 image: christian-wiediger-NmGzVG5Wsg8-unsplash.jpg
 ---
