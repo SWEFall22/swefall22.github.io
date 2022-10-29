@@ -12,7 +12,7 @@ plugins:             [jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-t
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
 title:		           "Naser Al Madi, PhD"
 description:	       "Blog"
-details:             "Welcome to my blog on software engineering, academia, and research. This is a writing exercise more than anything, but I hope that you will find some of my rants useful."
+details:             "My name is Naser Al Madi, and I am an Assistant Professor of Computer Science. Welcome to my blog on software engineering, academia, and research. This is a writing exercise more than anything, but I hope that you will find some of my rants useful."
 author:              "Naser Al Madi"
 
 # RSS 2.0 can be used instead of Atom by uncommenting following two lines
