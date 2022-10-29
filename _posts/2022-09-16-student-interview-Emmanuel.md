@@ -7,7 +7,6 @@ tags: [Interview, student]
 image: micro.jpg
 ---
 
-![Emmanuel]({{site.baseurl}}/images/micro.jpg)
 
 This post is part of a student spotlight series highlighting the work of exceptional students.  The series aims to facilitate knowledge sharing among students on topics such as internships, jobs, and graduate school.  Today, I have the pleasure of talking to Emmanuel Assumang ‘25, a rising sophomore who will tell us about his internship experience at Microsoft this summer.
 
