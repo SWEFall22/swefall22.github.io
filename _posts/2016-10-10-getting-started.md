@@ -1,5 +1,6 @@
 ---
 layout: post
+published: false
 title: "Getting Started"
 author: "Paul Le"
 categories: documentation
