@@ -2,7 +2,7 @@
 layout: post
 title: "On Facilitating Teams In The Classroom"
 author: "Naser"
-categories: Post
+categories: post
 tags: [Post]
 image: michal-parzuchowski-lHkUBtUiI2Q-unsplash.jpg
 ---
