@@ -1,6 +1,6 @@
 ---
 layout: category
 title: Interviews
-category: Interviews
+category: Interview
 permalink: /Interviews
 ---
