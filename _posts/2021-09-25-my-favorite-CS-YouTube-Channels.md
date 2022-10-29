@@ -2,6 +2,14 @@
 published: true
 title: My Favorite CS YouTube Channels
 ---
+---
+layout: post
+title: "My Favorite CS YouTube Channels"
+author: "Naser"
+categories: Post
+tags: [Post]
+image: christian-wiediger-NmGzVG5Wsg8-unsplash.jpg
+---
 
 
 My mentors used to recommend books to me, today I recommend YouTube channels to my students.  Here are some of my favorite computer science YouTube channels.  Feel free to email me with a suggestion if you have a recommendation.
