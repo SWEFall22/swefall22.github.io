@@ -1,73 +1,71 @@
+<html>
 
-<!-- saved from url=(0032)https://cs.colby.edu/writing.php -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>Writing in CS | Colby Computer Science</title>
 	<link rel="icon" href="https://cs.colby.edu/img/favicon.png">
 	<link rel="stylesheet" type="text/css" href="./writing_files/content.css">
-	
-			<link rel="stylesheet" type="text/css" href="./writing_files/indexoverride.css">
-				<link rel="stylesheet" type="text/css" href="./writing_files/header.css">
+
+	<link rel="stylesheet" type="text/css" href="./writing_files/indexoverride.css">
+	<link rel="stylesheet" type="text/css" href="./writing_files/header.css">
 	<link href="./writing_files/css" rel="stylesheet" type="text/css">
 	<meta name="viewport" content="width=device-width">
 	<script src="./writing_files/jquery-2.2.0.min.js"></script>
 
 
 </head>
+
 <body>
 	<div id="banner" name="top">
-	<!-- Background photo for banner taken by Matthew Martin -->
-	
+		<!-- Background photo for banner taken by Matthew Martin -->
+
 		<div id="header">
 			<script language="javascript">
-			function loginCMS () {
-				var history="ColbyPrevious=host&"+escape(window.location.host)+"&method&GET&protocol&"+escape(window.location.protocol.substring(0,window.location.protocol.length-1))+"&arguments&&local&0";
-				var port=window.location.port;
-				if ( ( window.location.protocol == 'https:' ) &&
-				( window.location.port == '443' ) ) { port=''; }
-				if ( ( window.location.protocol == 'http:' ) &&
-				( window.location.port == '80' ) ) { port=''; }
-				history=history+"&port&"+escape(port);
+				function loginCMS() {
+					var history = "ColbyPrevious=host&" + escape(window.location.host) + "&method&GET&protocol&" + escape(window.location.protocol.substring(0, window.location.protocol.length - 1)) + "&arguments&&local&0";
+					var port = window.location.port;
+					if ((window.location.protocol == 'https:') &&
+						(window.location.port == '443')) { port = ''; }
+					if ((window.location.protocol == 'http:') &&
+						(window.location.port == '80')) { port = ''; }
+					history = history + "&port&" + escape(port);
 
-				var query_string='';
-				if ( window.location.search.length > 0 ) {
-				query_string=window.location.search.substring(1,window.location.search.length);
+					var query_string = '';
+					if (window.location.search.length > 0) {
+						query_string = window.location.search.substring(1, window.location.search.length);
+					}
+					query_string = query_string + window.location.hash;
+					history = history + "&query_string&" + escape(query_string);
+					history = history + "&uri&" + escape(window.location.pathname);
+					history = history + "; path=/; domain=colby.edu";
+					document.cookie = history;
+					window.location = "https://www.colby.edu/ColbyMaster/login/";
 				}
-				query_string=query_string + window.location.hash;
-				history=history+"&query_string&"+escape(query_string);
-				history=history+"&uri&"+escape(window.location.pathname);
-				history=history+"; path=/; domain=colby.edu";
-				document.cookie=history;
-				window.location="https://www.colby.edu/ColbyMaster/login/";
-			}
 			</script>
 
 			<a href="http://colby.edu/" target="_blank">
 				<img id="logo" src="./writing_files/ColbyLogo_wide.png" alt="Colby College">
 			</a>
-			
 
-	 <h3>
-	 <a class="phonehidden" href="https://my.colby.edu/" target="_blank">myColby</a>
-	 <a class="phonehidden" href="http://www.colby.edu/directory/" target="_blank">Directory</a>
-	 <ul id="headerdropdown">
-	 <a href="http://www.colby.edu/visitors/" target="_blank"><li>Visitors</li></a>
-	 <a href="http://www.colby.edu/alumni" target="_blank"><li>Alumni</li></a>
-	 <a href="http://www.colby.edu/parents/" target="_blank"><li>Parents</li></a>
-	 <a href="http://www.colby.edu/afgift" target="_blank"><li>Make a Gift</li></a>
-	 </ul>
-	 <span class="phonehidden" id="moreheader">More</span>	 
 
-<!--
-				<a class="phonehidden" href="javascript:loginCMS()">myColby</a>
+			<h3>
+				<a class="phonehidden" href="https://my.colby.edu/" target="_blank">myColby</a>
 				<a class="phonehidden" href="http://www.colby.edu/directory/" target="_blank">Directory</a>
-				<a class="hiddenheader" style="display: none;" href="http://www.colby.edu/visitors/" target="_blank">Visitors</a>
-				<a class="hiddenheader" style="display: none;" href="http://www.colby.edu/alumni" target="_blank">Alumni</a>
-				<a class="hiddenheader" style="display: none;" href="http://www.colby.edu/parents/" target="_blank">Parents</a>
-				<a class="hiddenheader" style="display: none;" href="http://www.colby.edu/afgift" target="_blank">Make a Gift</a>
+				<ul id="headerdropdown">
+					<a href="http://www.colby.edu/visitors/" target="_blank">
+						<li>Visitors</li>
+					</a>
+					<a href="http://www.colby.edu/alumni" target="_blank">
+						<li>Alumni</li>
+					</a>
+					<a href="http://www.colby.edu/parents/" target="_blank">
+						<li>Parents</li>
+					</a>
+					<a href="http://www.colby.edu/afgift" target="_blank">
+						<li>Make a Gift</li>
+					</a>
+				</ul>
 				<span class="phonehidden" id="moreheader">More</span>
-				-->
-
-
 			</h3>
 
 			<div id="phonemenuicon">
@@ -75,28 +73,57 @@
 				<span></span>
 				<span></span>
 			</div>
-			<a href="http://www.colby.edu/search_cs/index.cfm" target="_blank"><div id="searchicon"></div></a>
+			<a href="http://www.colby.edu/search_cs/index.cfm" target="_blank">
+				<div id="searchicon"></div>
+			</a>
 		</div>
-		
+
 		<h1>Department of Computer Science</h1>
 		<h2>What do you want to create?</h2>
 
 		<div id="navbar">
 			<ul id="deptmenu">
-				<a href="https://cs.colby.edu/news.php"><li>News</li></a>
-				<a href="https://cs.colby.edu/faculty.php"><li>Faculty</li></a>
-				<a href="https://cs.colby.edu/connections.php"><li>Connections</li></a>
-				<a href="https://cs.colby.edu/projects.php"><li>Projects</li></a>
-				<a href="https://cs.colby.edu/writing.php"><li>Writing in CS</li></a>
+				<a href="https://cs.colby.edu/news.php">
+					<li>News</li>
+				</a>
+				<a href="https://cs.colby.edu/faculty.php">
+					<li>Faculty</li>
+				</a>
+				<a href="https://cs.colby.edu/connections.php">
+					<li>Connections</li>
+				</a>
+				<a href="https://cs.colby.edu/projects.php">
+					<li>Projects</li>
+				</a>
+				<a href="https://cs.colby.edu/writing.php">
+					<li>Writing in CS</li>
+				</a>
 			</ul>
 			<ul id="resourcemenu">
-				<a href="http://www.colby.edu/offices/" target="_blank"><li>Administration</li></a>
-				<a href="http://www.colby.edu/athletics/" target="_blank"><li>Athletics</li></a>
-				<a href="http://www.colby.edu/catalogue/" target="_blank"><li>Colby Catalogue</li></a>
-				<a href="http://www.colby.edu/academics/dual-degree" target="_blank"><li>Engineering Dual-Degree</li></a>
-                <a href="https://www.colby.edu/davisconnects/student-funding/" target="_blank"><li>Davis Connections Student Funding</li></a>
-				<a href="http://libguides.colby.edu/content.php?pid=7611&amp;sid=48409" target="_blank"><li>CS Library Resources</li></a>
-				<a href="http://www.colby.edu/registrar" target="_blank"><li>Colby Registrar</li></a>
+				<a href="http://www.colby.edu/offices/" target="_blank">
+					<li>Administration</li>
+				</a>
+				<a href="http://www.colby.edu/athletics/" target="_blank">
+					<li>Athletics</li>
+				</a>
+				<a href="http://www.colby.edu/catalogue/" target="_blank">
+					<li>Colby Catalogue</li>
+				</a>
+				<a href="http://www.colby.edu/academics/dual-degree" target="_blank">
+					<li>Engineering Dual-Degree</li>
+				</a>
+				<a href="https://www.colby.edu/davisconnects/student-funding/" target="_blank">
+					<li>Davis Connections Student Funding</li>
+				</a>
+				<a href="http://libguides.colby.edu/content.php?pid=7611&amp;sid=48409" target="_blank">
+					<li>CS Library Resources</li>
+				</a>
+				<a href="http://www.colby.edu/registrar" target="_blank">
+					<li>Colby Registrar</li>
+				</a>
+				<a href="http://hackers.colby.edu" target="_blank">
+					<li>Colby Hackers</li>
+				</a>
 			</ul>
 			<div class="navbutton">
 				<a href="https://cs.colby.edu/index.php">Home</a>
@@ -113,11 +140,6 @@
 			<div class="navbutton" id="resource">
 				<span>Resources</span>
 			</div>
-			<!-- 
-			<div class="navbutton">
-				<a href="hackers.php">Colby Hackers</a>
-			</div>
-			-->
 		</div>
 
 	</div>
@@ -125,108 +147,200 @@
 	<div id="phonemenu">
 		<div class="pmcol left-col">
 			<ul>
-				<a href="https://cs.colby.edu/index.php"><li>Home</li></a>
-				<a href="https://cs.colby.edu/courses.php"><li>Courses</li></a>
-				<a href="https://cs.colby.edu/curriculum.php"><li>Curriculum</li></a>
-				<a href="https://cs.colby.edu/hackers.php"><li>Colby Hackers</li></a>
-				<a href="https://cs.colby.edu/my.colby.edu"><li>myColby</li></a>
+				<a href="https://cs.colby.edu/index.php">
+					<li>Home</li>
+				</a>
+				<a href="https://cs.colby.edu/courses.php">
+					<li>Courses</li>
+				</a>
+				<a href="https://cs.colby.edu/curriculum.php">
+					<li>Curriculum</li>
+				</a>
+				<a href="https://cs.colby.edu/hackers.php">
+					<li>Colby Hackers</li>
+				</a>
+				<a href="https://cs.colby.edu/my.colby.edu">
+					<li>myColby</li>
+				</a>
 			</ul>
 		</div>
 		<div class="pmcol right-col">
 			<ul>
-				<a href="https://cs.colby.edu/news.php"><li>News</li></a>
-				<a href="https://cs.colby.edu/faculty.php"><li>Faculty</li></a>
-				<a href="https://cs.colby.edu/connections.php"><li>Connections</li></a>
-				<a href="https://cs.colby.edu/projects.php"><li>Projects</li></a>
-				<a href="https://cs.colby.edu/writing.php"><li>Writing in CS</li></a>
+				<a href="https://cs.colby.edu/news.php">
+					<li>News</li>
+				</a>
+				<a href="https://cs.colby.edu/faculty.php">
+					<li>Faculty</li>
+				</a>
+				<a href="https://cs.colby.edu/connections.php">
+					<li>Connections</li>
+				</a>
+				<a href="https://cs.colby.edu/projects.php">
+					<li>Projects</li>
+				</a>
+				<a href="https://cs.colby.edu/writing.php">
+					<li>Writing in CS</li>
+				</a>
 			</ul>
 		</div>
 	</div>
 
-<div id="content">
+	<div id="content">
 
-<div class="entry" id="subpage">
+		<div class="entry" id="subpage">
 
-<h2>Writing in Computer Science at Colby</h2>
+			<h2>Writing in Computer Science at Colby</h2>
 
-<p>Effective communication skills are critical to a rewarding career in computer science, no matter what kind of job you have. The computer science department at Colby has a Writing-Enriched Curriculum designed to support students as they improve the communication skills they will need to succeed beyond Colby.
+			<p>Effective communication skills are critical to a rewarding career in computer science, no matter what
+				kind of job you have. The computer science department at Colby has a Writing-Enriched Curriculum
+				designed to support students as they improve the communication skills they will need to succeed beyond
+				Colby.
 
-</p><p>Writing within the discipline of computer science has a wide variety of types and audiences, and, consequently, as broad set of characteristics. Below, we describe 15 characterstics of writing in computer science, organized in three sections: 
+			</p>
+			<p>Writing within the discipline of computer science has a wide variety of types and audiences, and,
+				consequently, as broad set of characteristics. Below, we describe 15 characterstics of writing in
+				computer science, organized in three sections:
 
-</p><p>Academic and professional writing in computer science is
-</p><ol> 
-<li>Readable: A reader with the appropriate background should be able to comprehend the meaning of the text and graphics with relative ease. 
+			</p>
+			<p>Academic and professional writing in computer science is
+			</p>
+			<ol>
+				<li>Readable: A reader with the appropriate background should be able to comprehend the meaning of the
+					text and graphics with relative ease.
 
-</li><li>Clear in Purpose: It should be clear to the reader why it is profitable to read the document. For example, it may contribute to an area of research or teach someone how to use a new programming language.
+				</li>
+				<li>Clear in Purpose: It should be clear to the reader why it is profitable to read the document. For
+					example, it may contribute to an area of research or teach someone how to use a new programming
+					language.
 
-</li><li>Well-organized: states the overall purpose in the beginning, then uses a logical flow of ideas (e.g. theoretical statements or mathematics) and information (e.g. data) to fulfill the purpose. 
+				</li>
+				<li>Well-organized: states the overall purpose in the beginning, then uses a logical flow of ideas (e.g.
+					theoretical statements or mathematics) and information (e.g. data) to fulfill the purpose.
 
-</li><li>Concise: written for fast comprehension. There are few words, but not so few that it is difficult to follow the reasoning.
+				</li>
+				<li>Concise: written for fast comprehension. There are few words, but not so few that it is difficult to
+					follow the reasoning.
 
-</li><li>Graphical: Well-designed figures should be used to summarize concepts that are best displayed graphically, e.g. process, design, and data. Well-designed figures display these concepts with the minimum amount of information necessary to make the desired point. For figures displaying data, there is also enough data for the reader to be able to draw their own conclusions about the data. Figures should be used to allow for fast comprehension of the data but should not hide confounding features of the data. Figures should be labeled well.
-</li></ol>
+				</li>
+				<li>Graphical: Well-designed figures should be used to summarize concepts that are best displayed
+					graphically, e.g. process, design, and data. Well-designed figures display these concepts with the
+					minimum amount of information necessary to make the desired point. For figures displaying data,
+					there is also enough data for the reader to be able to draw their own conclusions about the data.
+					Figures should be used to allow for fast comprehension of the data but should not hide confounding
+					features of the data. Figures should be labeled well.
+				</li>
+			</ol>
 
-<p>Broadly speaking, we identify five types of writing in the field:
-</p><ol start="6">
-<li>Persuasive: Depending on the type of document, it should persuade the reader to take action (e.g. follow-up on action items), support the work of the writer (e.g. proposals), appreciate the work of the writer (e.g. being persuaded that the writer has interesting and correct research results), or use a piece of software (e.g. a user guide or technical blog).
+			<p>Broadly speaking, we identify five types of writing in the field:
+			</p>
+			<ol start="6">
+				<li>Persuasive: Depending on the type of document, it should persuade the reader to take action (e.g.
+					follow-up on action items), support the work of the writer (e.g. proposals), appreciate the work of
+					the writer (e.g. being persuaded that the writer has interesting and correct research results), or
+					use a piece of software (e.g. a user guide or technical blog).
 
-</li><li>Descriptive: Descriptive writing, such as presenting a process, algorithm, or the output of these, should give the user an accurate sense of the purpose, workings, or function of what is being described. Descriptive writing may also explain the source or process by which data has been obtained or manipulated in order to achieve a certain result.
+				</li>
+				<li>Descriptive: Descriptive writing, such as presenting a process, algorithm, or the output of these,
+					should give the user an accurate sense of the purpose, workings, or function of what is being
+					described. Descriptive writing may also explain the source or process by which data has been
+					obtained or manipulated in order to achieve a certain result.
 
-</li><li>Explanatory: Explanatory writing attempts to communicate to the reader a new concept or process.  One example of explanatory writing is tutorials.  In code, descriptive writing explains the functionality of code, while explanatory writing covers why the code is important.
+				</li>
+				<li>Explanatory: Explanatory writing attempts to communicate to the reader a new concept or process. One
+					example of explanatory writing is tutorials. In code, descriptive writing explains the functionality
+					of code, while explanatory writing covers why the code is important.
 
-</li><li>Analytic: Analytic writing describes the examination, subdivision, or proof of a concept, process or data.  In computer science, these could include an analysis of time or space complexity, proof of correctness, or an examination of typical or pathological cases.
+				</li>
+				<li>Analytic: Analytic writing describes the examination, subdivision, or proof of a concept, process or
+					data. In computer science, these could include an analysis of time or space complexity, proof of
+					correctness, or an examination of typical or pathological cases.
 
-</li><li>Code: code should follow the same characteristics as natural language: readable, clear in purpose, well-organized, and concise.
+				</li>
+				<li>Code: code should follow the same characteristics as natural language: readable, clear in purpose,
+					well-organized, and concise.
 
-</li></ol>
+				</li>
+			</ol>
 
-<p>At the more detailed level are additional, specific writing skills. Writing in computer science should be:
+			<p>At the more detailed level are additional, specific writing skills. Writing in computer science should
+				be:
 
-</p><ol start="11">
-<li>Audience-specific: Take into account the interests and background of the intended reader (e.g. a software user who wants to learn how to interact with the GUI or a peer in the course who is interested in implementation details). For example, for non-technical audiences, the writing should be free of jargon.
+			</p>
+			<ol start="11">
+				<li>Audience-specific: Take into account the interests and background of the intended reader (e.g. a
+					software user who wants to learn how to interact with the GUI or a peer in the course who is
+					interested in implementation details). For example, for non-technical audiences, the writing should
+					be free of jargon.
 
-</li><li>Grammatically Correct: English usage and grammar should follow widely accepted rules, such as those in the Pocket Style Manual by Hacker and Sommers.
+				</li>
+				<li>Grammatically Correct: English usage and grammar should follow widely accepted rules, such as those
+					in the Pocket Style Manual by Hacker and Sommers.
 
-</li><li>Well-documented: Code should have comments that make it straight-forward for another programmer to maintain it.
+				</li>
+				<li>Well-documented: Code should have comments that make it straight-forward for another programmer to
+					maintain it.
 
-</li><li>Appropriately and properly referenced: proper references to other papers/documents. This includes proper references to authors/sources for code.
+				</li>
+				<li>Appropriately and properly referenced: proper references to other papers/documents. This includes
+					proper references to authors/sources for code.
 
-</li><li>Multi-modal: Posters and oral presentations are commonly used modes of communication and they need to have the same characteristics as written documents. In particular, they need to make a clear point and make it quickly.
+				</li>
+				<li>Multi-modal: Posters and oral presentations are commonly used modes of communication and they need
+					to have the same characteristics as written documents. In particular, they need to make a clear
+					point and make it quickly.
 
-</li></ol>
+				</li>
+			</ol>
 
-<h3>Writing Abilities</h3>
+			<h3>Writing Abilities</h3>
 
-<p>Students graduating with a major in the computer science department should be able to:
+			<p>Students graduating with a major in the computer science department should be able to:
 
-</p><ol>
-<li>Create precise descriptions of processes, data, and/or findings such that readers are able to quickly understand and are persuaded by the presentation.
+			</p>
+			<ol>
+				<li>Create precise descriptions of processes, data, and/or findings such that readers are able to
+					quickly understand and are persuaded by the presentation.
 
-</li><li>Explain processes and concepts to a target audience for the purpose of teaching or instruction
+				</li>
+				<li>Explain processes and concepts to a target audience for the purpose of teaching or instruction
 
-</li><li>Write an analysis or critical evaluation of a design, concept, algorithm, findings, data, or process
+				</li>
+				<li>Write an analysis or critical evaluation of a design, concept, algorithm, findings, data, or process
 
-</li><li>Write concise, precise, easy to read code so that it can be easily maintained
+				</li>
+				<li>Write concise, precise, easy to read code so that it can be easily maintained
 
-</li><li>Write concise, easy to read, well-documented comments or documentation so that the code can be used by others
+				</li>
+				<li>Write concise, easy to read, well-documented comments or documentation so that the code can be used
+					by others
 
-</li><li>Be able to integrate text, code, and figures into a comprehensive and smoothly flowing document so that the reader can understand the content better or faster than they would with text alone
+				</li>
+				<li>Be able to integrate text, code, and figures into a comprehensive and smoothly flowing document so
+					that the reader can understand the content better or faster than they would with text alone
 
-</li><li>Effectively present written work in different forms--papers, posters, short talks, longer talks
+				</li>
+				<li>Effectively present written work in different forms--papers, posters, short talks, longer talks
 
-</li><li>Properly cite sources (e.g. peer consultation, images found on the internet, publications, web pages)
+				</li>
+				<li>Properly cite sources (e.g. peer consultation, images found on the internet, publications, web
+					pages)
 
-</li><li>The writer uses an effective voice to describe his/her processes, tests, and choices so that the reader is easily engaged
+				</li>
+				<li>The writer uses an effective voice to describe his/her processes, tests, and choices so that the
+					reader is easily engaged
 
-</li></ol>
-</div>
-</div>
+				</li>
+			</ol>
+		</div>
+	</div>
 
-<script type="text/javascript" src="./writing_files/main.js"></script>
-<div id="footer">
-	 <!--? 	date_default_timezone_set( "America/New_York" ); ?-->
-	<h4>© 2023 <a target="_blank" href="http://matthewmartin.me/">Matthew J. Martin</a> '18 and <a target="_blank" href="https://www.linkedin.com/in/adamcarlson18">Adam L. Carlson</a> '18</h4>
-</div>
+	<script type="text/javascript" src="./writing_files/main.js"></script>
+	<div id="footer">
+		<h4>© 2023 <a target="_blank" href="http://matthewmartin.me/">Matthew J. Martin</a> '18 and <a target="_blank"
+				href="https://www.linkedin.com/in/adamcarlson18">Adam L. Carlson</a> '18</h4>
+	</div>
 
 
-</body></html>
+</body>
+
+</html>
