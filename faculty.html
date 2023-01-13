@@ -1,73 +1,71 @@
+<html>
 
-<!-- saved from url=(0032)https://cs.colby.edu/faculty.php -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>Faculty | Colby Computer Science</title>
 	<link rel="icon" href="https://cs.colby.edu/img/favicon.png">
 	<link rel="stylesheet" type="text/css" href="./faculty_files/content.css">
-	
-			<link rel="stylesheet" type="text/css" href="./faculty_files/indexoverride.css">
-				<link rel="stylesheet" type="text/css" href="./faculty_files/header.css">
+
+	<link rel="stylesheet" type="text/css" href="./faculty_files/indexoverride.css">
+	<link rel="stylesheet" type="text/css" href="./faculty_files/header.css">
 	<link href="./faculty_files/css" rel="stylesheet" type="text/css">
 	<meta name="viewport" content="width=device-width">
 	<script src="./faculty_files/jquery-2.2.0.min.js"></script>
 
 
 </head>
+
 <body>
 	<div id="banner" name="top">
-	<!-- Background photo for banner taken by Matthew Martin -->
-	
+		<!-- Background photo for banner taken by Matthew Martin -->
+
 		<div id="header">
 			<script language="javascript">
-			function loginCMS () {
-				var history="ColbyPrevious=host&"+escape(window.location.host)+"&method&GET&protocol&"+escape(window.location.protocol.substring(0,window.location.protocol.length-1))+"&arguments&&local&0";
-				var port=window.location.port;
-				if ( ( window.location.protocol == 'https:' ) &&
-				( window.location.port == '443' ) ) { port=''; }
-				if ( ( window.location.protocol == 'http:' ) &&
-				( window.location.port == '80' ) ) { port=''; }
-				history=history+"&port&"+escape(port);
+				function loginCMS() {
+					var history = "ColbyPrevious=host&" + escape(window.location.host) + "&method&GET&protocol&" + escape(window.location.protocol.substring(0, window.location.protocol.length - 1)) + "&arguments&&local&0";
+					var port = window.location.port;
+					if ((window.location.protocol == 'https:') &&
+						(window.location.port == '443')) { port = ''; }
+					if ((window.location.protocol == 'http:') &&
+						(window.location.port == '80')) { port = ''; }
+					history = history + "&port&" + escape(port);
 
-				var query_string='';
-				if ( window.location.search.length > 0 ) {
-				query_string=window.location.search.substring(1,window.location.search.length);
+					var query_string = '';
+					if (window.location.search.length > 0) {
+						query_string = window.location.search.substring(1, window.location.search.length);
+					}
+					query_string = query_string + window.location.hash;
+					history = history + "&query_string&" + escape(query_string);
+					history = history + "&uri&" + escape(window.location.pathname);
+					history = history + "; path=/; domain=colby.edu";
+					document.cookie = history;
+					window.location = "https://www.colby.edu/ColbyMaster/login/";
 				}
-				query_string=query_string + window.location.hash;
-				history=history+"&query_string&"+escape(query_string);
-				history=history+"&uri&"+escape(window.location.pathname);
-				history=history+"; path=/; domain=colby.edu";
-				document.cookie=history;
-				window.location="https://www.colby.edu/ColbyMaster/login/";
-			}
 			</script>
 
 			<a href="http://colby.edu/" target="_blank">
 				<img id="logo" src="./faculty_files/ColbyLogo_wide.png" alt="Colby College">
 			</a>
-			
 
-	 <h3>
-	 <a class="phonehidden" href="https://my.colby.edu/" target="_blank">myColby</a>
-	 <a class="phonehidden" href="http://www.colby.edu/directory/" target="_blank">Directory</a>
-	 <ul id="headerdropdown">
-	 <a href="http://www.colby.edu/visitors/" target="_blank"><li>Visitors</li></a>
-	 <a href="http://www.colby.edu/alumni" target="_blank"><li>Alumni</li></a>
-	 <a href="http://www.colby.edu/parents/" target="_blank"><li>Parents</li></a>
-	 <a href="http://www.colby.edu/afgift" target="_blank"><li>Make a Gift</li></a>
-	 </ul>
-	 <span class="phonehidden" id="moreheader">More</span>	 
 
-<!--
-				<a class="phonehidden" href="javascript:loginCMS()">myColby</a>
+			<h3>
+				<a class="phonehidden" href="https://my.colby.edu/" target="_blank">myColby</a>
 				<a class="phonehidden" href="http://www.colby.edu/directory/" target="_blank">Directory</a>
-				<a class="hiddenheader" style="display: none;" href="http://www.colby.edu/visitors/" target="_blank">Visitors</a>
-				<a class="hiddenheader" style="display: none;" href="http://www.colby.edu/alumni" target="_blank">Alumni</a>
-				<a class="hiddenheader" style="display: none;" href="http://www.colby.edu/parents/" target="_blank">Parents</a>
-				<a class="hiddenheader" style="display: none;" href="http://www.colby.edu/afgift" target="_blank">Make a Gift</a>
+				<ul id="headerdropdown">
+					<a href="http://www.colby.edu/visitors/" target="_blank">
+						<li>Visitors</li>
+					</a>
+					<a href="http://www.colby.edu/alumni" target="_blank">
+						<li>Alumni</li>
+					</a>
+					<a href="http://www.colby.edu/parents/" target="_blank">
+						<li>Parents</li>
+					</a>
+					<a href="http://www.colby.edu/afgift" target="_blank">
+						<li>Make a Gift</li>
+					</a>
+				</ul>
 				<span class="phonehidden" id="moreheader">More</span>
-				-->
-
-
 			</h3>
 
 			<div id="phonemenuicon">
@@ -75,28 +73,57 @@
 				<span></span>
 				<span></span>
 			</div>
-			<a href="http://www.colby.edu/search_cs/index.cfm" target="_blank"><div id="searchicon"></div></a>
+			<a href="http://www.colby.edu/search_cs/index.cfm" target="_blank">
+				<div id="searchicon"></div>
+			</a>
 		</div>
-		
+
 		<h1>Department of Computer Science</h1>
 		<h2>What do you want to create?</h2>
 
 		<div id="navbar">
 			<ul id="deptmenu">
-				<a href="https://cs.colby.edu/news.php"><li>News</li></a>
-				<a href="https://cs.colby.edu/faculty.php"><li>Faculty</li></a>
-				<a href="https://cs.colby.edu/connections.php"><li>Connections</li></a>
-				<a href="https://cs.colby.edu/projects.php"><li>Projects</li></a>
-				<a href="https://cs.colby.edu/writing.php"><li>Writing in CS</li></a>
+				<a href="https://cs.colby.edu/news.php">
+					<li>News</li>
+				</a>
+				<a href="https://cs.colby.edu/faculty.php">
+					<li>Faculty</li>
+				</a>
+				<a href="https://cs.colby.edu/connections.php">
+					<li>Connections</li>
+				</a>
+				<a href="https://cs.colby.edu/projects.php">
+					<li>Projects</li>
+				</a>
+				<a href="https://cs.colby.edu/writing.php">
+					<li>Writing in CS</li>
+				</a>
 			</ul>
 			<ul id="resourcemenu">
-				<a href="http://www.colby.edu/offices/" target="_blank"><li>Administration</li></a>
-				<a href="http://www.colby.edu/athletics/" target="_blank"><li>Athletics</li></a>
-				<a href="http://www.colby.edu/catalogue/" target="_blank"><li>Colby Catalogue</li></a>
-				<a href="http://www.colby.edu/academics/dual-degree" target="_blank"><li>Engineering Dual-Degree</li></a>
-                <a href="https://www.colby.edu/davisconnects/student-funding/" target="_blank"><li>Davis Connections Student Funding</li></a>
-				<a href="http://libguides.colby.edu/content.php?pid=7611&amp;sid=48409" target="_blank"><li>CS Library Resources</li></a>
-				<a href="http://www.colby.edu/registrar" target="_blank"><li>Colby Registrar</li></a>
+				<a href="http://www.colby.edu/offices/" target="_blank">
+					<li>Administration</li>
+				</a>
+				<a href="http://www.colby.edu/athletics/" target="_blank">
+					<li>Athletics</li>
+				</a>
+				<a href="http://www.colby.edu/catalogue/" target="_blank">
+					<li>Colby Catalogue</li>
+				</a>
+				<a href="http://www.colby.edu/academics/dual-degree" target="_blank">
+					<li>Engineering Dual-Degree</li>
+				</a>
+				<a href="https://www.colby.edu/davisconnects/student-funding/" target="_blank">
+					<li>Davis Connections Student Funding</li>
+				</a>
+				<a href="http://libguides.colby.edu/content.php?pid=7611&amp;sid=48409" target="_blank">
+					<li>CS Library Resources</li>
+				</a>
+				<a href="http://www.colby.edu/registrar" target="_blank">
+					<li>Colby Registrar</li>
+				</a>
+				<a href="http://hackers.colby.edu" target="_blank">
+					<li>Colby Hackers</li>
+				</a>
 			</ul>
 			<div class="navbutton">
 				<a href="https://cs.colby.edu/index.php">Home</a>
@@ -113,11 +140,6 @@
 			<div class="navbutton" id="resource">
 				<span>Resources</span>
 			</div>
-			<!-- 
-			<div class="navbutton">
-				<a href="hackers.php">Colby Hackers</a>
-			</div>
-			-->
 		</div>
 
 	</div>
@@ -125,332 +147,371 @@
 	<div id="phonemenu">
 		<div class="pmcol left-col">
 			<ul>
-				<a href="https://cs.colby.edu/index.php"><li>Home</li></a>
-				<a href="https://cs.colby.edu/courses.php"><li>Courses</li></a>
-				<a href="https://cs.colby.edu/curriculum.php"><li>Curriculum</li></a>
-				<a href="https://cs.colby.edu/hackers.php"><li>Colby Hackers</li></a>
-				<a href="https://cs.colby.edu/my.colby.edu"><li>myColby</li></a>
+				<a href="https://cs.colby.edu/index.php">
+					<li>Home</li>
+				</a>
+				<a href="https://cs.colby.edu/courses.php">
+					<li>Courses</li>
+				</a>
+				<a href="https://cs.colby.edu/curriculum.php">
+					<li>Curriculum</li>
+				</a>
+				<a href="https://cs.colby.edu/hackers.php">
+					<li>Colby Hackers</li>
+				</a>
+				<a href="https://cs.colby.edu/my.colby.edu">
+					<li>myColby</li>
+				</a>
 			</ul>
 		</div>
 		<div class="pmcol right-col">
 			<ul>
-				<a href="https://cs.colby.edu/news.php"><li>News</li></a>
-				<a href="https://cs.colby.edu/faculty.php"><li>Faculty</li></a>
-				<a href="https://cs.colby.edu/connections.php"><li>Connections</li></a>
-				<a href="https://cs.colby.edu/projects.php"><li>Projects</li></a>
-				<a href="https://cs.colby.edu/writing.php"><li>Writing in CS</li></a>
+				<a href="https://cs.colby.edu/news.php">
+					<li>News</li>
+				</a>
+				<a href="https://cs.colby.edu/faculty.php">
+					<li>Faculty</li>
+				</a>
+				<a href="https://cs.colby.edu/connections.php">
+					<li>Connections</li>
+				</a>
+				<a href="https://cs.colby.edu/projects.php">
+					<li>Projects</li>
+				</a>
+				<a href="https://cs.colby.edu/writing.php">
+					<li>Writing in CS</li>
+				</a>
 			</ul>
 		</div>
 	</div>
 
-<div id="content">
+	<div id="content">
 		<div class="entry" id="subpage">
-				<h2>Computer Science Faculty and Staff</h2>
+			<h2>Computer Science Faculty and Staff</h2>
 
-				<table>
+			<table>
 
-						<tbody><tr>
-								<td width="&lt;? echo $pic_col_width; ?&gt;" align="center" valign="top">
-										<a href="https://cs.colby.edu/srtaylor">
-												<img src="./faculty_files/StephanieTaylor-scale.jpg" height="130px"><br>
-												Dr. Stephanie Taylor</a><br>
-												Associate Professor<br> and Chair
-								</td>
-								<td>
-										Stephanie Taylor started her academic life at Gordon College in Massachusetts as a double-major in math and computer science. She spent several years as a software engineer in Peabody, MA before she pursued her PhD in computer science at UC Santa Barbara. Her research was then and continues to be developing and analyzing computational methods to study biological clocks. She joined the CS department at Colby in the fall of 2008 and finds a lot of joy working with Colby students.
-								</td> </tr>
-
-						<tr><td>&nbsp;</td><td></td></tr>
-
-						<tr><td width="&lt;? echo $pic_col_width; ?&gt;" align="center" valign="top"><br>
-								<a href="https://cs.colby.edu/eaaron">
-										<img src="./faculty_files/EricAaron.jpg" height="130px"><br>
-										Dr. Eric Aaron</a><br>
-										Assistant Professor
+				<tbody>
+					<tr>
+						<td width="&lt;? echo $pic_col_width; ?&gt;" align="center" valign="top">
+							<a href="https://cs.colby.edu/srtaylor">
+								<img src="./faculty_files/StephanieTaylor-scale.jpg" height="130px"><br>
+								Dr. Stephanie Taylor</a><br>
+							Associate Professor<br> and Chair
 						</td>
 						<td>
-								Eric Aaron majored in Mathematics at Princeton University, also studying Cognitive Science and Computer Science, before receiving his M.S. and Ph.D. in Computer Science from Cornell University. Focusing on interdisciplinary applications of computational modeling, his work is broadly interdisciplinary, bridging science, theory, and systems. His research has two areas of emphasis: intelligent robotics, including autonomous agent navigation, task sequencing, and graph theoretic analyses for robots in dynamic environments; and interdisciplinary computational science--spanning data acquisition, modeling, simulation, and data analysis--with application domains including tumor simulations, caterpillar crypsis, and mechanisms that extend existing evolutionary theory.
+							Stephanie Taylor started her academic life at Gordon College in Massachusetts as a
+							double-major in math and computer science. She spent several years as a software engineer in
+							Peabody, MA before she pursued her PhD in computer science at UC Santa Barbara. Her research
+							was then and continues to be developing and analyzing computational methods to study
+							biological clocks. She joined the CS department at Colby in the fall of 2008 and finds a lot
+							of joy working with Colby students.
 						</td>
-						</tr>
+					</tr>
 
-						<tr><td>&nbsp;</td><td></td></tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td></td>
+					</tr>
 
-						<tr><td width="&lt;? echo $pic_col_width; ?&gt;" align="center" valign="top"><br>
-								<a href="https://cs.colby.edu/nsalmadi">
-										<img src="./faculty_files/NaserAlMadi.jpg" height="130px"><br>
-										Dr. Naser Al Madi  </a><br>
-										Assistant Professor
-						</td>
-						<td>
-								Naser Al Madi’s research focuses on supporting source code reading and comprehension by modeling user behavior and eye movement during software development. He started his teaching career at Hamilton college, where he taught Operating Systems and Wearable Technology among other topics. He received his PhD from Kent State University, where he is a member of the Software Development Laboratory (SDML). His dissertation focuses on modeling eye movement control in reading source code, and his research interests include eye tracking, program comprehension, and reading models. nsalmadi@colby.edu
-						</td>
-</tr>
-
-						<tr><td>&nbsp;</td><td></td></tr>
-
-						<tr><td width="&lt;? echo $pic_col_width; ?&gt;" align="center" valign="top"><br>
-								<a href="https://cs.colby.edu/faculty.php">
-										<img src="./faculty_files/MaxBender.JPG" height="130px"><br>
-										Dr. Max Bender</a><br>
-										Assistant Professor
+					<tr>
+						<td width="&lt;? echo $pic_col_width; ?&gt;" align="center" valign="top"><br>
+							<a href="https://cs.colby.edu/eaaron">
+								<img src="./faculty_files/EricAaron.jpg" height="130px"><br>
+								Dr. Eric Aaron</a><br>
+							Assistant Professor
 						</td>
 						<td>
-						Max Bender went to our NESCAC friends at Connecticut College for his undergraduate years, where he majored in Computer Science, Mathematics, and Classics. Deciding to combine his passions in Computer Science and Mathematics, Max then went to the University of Pittsburgh for graduate school to study algorithms. Max primarily works in the realm of Online Approximation Algorithms with his dissertation focusing on Dynamic Pricing Problems, but more recently Max has been looking into applications of online approximation within Algorithmic Game Theory.</td></tr>
-						<tr><td>&nbsp;</td><td></td></tr>
+							Eric Aaron majored in Mathematics at Princeton University, also studying Cognitive Science
+							and Computer Science, before receiving his M.S. and Ph.D. in Computer Science from Cornell
+							University. Focusing on interdisciplinary applications of computational modeling, his work
+							is broadly interdisciplinary, bridging science, theory, and systems. His research has two
+							areas of emphasis: intelligent robotics, including autonomous agent navigation, task
+							sequencing, and graph theoretic analyses for robots in dynamic environments; and
+							interdisciplinary computational science--spanning data acquisition, modeling, simulation,
+							and data analysis--with application domains including tumor simulations, caterpillar
+							crypsis, and mechanisms that extend existing evolutionary theory.
+						</td>
+					</tr>
 
-						<tr><td width="&lt;? echo $pic_col_width; ?&gt;" align="center" valign="top"><br>
-								<!-- <a href="">-->
-										<img src="./faculty_files/photo_Tahiya_Chowdhury.jpg" height="130px"><br>
-										Dr. Tahiya Chowdhury<!--</a>--><br>
-										Postdoctoral Fellow<br>
-                                        Davis Institute of Artificial Intelligence
+					<tr>
+						<td>&nbsp;</td>
+						<td></td>
+					</tr>
+
+					<tr>
+						<td width="&lt;? echo $pic_col_width; ?&gt;" align="center" valign="top"><br>
+							<a href="https://cs.colby.edu/nsalmadi">
+								<img src="./faculty_files/NaserAlMadi.jpg" height="130px"><br>
+								Dr. Naser Al Madi </a><br>
+							Assistant Professor
 						</td>
 						<td>
-Tahiya Chowdhury received a Bachelor of Electrical Engineering from Bangladesh University of Engineering and Technology. She went to Rutgers University for graduate studies, where she received a Master of Science in Computer Engineering with a focus on usable privacy and human-computer interaction. During her Ph.D. in Computer Engineering at Rutgers University, she focused on designing data-driven intelligent tools to model human events on individual and city scale. Her recent research interests include human-centered design of ethical AI, public interest technology, and computer science education.
+							Naser Al Madi’s research focuses on supporting source code reading and comprehension by
+							modeling user behavior and eye movement during software development. He started his teaching
+							career at Hamilton college, where he taught Operating Systems and Wearable Technology among
+							other topics. He received his PhD from Kent State University, where he is a member of the
+							Software Development Laboratory (SDML). His dissertation focuses on modeling eye movement
+							control in reading source code, and his research interests include eye tracking, program
+							comprehension, and reading models. nsalmadi@colby.edu
 						</td>
-						</tr>
+					</tr>
 
-						<tr><td>&nbsp;</td><td></td></tr>
-						<tr><td width="&lt;? echo $pic_col_width; ?&gt;" align="center" valign="top"><br>
-								<!-- <a href="">-->
-										<img src="./faculty_files/StacyDoore.jpg" height="130px"><br>
-										Dr. Stacy Doore<!--</a>--><br>
-										Clare Boothe Luce Assistant Professor
-						</td>
-						<td>
-						Stacy Doore began her journey as a computer scientist while receiving her M.S. and Ph.D. in Spatial Information Science and Engineering at the University of Maine. Before coming to Colby, she taught computer science for two years at Bowdoin College. Her technical research interests include digital information access, emerging assistive technologies, multimodal systems, and non-visual spatial language interfaces. She is also the principal investigator on several grants related to improving the teaching of computing ethics and equity in computer science education. Her technical and educational research is supported by NSF and the Mozilla Foundation and she serves as an external evaluator for programs related to increasing inclusion, equity, and accessibility in the STEM disciplines.
-						</td>
-						</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td></td>
+					</tr>
 
-						<tr><td>&nbsp;</td><td></td></tr>
-
-						<tr><td width="&lt;? echo $pic_col_width; ?&gt;" align="center" valign="top"><br>
-								<!-- <a href="">-->
-										<img src="./faculty_files/AllenHarper.jpg" height="130px"><br>
-										Dr. Allen Harper<!--</a>--><br>
-										Assistant Professor
-						</td>
-						<td> Allen Harper began his academic at the University of Rhode Island where he completed his undergraduate degree in Geology. However, after studying Economics and Political Economy at URI and UMass Amherst, Allen ventured to NYC where he spent the next quarter of a century working on solutions to urban social problems. During that time Allen become interested in Computer Science and especially how humans interact with machines. This led to Allen’s dissertation on eye tracking and human task performance at City University of New York--Graduate Center. More recently, Allen has begun to study how eye tracking can be combined with virtual reality. 
-						</td>
-						</tr>
-
-						<tr><td>&nbsp;</td><td></td></tr>
-
-						<tr><td width="&lt;? echo $pic_col_width; ?&gt;" align="center" valign="top"><br>
-								<a href="https://sites.google.com/colby.edu/owlab">
-										<img src="./faculty_files/OliverLayton2.jpg" height="130px"><br>
-										Dr. Oliver Layton</a><br>
-										Assistant Professor
+					<tr>
+						<td width="&lt;? echo $pic_col_width; ?&gt;" align="center" valign="top"><br>
+							<a href="https://cs.colby.edu/faculty.php">
+								<img src="./faculty_files/MaxBender.JPG" height="130px"><br>
+								Dr. Max Bender</a><br>
+							Assistant Professor
 						</td>
 						<td>
-								Oliver Layton’s research focuses on how the brain controls behavior and informs the design of better technology. Specifically, he is fascinated by the brain mechanisms and strategies that allow people to effortlessly move through dynamic, complex scenarios, such as walking through Grand Central Station without colliding with people and flying drones through cluttered environments. Oliver is passionate about the liberal arts and interdisciplinary learning, having created a self-determined major in ‘Computational Neuroscience’ at Skidmore College to study the brain from a diversity of perspectives, including Computer Science, Neuroscience, Psychology, and Mathematics. He went onto graduate school at Boston University, where he became interested in human navigation and developed a large-scale, dynamic neural model that simulates how humans perceive their movement through realistic environments. After earning his Ph.D. in Cognitive and Neural Systems, he joined the Perception and Action Lab at Rensselaer Polytechnic Institute as a Postdoctoral Researcher to design virtual reality experiments to better understand human navigation and develop new models of the primate visual system.</td>
-						</tr>
-						
-						<tr><td>&nbsp;</td><td></td></tr>
+							Max Bender went to our NESCAC friends at Connecticut College for his undergraduate years,
+							where he majored in Computer Science, Mathematics, and Classics. Deciding to combine his
+							passions in Computer Science and Mathematics, Max then went to the University of Pittsburgh
+							for graduate school to study algorithms. Max primarily works in the realm of Online
+							Approximation Algorithms with his dissertation focusing on Dynamic Pricing Problems, but
+							more recently Max has been looking into applications of online approximation within
+							Algorithmic Game Theory.</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td></td>
+					</tr>
 
-						<tr><td width="&lt;? echo $pic_col_width; ?&gt;" align="center"><br>
-								<a href="https://cs.colby.edu/yingli">
-										<img src="./faculty_files/yingli-small.jpg" height="130px"><br>
-										Dr. Ying Li</a><br>
-										Associate Professor<br> and Associate Chair
+					<tr>
+						<td width="&lt;? echo $pic_col_width; ?&gt;" align="center" valign="top"><br>
+							<img src="./faculty_files/photo_Tahiya_Chowdhury.jpg" height="130px"><br>
+							Dr. Tahiya Chowdhury<br>
+							Postdoctoral Fellow<br>
+							Davis Institute of Artificial Intelligence
 						</td>
 						<td>
-								Ying Li received a Bachelor of Engineering in Computer Science and Technology from Hubei University of Technology in China, where she continued her education and received a Master of Engineering in Applied Technology. She went on to the University of New Hampshire and received her Ph.D. in Computer Science there. Her research interests include efficient methods for resource-limited networks, reliable communication, performance analysis, intermittently connected networks, wireless sensor networks, and drone networks.
+							Tahiya Chowdhury received a Bachelor of Electrical Engineering from Bangladesh University of
+							Engineering and Technology. She went to Rutgers University for graduate studies, where she
+							received a Master of Science in Computer Engineering with a focus on usable privacy and
+							human-computer interaction. During her Ph.D. in Computer Engineering at Rutgers University,
+							she focused on designing data-driven intelligent tools to model human events on individual
+							and city scale. Her recent research interests include human-centered design of ethical AI,
+							public interest technology, and computer science education.
 						</td>
-						</tr>
+					</tr>
 
-						<tr><td>&nbsp;</td><td></td></tr>
-
-	<tr><td width="&lt;? echo $pic_col_width; ?&gt;" align="center" valign="top"><br>
-								<a href="https://www.colby.edu/directory/profile/ajstent/">	<img src="./faculty_files/Amanda-Stent-225x300.jpg" height="130px"><br>
-										Dr. Amanda Stent</a><br>
-									Director, Davis Institute for AI and Professor<br>
-						</td>
-						<td>
-Amanda Stent is the founding director of the <a href="https://davisinstituteai.colby.edu/">Davis Institute for AI</a>. She previously worked in industry at Bloomberg, Yahoo, AT&amp;T Labs, and in academia at Stony Brook University as an associate professor of computer science. She holds a Ph.D. in Computer Science from the University of Rochester. 
-						</td>
-						</tr>
-						<tr><td width="&lt;? echo $pic_col_width; ?&gt;" align="center" valign="top"><br>
-								<a href="https://cs.colby.edu/hewolfe">
-										<img src="./faculty_files/HannahWolfe.jpg" height="130px"><br>
-										Dr. Hannen Wolfe<br></a>
-										Assistant Professor
-						</td>
-						<td>
-								Hannen Wolfe went to Bennington College where they received a Bachelors of Arts in a self-designed major that integrated visual arts, computer science, and mathematics.  While completing their PhD in Media Arts and Technology from University of California Santa Barbara, they received a Masters of Science in Computer Science.  Their research interests include human robot interaction, affective computing, virtual reality, and computational creativity.  Their artwork focuses on the relationship between body and technology, giving computers and robots biological qualities.
-						</td>
-						</tr>
-
-						<!--
-								 <tr><td width="200px" align="center"><br/>
-								 <a href="ceeaton">
-								 <img src="/images/department/Caitrin.png" height="130px" valign="top"><br>
-								 Dr. Caitrin Eaton</a><br>
-								 Assistant Professor
-								 </td>
-								 <td>
-								 Caitrin Eaton started her journey to robotics and	bio-inspired algorithms at Tufts University, earning a BS in Computer Engineering in 2009. She completed her PhD in CS &amp; Engineering at the University of South Florida in 2015, and then completed a post-doc at the University of California, Irvine, building embedded systems for real-time interaction with animals and live tissues.  Caitrin's research interests include biomimetic robotics, embedded systems, computational physiology, and modeling complex systems.  All of that is technical speak for having the best toys on campus and building stuff that moves and reacts to its environment. </td>
-								 </tr>
-
-								 <tr><td>&nbsp;</td><td></td></tr>
-
-
-						<tr><td width="200px" align="center"><br/>
-								<a href="zcodabux">
-										<img src="/images/department/ZCodabux.jpg" height="130px" valign="top"><br>
-										Dr. Zadia Codabux</a><br>
-										Visiting Assistant Professor
+					<tr>
+						<td>&nbsp;</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td width="&lt;? echo $pic_col_width; ?&gt;" align="center" valign="top"><br>
+							<img src="./faculty_files/StacyDoore.jpg" height="130px"><br>
+							Dr. Stacy Doore<br>
+							Clare Boothe Luce Assistant Professor
 						</td>
 						<td>
-								Zadia Codabux holds a B.S. (Hons) Degree in Software Engineering 
-								from the University of Technology Mauritius (UTM) and a M.S. in 
-								Computer Science from the University of Mauritius (UOM). She 
-								earned her Ph.D. in Computer Science from Mississippi State 
-								University. Her research is on software quality with a 
-								focus on technical debt. Prior to coming to USA, she worked 
-								as a lecturer at UOM and UTM and in industry as a software 
-								quality assurance manager. Her research interests are 
-								empirical software engineering, technical debt, software metrics, 
-								predictive analytics, software quality, software maintenance and 
-								computer science education.
+							Stacy Doore began her journey as a computer scientist while receiving her M.S. and Ph.D. in
+							Spatial Information Science and Engineering at the University of Maine. Before coming to
+							Colby, she taught computer science for two years at Bowdoin College. Her technical research
+							interests include digital information access, emerging assistive technologies, multimodal
+							systems, and non-visual spatial language interfaces. She is also the principal investigator
+							on several grants related to improving the teaching of computing ethics and equity in
+							computer science education. Her technical and educational research is supported by NSF and
+							the Mozilla Foundation and she serves as an external evaluator for programs related to
+							increasing inclusion, equity, and accessibility in the STEM disciplines.
 						</td>
-						</tr>
-						-->
+					</tr>
 
-						<tr><td>&nbsp;</td><td></td></tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td></td>
+					</tr>
 
-						<!--
-								 <tr>
-								 <td align = "center">
-								 <a href = "kgburke/">
-								 <img src = "https://dl.dropboxusercontent.com/u/43416022/KyleInSuit.jpg" height = "130px" valign="top">
-								 <br \>
-								 Dr. Kyle Burke</a>
-								 <br \>
-								 Visiting Assistant Professor</td>
-								 <td>
-								 Kyle realized his interest in computer science here at Colby, where he also majored in math.  He got his Ph.D. in theoretial computer science at Boston University.  From 2009 to 2013, he taught at Wittenberg University in Springfield, Ohio.  Kyle has done lots studying combinatorial games and computational complexity.  Recently he has also become very interested in object-oriented parallel design patterns.  He is extremely excited to be back at Colby for the '13-'14 year! </td></tr> 
-							 -->
+					<tr>
+						<td width="&lt;? echo $pic_col_width; ?&gt;" align="center" valign="top"><br>
+							<img src="./faculty_files/AllenHarper.jpg" height="130px"><br>
+							Dr. Allen Harper<br>
+							Assistant Professor
+						</td>
+						<td> Allen Harper began his academic at the University of Rhode Island where he completed his
+							undergraduate degree in Geology. However, after studying Economics and Political Economy at
+							URI and UMass Amherst, Allen ventured to NYC where he spent the next quarter of a century
+							working on solutions to urban social problems. During that time Allen become interested in
+							Computer Science and especially how humans interact with machines. This led to Allen’s
+							dissertation on eye tracking and human task performance at City University of New
+							York--Graduate Center. More recently, Allen has begun to study how eye tracking can be
+							combined with virtual reality.
+						</td>
+					</tr>
 
-						<!--
-								 <tr>
-								 <td width="200px" align="center">
-								 <img src="/images/department/DanSiff.jpg" height="130px" valign="top"><br>
-								 <a href="http://www.colby.edu/directory_cs/dsiff/">
-								 Daniel S. Siff</a><br>
-								 Visiting Instructor
-								 <p>
-								 </td>
-								 <td>
-								 Dan Siff earned B.A. and M.S. degrees at UC Boulder. As Colby's
-								 network specialist he has extensive experience in maintaining and
-								 debugging real networks.  Dan is teaching networking for the second
-								 time in the spring of '09, brought back by popular demand after first
-								 teaching the course in the spring of 2007.
-								 </td> </tr>
-							 -->
+					<tr>
+						<td>&nbsp;</td>
+						<td></td>
+					</tr>
 
-						<!--
-								 <tr>
-								 <td width="200px" align="center">
-								 <a href="bseastwo">
-								 <img src="/images/department/BrianEastwoodF09.jpg" height="130px" valign="top"><br>
-								 Dr. Brian Eastwood</a><br>
-								 HHMI Postdoctoral Fellow in Computer Science
-								 <p>
-								 </td>
-								 <td valign="top">
-								 Brian graduated from the University of Vermont with a B.S. in 
-								 Physics and minors in Computer Science and Applied Mathematics.  
-								 He spent several years as a software engineering consultant in
-								 the financial services industry before attending graduate school 
-								 at the University of North Carolina at Chapel Hill.  His graduate 
-								 research involved analyzing motion in biological microscopy videos.
-								 At Colby, Brian is continuing research in image analysis, scientific
-								 computing, and visualization with applications in the natural sciences.
-								 </td></tr>
-							 -->
+					<tr>
+						<td width="&lt;? echo $pic_col_width; ?&gt;" align="center" valign="top"><br>
+							<a href="https://sites.google.com/colby.edu/owlab">
+								<img src="./faculty_files/OliverLayton2.jpg" height="130px"><br>
+								Dr. Oliver Layton</a><br>
+							Assistant Professor
+						</td>
+						<td>
+							Oliver Layton’s research focuses on how the brain controls behavior and informs the design
+							of better technology. Specifically, he is fascinated by the brain mechanisms and strategies
+							that allow people to effortlessly move through dynamic, complex scenarios, such as walking
+							through Grand Central Station without colliding with people and flying drones through
+							cluttered environments. Oliver is passionate about the liberal arts and interdisciplinary
+							learning, having created a self-determined major in ‘Computational Neuroscience’ at Skidmore
+							College to study the brain from a diversity of perspectives, including Computer Science,
+							Neuroscience, Psychology, and Mathematics. He went onto graduate school at Boston
+							University, where he became interested in human navigation and developed a large-scale,
+							dynamic neural model that simulates how humans perceive their movement through realistic
+							environments. After earning his Ph.D. in Cognitive and Neural Systems, he joined the
+							Perception and Action Lab at Rensselaer Polytechnic Institute as a Postdoctoral Researcher
+							to design virtual reality experiments to better understand human navigation and develop new
+							models of the primate visual system.</td>
+					</tr>
 
-						<!--
-								 <tr>
-								 <td width="200px" align="center">
-								 <img src="/images/department/ScottRussell.jpg" height="130px" valign="top"><br>
-								 Scott Russell<br>Visiting Assistant Professor
-								 <p>
-								 </td>
-								 <td>
+					<tr>
+						<td>&nbsp;</td>
+						<td></td>
+					</tr>
 
-								 Scott started his long academic stint as a member of the Clarkson
-								 School Bridging Year program at Clarkson University.  Seeking a more
-								 well-rounded liberal arts education, he migrated to Hamilton College
-								 where he received an A.B. in mathematics and minored in Asian Studies.
-								 He then spent a year pursuing graduate studies at Northwestern
-								 University where he earned an M.S. in Applied Mathematics.  He next
-								 went to work for a small database consulting company and spend five
-								 years supporting and developing finance and marketing systems for
-								 Fortune 1000-size companies.  After some time off from work, he moved
-								 to Japan where he lived and taught English conversation for a year.
-								 Upon returning to the states he enrolled in the Ph.D. program in
-								 Computer Science at Boston University.  He received his M.A. in 2004
-								 and is in the final throes of completing his Ph.D.  His research
-								 interests are in the areas of Cryptography, Information Security, and
-								 Privacy.  He landed on Mayflower Hill in the fall of 2007.
+					<tr>
+						<td width="&lt;? echo $pic_col_width; ?&gt;" align="center"><br>
+							<a href="https://cs.colby.edu/yingli">
+								<img src="./faculty_files/yingli-small.jpg" height="130px"><br>
+								Dr. Ying Li</a><br>
+							Associate Professor<br> and Associate Chair
+						</td>
+						<td>
+							Ying Li received a Bachelor of Engineering in Computer Science and Technology from Hubei
+							University of Technology in China, where she continued her education and received a Master
+							of Engineering in Applied Technology. She went on to the University of New Hampshire and
+							received her Ph.D. in Computer Science there. Her research interests include efficient
+							methods for resource-limited networks, reliable communication, performance analysis,
+							intermittently connected networks, wireless sensor networks, and drone networks.
+						</td>
+					</tr>
 
-								 </td>
-								 </tr>
-							 -->
+					<tr>
+						<td>&nbsp;</td>
+						<td></td>
+					</tr>
 
-						<tr>
-								<td width="200px" align="center">
-										<a href="http://www.colby.edu/directory/profile/kim.caswell">
-												Kim Caswell</a><br>
-										Administrative Secretary
-								</td>
-						</tr>
-				</tbody></table>
+					<tr>
+						<td width="&lt;? echo $pic_col_width; ?&gt;" align="center" valign="top"><br>
+							<a href="https://www.colby.edu/directory/profile/ajstent/"> <img
+									src="./faculty_files/Amanda-Stent-225x300.jpg" height="130px"><br>
+								Dr. Amanda Stent</a><br>
+							Director, Davis Institute for AI and Professor<br>
+						</td>
+						<td>
+							Amanda Stent is the founding director of the <a
+								href="https://davisinstituteai.colby.edu/">Davis Institute for AI</a>. She previously
+							worked in industry at Bloomberg, Yahoo, AT&amp;T Labs, and in academia at Stony Brook
+							University as an associate professor of computer science. She holds a Ph.D. in Computer
+							Science from the University of Rochester.
+						</td>
+					</tr>
+					<tr>
+						<td width="&lt;? echo $pic_col_width; ?&gt;" align="center" valign="top"><br>
+							<a href="https://cs.colby.edu/hewolfe">
+								<img src="./faculty_files/HannahWolfe.jpg" height="130px"><br>
+								Dr. Hannen Wolfe<br></a>
+							Assistant Professor
+						</td>
+						<td>
+							Hannen Wolfe went to Bennington College where they received a Bachelors of Arts in a
+							self-designed major that integrated visual arts, computer science, and mathematics. While
+							completing their PhD in Media Arts and Technology from University of California Santa
+							Barbara, they received a Masters of Science in Computer Science. Their research interests
+							include human robot interaction, affective computing, virtual reality, and computational
+							creativity. Their artwork focuses on the relationship between body and technology, giving
+							computers and robots biological qualities.
+						</td>
+					</tr>
+
+					<tr>
+						<td>&nbsp;</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td width="200px" align="center">
+							<a href="http://www.colby.edu/directory/profile/kim.caswell">
+								Kim Caswell</a><br>
+							Administrative Secretary
+						</td>
+					</tr>
+				</tbody>
+			</table>
 		</div>
 
-       <div class="entry" id="subpage">
-                <h2>Associated Computer Science Faculty</h2>
+		<div class="entry" id="subpage">
+			<h2>Associated Computer Science Faculty</h2>
 
-                <table>
+			<table>
 
-                        <tbody><tr>
-                                <td width="&lt;? echo $pic_col_width; ?&gt;" align="center" valign="top">
-                                        <a href="https://cs.colby.edu/maxwell">
-                                                <img src="./faculty_files/Bruce-2021-06.jpg" height="130px"><br>
-                                                Dr. Bruce A. Maxwell</a><br>
-                                </td>
-                                <td valign="top">
-                                        After 15 years at Colby, Bruce is now the Teaching Professor and Assistant Director of Computing Programs, Seattle Campus, Northeastern University. Bruce Maxwell started exploring computer science as an undergraduate at Swarthmore College, where he earned a B.A. in Political Science, a B.S. in Engineering, and a Concentration in Computer Science.  He went on to obtain an M.Phil. in Speech Recognition at Cambridge University and a Ph.D. in Robotics at Carnegie Mellon University. He taught for two years at the University of North Dakota and nine years at Swarthmore College before coming to Colby in the fall of 2007. His interests include robotics, computer vision, computer graphics, scientific data analysis and visualization.
-                                </td>
-                        </tr>
-                        <tr><td>&nbsp;</td><td></td></tr>
+				<tbody>
+					<tr>
+						<td width="&lt;? echo $pic_col_width; ?&gt;" align="center" valign="top">
+							<a href="https://cs.colby.edu/maxwell">
+								<img src="./faculty_files/Bruce-2021-06.jpg" height="130px"><br>
+								Dr. Bruce A. Maxwell</a><br>
+						</td>
+						<td valign="top">
+							After 15 years at Colby, Bruce is now the Teaching Professor and Assistant Director of
+							Computing Programs, Seattle Campus, Northeastern University. Bruce Maxwell started exploring
+							computer science as an undergraduate at Swarthmore College, where he earned a B.A. in
+							Political Science, a B.S. in Engineering, and a Concentration in Computer Science. He went
+							on to obtain an M.Phil. in Speech Recognition at Cambridge University and a Ph.D. in
+							Robotics at Carnegie Mellon University. He taught for two years at the University of North
+							Dakota and nine years at Swarthmore College before coming to Colby in the fall of 2007. His
+							interests include robotics, computer vision, computer graphics, scientific data analysis and
+							visualization.
+						</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td></td>
+					</tr>
 
-                       <tr>
-                                <td width="&lt;? echo $pic_col_width; ?&gt;" align="center" valign="top">
-                                        <a href="https://cs.colby.edu/djskrien">
-                                                <img src="./faculty_files/DaleSkrien.jpg" height="130px"><br>
-                                                Dr. Dale Skrien</a><br>
-                                                Emeritus Professor
-                                </td>
-                                <td> Dale Skrien went to St. Olaf College where he received a B.A. in Mathematics.  He continued his education at the University of Washington where he received M.S. and Ph.D. degrees in Mathematics. His dissertation concerned algorithmic graph theory or, more specifically, algorithms relating to interval graphs.  He later picked up a M.S. degree in Computer Science at the University of Illinois. He taught at Colby from 1980 until 2022.  His interests have included object-oriented software design, educational software for computer organization courses, and computer music.
-                                </td>
-                        </tr>
+					<tr>
+						<td width="&lt;? echo $pic_col_width; ?&gt;" align="center" valign="top">
+							<a href="https://cs.colby.edu/djskrien">
+								<img src="./faculty_files/DaleSkrien.jpg" height="130px"><br>
+								Dr. Dale Skrien</a><br>
+							Emeritus Professor
+						</td>
+						<td> Dale Skrien went to St. Olaf College where he received a B.A. in Mathematics. He continued
+							his education at the University of Washington where he received M.S. and Ph.D. degrees in
+							Mathematics. His dissertation concerned algorithmic graph theory or, more specifically,
+							algorithms relating to interval graphs. He later picked up a M.S. degree in Computer Science
+							at the University of Illinois. He taught at Colby from 1980 until 2022. His interests have
+							included object-oriented software design, educational software for computer organization
+							courses, and computer music.
+						</td>
+					</tr>
 
-				</tbody></table>
+				</tbody>
+			</table>
 		</div>
-		
-</div>
 
-<script type="text/javascript" src="./faculty_files/main.js"></script>
-<script type="text/javascript">
- 
-</script>
-<div id="footer">
-	 <!--? 	date_default_timezone_set( "America/New_York" ); ?-->
-	<h4>© 2023 <a target="_blank" href="http://matthewmartin.me/">Matthew J. Martin</a> '18 and <a target="_blank" href="https://www.linkedin.com/in/adamcarlson18">Adam L. Carlson</a> '18</h4>
-</div>
+	</div>
+
+	<script type="text/javascript" src="./faculty_files/main.js"></script>
+	<script type="text/javascript">
+
+	</script>
+	<div id="footer">
+		<h4>© 2023 <a target="_blank" href="http://matthewmartin.me/">Matthew J. Martin</a> '18 and <a target="_blank"
+				href="https://www.linkedin.com/in/adamcarlson18">Adam L. Carlson</a> '18</h4>
+	</div>
 
 
-</body></html>
+</body>
+
+</html>
