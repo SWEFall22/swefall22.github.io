@@ -6,6 +6,8 @@ def create_app() -> Flask:
 
     app = Flask(__name__)
 
+    app.static_folder = "static"
+
     from .views import views
 
     app.register_blueprint(views, url_prefix='/')
