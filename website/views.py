@@ -21,6 +21,12 @@ def curriculum(name=None):
     return render_template("curriculum.html", name=name)
 
 
+@views.route("/connections")
+def connections(name=None):
+    """View for connections page."""
+    return render_template("connections.html", name=name)
+
+
 @views.route("/faculty")
 def faculty(name=None):
     """View for faculty page."""
