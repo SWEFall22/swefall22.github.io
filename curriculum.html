@@ -1,71 +1,69 @@
+<html>
 
-<!-- saved from url=(0035)https://cs.colby.edu/curriculum.php -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>Colby Computer Science</title>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Curriculum | Colby Computer Science</title>
 	<link rel="icon" href="https://cs.colby.edu/img/favicon.png">
 	<link rel="stylesheet" type="text/css" href="./curriculum_files/content.css">
-		<link rel="stylesheet" type="text/css" href="./curriculum_files/header.css">
+	<link rel="stylesheet" type="text/css" href="./curriculum_files/header.css">
 	<link href="./curriculum_files/css" rel="stylesheet" type="text/css">
 	<meta name="viewport" content="width=device-width">
 	<script src="./curriculum_files/jquery-2.2.0.min.js"></script>
 
 
 </head>
+
 <body>
 	<div id="banner" name="top">
-	<!-- Background photo for banner taken by Matthew Martin -->
-	
+		<!-- Background photo for banner taken by Matthew Martin -->
+
 		<div id="header">
 			<script language="javascript">
-			function loginCMS () {
-				var history="ColbyPrevious=host&"+escape(window.location.host)+"&method&GET&protocol&"+escape(window.location.protocol.substring(0,window.location.protocol.length-1))+"&arguments&&local&0";
-				var port=window.location.port;
-				if ( ( window.location.protocol == 'https:' ) &&
-				( window.location.port == '443' ) ) { port=''; }
-				if ( ( window.location.protocol == 'http:' ) &&
-				( window.location.port == '80' ) ) { port=''; }
-				history=history+"&port&"+escape(port);
+				function loginCMS() {
+					var history = "ColbyPrevious=host&" + escape(window.location.host) + "&method&GET&protocol&" + escape(window.location.protocol.substring(0, window.location.protocol.length - 1)) + "&arguments&&local&0";
+					var port = window.location.port;
+					if ((window.location.protocol == 'https:') &&
+						(window.location.port == '443')) { port = ''; }
+					if ((window.location.protocol == 'http:') &&
+						(window.location.port == '80')) { port = ''; }
+					history = history + "&port&" + escape(port);
 
-				var query_string='';
-				if ( window.location.search.length > 0 ) {
-				query_string=window.location.search.substring(1,window.location.search.length);
+					var query_string = '';
+					if (window.location.search.length > 0) {
+						query_string = window.location.search.substring(1, window.location.search.length);
+					}
+					query_string = query_string + window.location.hash;
+					history = history + "&query_string&" + escape(query_string);
+					history = history + "&uri&" + escape(window.location.pathname);
+					history = history + "; path=/; domain=colby.edu";
+					document.cookie = history;
+					window.location = "https://www.colby.edu/ColbyMaster/login/";
 				}
-				query_string=query_string + window.location.hash;
-				history=history+"&query_string&"+escape(query_string);
-				history=history+"&uri&"+escape(window.location.pathname);
-				history=history+"; path=/; domain=colby.edu";
-				document.cookie=history;
-				window.location="https://www.colby.edu/ColbyMaster/login/";
-			}
 			</script>
 
 			<a href="http://colby.edu/" target="_blank">
 				<img id="logo" src="./curriculum_files/ColbyLogo_wide.png" alt="Colby College">
 			</a>
-			
 
-	 <h3>
-	 <a class="phonehidden" href="https://my.colby.edu/" target="_blank">myColby</a>
-	 <a class="phonehidden" href="http://www.colby.edu/directory/" target="_blank">Directory</a>
-	 <ul id="headerdropdown">
-	 <a href="http://www.colby.edu/visitors/" target="_blank"><li>Visitors</li></a>
-	 <a href="http://www.colby.edu/alumni" target="_blank"><li>Alumni</li></a>
-	 <a href="http://www.colby.edu/parents/" target="_blank"><li>Parents</li></a>
-	 <a href="http://www.colby.edu/afgift" target="_blank"><li>Make a Gift</li></a>
-	 </ul>
-	 <span class="phonehidden" id="moreheader">More</span>	 
 
-<!--
-				<a class="phonehidden" href="javascript:loginCMS()">myColby</a>
+			<h3>
+				<a class="phonehidden" href="https://my.colby.edu/" target="_blank">myColby</a>
 				<a class="phonehidden" href="http://www.colby.edu/directory/" target="_blank">Directory</a>
-				<a class="hiddenheader" style="display: none;" href="http://www.colby.edu/visitors/" target="_blank">Visitors</a>
-				<a class="hiddenheader" style="display: none;" href="http://www.colby.edu/alumni" target="_blank">Alumni</a>
-				<a class="hiddenheader" style="display: none;" href="http://www.colby.edu/parents/" target="_blank">Parents</a>
-				<a class="hiddenheader" style="display: none;" href="http://www.colby.edu/afgift" target="_blank">Make a Gift</a>
+				<ul id="headerdropdown">
+					<a href="http://www.colby.edu/visitors/" target="_blank">
+						<li>Visitors</li>
+					</a>
+					<a href="http://www.colby.edu/alumni" target="_blank">
+						<li>Alumni</li>
+					</a>
+					<a href="http://www.colby.edu/parents/" target="_blank">
+						<li>Parents</li>
+					</a>
+					<a href="http://www.colby.edu/afgift" target="_blank">
+						<li>Make a Gift</li>
+					</a>
+				</ul>
 				<span class="phonehidden" id="moreheader">More</span>
-				-->
-
-
 			</h3>
 
 			<div id="phonemenuicon">
@@ -73,28 +71,57 @@
 				<span></span>
 				<span></span>
 			</div>
-			<a href="http://www.colby.edu/search_cs/index.cfm" target="_blank"><div id="searchicon"></div></a>
+			<a href="http://www.colby.edu/search_cs/index.cfm" target="_blank">
+				<div id="searchicon"></div>
+			</a>
 		</div>
-		
+
 		<h1>Department of Computer Science</h1>
 		<h2>What do you want to create?</h2>
 
 		<div id="navbar">
 			<ul id="deptmenu">
-				<a href="https://cs.colby.edu/news.php"><li>News</li></a>
-				<a href="https://cs.colby.edu/faculty.php"><li>Faculty</li></a>
-				<a href="https://cs.colby.edu/connections.php"><li>Connections</li></a>
-				<a href="https://cs.colby.edu/projects.php"><li>Projects</li></a>
-				<a href="https://cs.colby.edu/writing.php"><li>Writing in CS</li></a>
+				<a href="https://cs.colby.edu/news.php">
+					<li>News</li>
+				</a>
+				<a href="https://cs.colby.edu/faculty.php">
+					<li>Faculty</li>
+				</a>
+				<a href="https://cs.colby.edu/connections.php">
+					<li>Connections</li>
+				</a>
+				<a href="https://cs.colby.edu/projects.php">
+					<li>Projects</li>
+				</a>
+				<a href="https://cs.colby.edu/writing.php">
+					<li>Writing in CS</li>
+				</a>
 			</ul>
 			<ul id="resourcemenu">
-				<a href="http://www.colby.edu/offices/" target="_blank"><li>Administration</li></a>
-				<a href="http://www.colby.edu/athletics/" target="_blank"><li>Athletics</li></a>
-				<a href="http://www.colby.edu/catalogue/" target="_blank"><li>Colby Catalogue</li></a>
-				<a href="http://www.colby.edu/academics/dual-degree" target="_blank"><li>Engineering Dual-Degree</li></a>
-                <a href="https://www.colby.edu/davisconnects/student-funding/" target="_blank"><li>Davis Connections Student Funding</li></a>
-				<a href="http://libguides.colby.edu/content.php?pid=7611&amp;sid=48409" target="_blank"><li>CS Library Resources</li></a>
-				<a href="http://www.colby.edu/registrar" target="_blank"><li>Colby Registrar</li></a>
+				<a href="http://www.colby.edu/offices/" target="_blank">
+					<li>Administration</li>
+				</a>
+				<a href="http://www.colby.edu/athletics/" target="_blank">
+					<li>Athletics</li>
+				</a>
+				<a href="http://www.colby.edu/catalogue/" target="_blank">
+					<li>Colby Catalogue</li>
+				</a>
+				<a href="http://www.colby.edu/academics/dual-degree" target="_blank">
+					<li>Engineering Dual-Degree</li>
+				</a>
+				<a href="https://www.colby.edu/davisconnects/student-funding/" target="_blank">
+					<li>Davis Connections Student Funding</li>
+				</a>
+				<a href="http://libguides.colby.edu/content.php?pid=7611&amp;sid=48409" target="_blank">
+					<li>CS Library Resources</li>
+				</a>
+				<a href="http://www.colby.edu/registrar" target="_blank">
+					<li>Colby Registrar</li>
+				</a>
+				<a href="http://hackers.colby.edu" target="_blank">
+					<li>Colby Hackers</li>
+				</a>
 			</ul>
 			<div class="navbutton">
 				<a href="https://cs.colby.edu/index.php">Home</a>
@@ -111,11 +138,6 @@
 			<div class="navbutton" id="resource">
 				<span>Resources</span>
 			</div>
-			<!-- 
-			<div class="navbutton">
-				<a href="hackers.php">Colby Hackers</a>
-			</div>
-			-->
 		</div>
 
 	</div>
@@ -123,481 +145,603 @@
 	<div id="phonemenu">
 		<div class="pmcol left-col">
 			<ul>
-				<a href="https://cs.colby.edu/index.php"><li>Home</li></a>
-				<a href="https://cs.colby.edu/courses.php"><li>Courses</li></a>
-				<a href="https://cs.colby.edu/curriculum.php"><li>Curriculum</li></a>
-				<a href="https://cs.colby.edu/hackers.php"><li>Colby Hackers</li></a>
-				<a href="https://cs.colby.edu/my.colby.edu"><li>myColby</li></a>
+				<a href="https://cs.colby.edu/index.php">
+					<li>Home</li>
+				</a>
+				<a href="https://cs.colby.edu/courses.php">
+					<li>Courses</li>
+				</a>
+				<a href="https://cs.colby.edu/curriculum.php">
+					<li>Curriculum</li>
+				</a>
+				<a href="https://cs.colby.edu/hackers.php">
+					<li>Colby Hackers</li>
+				</a>
+				<a href="https://cs.colby.edu/my.colby.edu">
+					<li>myColby</li>
+				</a>
 			</ul>
 		</div>
 		<div class="pmcol right-col">
 			<ul>
-				<a href="https://cs.colby.edu/news.php"><li>News</li></a>
-				<a href="https://cs.colby.edu/faculty.php"><li>Faculty</li></a>
-				<a href="https://cs.colby.edu/connections.php"><li>Connections</li></a>
-				<a href="https://cs.colby.edu/projects.php"><li>Projects</li></a>
-				<a href="https://cs.colby.edu/writing.php"><li>Writing in CS</li></a>
+				<a href="https://cs.colby.edu/news.php">
+					<li>News</li>
+				</a>
+				<a href="https://cs.colby.edu/faculty.php">
+					<li>Faculty</li>
+				</a>
+				<a href="https://cs.colby.edu/connections.php">
+					<li>Connections</li>
+				</a>
+				<a href="https://cs.colby.edu/projects.php">
+					<li>Projects</li>
+				</a>
+				<a href="https://cs.colby.edu/writing.php">
+					<li>Writing in CS</li>
+				</a>
 			</ul>
 		</div>
 	</div>
 
 
-<div id="content">
+	<div id="content">
 		<div class="entry" id="subpage">
-				
-				<h2>Computer Science Curriculum</h2>
 
-				<h3>Mission</h3>
+			<h2>Computer Science Curriculum</h2>
 
-				<p>
-						Computer Science studies the design of computational processes,
-						computing systems, and virtual objects.</p>
+			<h3>Mission</h3>
 
-				<p>
-						The Colby Department of Computer Science is committed to making
-						computer science an integral part of a liberal arts education. Our
-						goal is to provide Colby students with a strong background in computer
-						science, including the integration of knowledge from other
-						disciplines. Our graduates will have the ability and experience to
-						enable and produce new and innovative discoveries.</p>
+			<p>
+				Computer Science studies the design of computational processes,
+				computing systems, and virtual objects.</p>
 
-				<p>
-						The Department of Computer Science has the broader goal of enabling
-						computational thinking throughout the college community. Computational
-						thinking is the ability to decompose a problem or process and describe
-						it at the level of computable operations. Computational thinking
-						integrates abstraction, hierarchical design, information management,
-						and an understanding of complexity.</p>
+			<p>
+				The Colby Department of Computer Science is committed to making
+				computer science an integral part of a liberal arts education. Our
+				goal is to provide Colby students with a strong background in computer
+				science, including the integration of knowledge from other
+				disciplines. Our graduates will have the ability and experience to
+				enable and produce new and innovative discoveries.</p>
 
-				<h3>Objectives</h3>
+			<p>
+				The Department of Computer Science has the broader goal of enabling
+				computational thinking throughout the college community. Computational
+				thinking is the ability to decompose a problem or process and describe
+				it at the level of computable operations. Computational thinking
+				integrates abstraction, hierarchical design, information management,
+				and an understanding of complexity.</p>
 
-				<p><i>Objectives are broad statements that describe the career and
-						professional accomplishments that the program is preparing graduates
-						to achieve.</i></p>
+			<h3>Objectives</h3>
 
-				<p>
-						We expect that graduates of the Colby Computer Science program will
-						</p><ul>
-								<li>exhibit the ability to learn and apply new concepts and adapt to new technologies and challenges,</li>
-								<li> seek out opportunities for continuing education and intellectual engagement, and</li>
-								<li> become leaders and innovators in their chosen professions.</li>
-						</ul>
-				<p></p>
+			<p><i>Objectives are broad statements that describe the career and
+					professional accomplishments that the program is preparing graduates
+					to achieve.</i></p>
 
-				<h3>Outcomes</h3>
+			<p>
+				We expect that graduates of the Colby Computer Science program will
+			</p>
+			<ul>
+				<li>exhibit the ability to learn and apply new concepts and adapt to new technologies and challenges,
+				</li>
+				<li> seek out opportunities for continuing education and intellectual engagement, and</li>
+				<li> become leaders and innovators in their chosen professions.</li>
+			</ul>
+			<p></p>
 
-				<p><i>Outcomes relate to the skills, knowledge, and behaviors that
-						students acquire through courses and degree programs.</i></p>
+			<h3>Outcomes</h3>
 
-				<p>
-						Graduates of Colby College with a major in computer science will possess
-						</p><ol>
-								<li>proficiency in computational thinking,</li>
-								<li>the ability to analyze systems at the three levels of computer science: theory, software, and hardware,</li>
-								<li>proficiency in the design and implementation of algorithms using multiple programming languages,</li>
-								<li>the ability to apply computational thinking to a diverse set of problems and disciplines,</li>
-								<li>the ability to communicate effectively and collaborate with others, and</li>
-								<li>the ability to adapt to new challenges and computational environments.</li>
-						</ol>
-				<p></p>
+			<p><i>Outcomes relate to the skills, knowledge, and behaviors that
+					students acquire through courses and degree programs.</i></p>
+
+			<p>
+				Graduates of Colby College with a major in computer science will possess
+			</p>
+			<ol>
+				<li>proficiency in computational thinking,</li>
+				<li>the ability to analyze systems at the three levels of computer science: theory, software, and
+					hardware,</li>
+				<li>proficiency in the design and implementation of algorithms using multiple programming languages,
+				</li>
+				<li>the ability to apply computational thinking to a diverse set of problems and disciplines,</li>
+				<li>the ability to communicate effectively and collaborate with others, and</li>
+				<li>the ability to adapt to new challenges and computational environments.</li>
+			</ol>
+			<p></p>
 
 
-				<h3>Degree Programs</h3>
+			<h3>Degree Programs</h3>
 
+			<ul>
+				<li><a href="https://cs.colby.edu/curriculum.php#cs-major">Major in Computer Science</a></li>
+				<li><a href="https://cs.colby.edu/curriculum.php#cs-ai">Major in Computer Science with a Concentration
+						in Artificial Intelligence</a></li>
+				<li><a href="https://cs.colby.edu/curriculum.php#comp-bio">Major in Computational Biology</a></li>
+				<li><a href="https://cs.colby.edu/curriculum.php#env-comp">Major in Environmental Computation</a></li>
+				<li><a href="https://cs.colby.edu/curriculum.php#comp-psych">Major in Computational Psychology</a></li>
+				<li><a href="https://cs.colby.edu/curriculum.php#ic-theater">Major in IC Theater and Dance</a></li>
+				<li><a href="https://cs.colby.edu/curriculum.php#ic-music">Major in IC Music</a></li>
+				<li><a href="https://cs.colby.edu/curriculum.php#cs-minor">Minor in Computer Science</a></li>
+				<li><a href="https://cs.colby.edu/curriculum.php#data-science">Minor in Data Science</a></li>
+				<li><a href="https://cs.colby.edu/curriculum.php#cs-honors">Honors in Computer Science</a></li>
+				<li><a href="https://cs.colby.edu/curriculum.php#cs-is">Independent Study in Computer Science</a></li>
+			</ul>
+
+
+			<p>
+				Students with a variety of interests may want to explore Computer Science, as it impacts and interacts
+				with virtually every discipline. Many advances in the natural and social sciences, engineering, and the
+				humanities would not have been possible without the exponential growth in computing power and the
+				corresponding design of advanced algorithms by computer scientists. Students who become majors or
+				minors, or take just a few courses, will expand their possibilities by knowing more about how to
+				effectively use computers and computation.</p>
+
+			<p>
+				Computer science offers a major in CS, a minor in CS, a minor in Data Science, and five
+				interdisciplinary computing majors: IC-Theater, IC-Music, Environmental Computation, Computational
+				Biology, and Computational Psychology. The interdisciplinary majors are designed to give students depth
+				in both computer science and their focus discipline, preparing them for careers or interdisciplinary
+				graduate programs with a computational focus, such as digital media, geographic information systems, and
+				bioinformatics, computational neuroscience, or computational biology.
+			</p>
+
+			<p>The initial sequence of CS courses (CS {151, 152, or 153}, CS 231, and CS 251/2) also complements many
+				disciplines. Whether you are an artist or a biology major, you will benefit by knowing more about how to
+				apply computing to you area of interest. The first CS course for most students will be CS 151, 152, or
+				153 Computational Thinking. Students with significant programming experience should speak with a
+				professor about taking a placement exam and potentially starting with CS 231.
+			</p>
+
+			<p>Students may count only CS 15X, CS 231, and CS 251/2 toward a CS major or minor and any Interdisciplinary
+				major. CS majors or minors may not also obtain a minor in Data Science. CS majors, IC majors, or CS
+				minors interested in Data Science should complete a Statistics minor. Mathematics or Statistics majors
+				interested in Data Science should complete a CS minor.
+			</p>
+
+			<a name="cs-major">
+				<h3>Major in Computer Science</h3>
+			</a>
+
+			<p>
+				The major in computer science is designed to prepare students for either graduate study or a career in a
+				computation-related field. Colby CS majors have been successful in a wide variety of career paths.</p>
+
+			<p>Students planning to attend graduate school in CS should strongly consider taking CS 376 and CS 378,
+				undertaking an honors project, and strengthening their math background beyond the minimum required.</p>
+
+			<ul>
+				<p>Core Requirements</p>
 				<ul>
-						<li><a href="https://cs.colby.edu/curriculum.php#cs-major">Major in Computer Science</a></li>
-						<li><a href="https://cs.colby.edu/curriculum.php#cs-ai">Major in Computer Science with a Concentration in Artificial Intelligence</a></li>
-						<li><a href="https://cs.colby.edu/curriculum.php#comp-bio">Major in Computational Biology</a></li>
-						<li><a href="https://cs.colby.edu/curriculum.php#env-comp">Major in Environmental Computation</a></li>
-						<li><a href="https://cs.colby.edu/curriculum.php#comp-psych">Major in Computational Psychology</a></li>
-						<li><a href="https://cs.colby.edu/curriculum.php#ic-theater">Major in IC Theater and Dance</a></li>
-						<li><a href="https://cs.colby.edu/curriculum.php#ic-music">Major in IC Music</a></li>
-						<li><a href="https://cs.colby.edu/curriculum.php#cs-minor">Minor in Computer Science</a></li>
-						<li><a href="https://cs.colby.edu/curriculum.php#data-science">Minor in Data Science</a></li>
-						<li><a href="https://cs.colby.edu/curriculum.php#cs-honors">Honors in Computer Science</a></li>
-						<li><a href="https://cs.colby.edu/curriculum.php#cs-is">Independent Study in Computer Science</a></li>
+					<li>CS 15X Computational Thinking</li>
+					<li>CS 231 Data Structures and Algorithms</li>
+					<li>CS 232 Computer Organization</li>
+					<li>CS 251 Data Analysis and Visualization or CS252 Mathematical Data Analysis and Visualization
+					</li>
+					<li>CS 333 Programming Languages</li>
+					<li>One of CS 375 Analysis of Algorithms, CS 376 Algorithm Analysis and Design, or CS 378 Theory of
+						Computation</li>
+				</ul>
+				<p>Electives</p>
+				<ul>
+					<li>In addition to the core, one CS course at the 200 level or higher and three CS courses at the
+						300 level or higher.</li>
+					<li>At least two of the four electives must be part of a two-semester sequence, finishing with a
+						400-level course.</li>
 				</ul>
 
-
-				<p>
-						Students with a variety of interests may want to explore Computer Science, as it impacts and interacts with virtually every discipline. Many advances in the natural and social sciences, engineering, and the humanities would not have been possible without the exponential growth in computing power and the corresponding design of advanced algorithms by computer scientists. Students who become majors or minors, or take just a few courses, will expand their possibilities by knowing more about how to effectively use computers and computation.</p>
-
-				<p>
-						Computer science offers a major in CS, a minor in CS, a minor in Data Science, and five	interdisciplinary computing majors: IC-Theater, IC-Music,	Environmental Computation, Computational Biology, and Computational Psychology. The interdisciplinary majors are designed to give students depth in both computer science and their focus discipline, preparing them for careers or interdisciplinary graduate programs with a computational focus, such as digital media, geographic information systems, and bioinformatics, computational neuroscience, or computational biology.
-				</p>
-
-				<p>The initial sequence of	CS courses (CS {151, 152, or 153}, CS 231, and CS 251/2) also complements many disciplines. Whether you are an artist or a biology major, you will benefit by knowing more about how to apply computing to you area of interest. The first CS course for most students will be CS 151, 152, or 153 Computational Thinking. Students with significant programming experience should speak with a professor about taking a placement exam and potentially starting with CS 231.
-				</p>
-
-				<p>Students may count only CS 15X, CS 231, and CS 251/2 toward a CS major or minor and any Interdisciplinary major. CS majors or minors may not also obtain a minor in Data Science.  CS majors, IC majors, or CS minors interested in Data Science should complete a Statistics minor.  Mathematics or Statistics majors interested in Data Science should complete a CS minor.
-				</p>
-
-				<a name="cs-major">
-						<h3>Major in Computer Science</h3></a>
-
-				<p>
-						The major in computer science is designed to prepare students for either graduate study or a career in a computation-related field. Colby CS majors have been successful in a wide variety of career paths.</p>
-
-				<p>Students planning to attend graduate school in CS should strongly consider taking CS 376 and CS 378, undertaking an honors project, and strengthening their math background beyond the minimum required.</p>
-
+				<p>Math/Statistics Requirement</p>
 				<ul>
-						<p>Core Requirements</p>
-						<ul>
-								<li>CS 15X Computational Thinking</li>
-								<li>CS 231 Data Structures and Algorithms</li>
-								<li>CS 232 Computer Organization</li>
-								<li>CS 251 Data Analysis and Visualization or CS252 Mathematical Data Analysis and Visualization</li>
-								<li>CS 333 Programming Languages</li>
-								<li>One of CS 375 Analysis of Algorithms, CS 376 Algorithm Analysis and Design, or CS 378 Theory of Computation</li>
-						</ul>
-						<p>Electives</p>
-						<ul>
-								<li>In addition to the core, one CS course at the 200 level or higher and three CS courses at the 300 level or higher.</li>
-								<li>At least two of the four electives must be part of a two-semester sequence, finishing with a 400-level course.</li>
-						</ul>
-
-						<p>Math/Statistics Requirement</p>
-						<ul>
-								<li>A 200-level mathematics or statistics course.
-                                </li><li>Students must complete their math requirement prior to taking CS 375.
-                                </li><li>MA 274 is a pre-requisite for CS 376 and CS 378. 
-                                </li><li>MA 253 is a pre-requisite for CS 252.</li>
-						</ul>
+					<li>A 200-level mathematics or statistics course.
+					</li>
+					<li>Students must complete their math requirement prior to taking CS 375.
+					</li>
+					<li>MA 274 is a pre-requisite for CS 376 and CS 378.
+					</li>
+					<li>MA 253 is a pre-requisite for CS 252.</li>
 				</ul>
+			</ul>
+
+			<p>
+				Interested students should look at the <a target="_blank"
+					href="https://cs.colby.edu/inc/csmajortimelines.pdf"> example CS Major timelines</a>. As is apparent
+				from the timelines, taking a CS 15X course in your first year is strongly recommended. Students can take
+				only one of the CS 15X courses. CS 151, 152, and 153 all satisfy a Q (Quantitative) requirement for
+				graduation, in addition to providing an introduction to the fundamental concepts of computer science.
+			</p>
+
+			<a name="cs-ai">
+				<h3>Major in Computer Science with a Concentration in Artificial Intelligence</h3>
+			</a>
+
+			<p>
+				The Computer Science major with a concentration in Artificial Intelligence prepares students for
+				graduate work or careers as tool builders in AI.
+			</p>
+			<ul>
+				<li>Computer Science Core: identical to the Core Requirements for the CS Major
+				</li>
+				<li>Artificial Intelligence Math: one of
+					<ul>
+						<li>MA 253, in which case students should take CS 252, <i>or</i></li>
+						<li>MA 274, in which case students may take CS 252 or CS 251</li>
+					</ul>
+				</li>
+				<li>Artificial Intelligence Core
+					<ul>
+						<li>CS 310</li>
+						<li>Neural Networks (i.e. CS 343 at Colby)</li>
+					</ul>
+				</li>
+				<li>Artificial Intelligence Sequence: One of the following sequences:
+					<ul>
+						<li>Simulation: CS 346, CS 446</li>
+						<li>Interactive Systems: CS 353, CS 453</li>
+						<li>Neural Networks: CS 343, CS 443 (but if this is the sequence, either CS 321, CS 346, CS 353,
+							or an AI course from abroad must also be taken to satisfy the AI Core requirement)</li>
+						<li>Other AI sequences by permission of the faculty</li>
+					</ul>
+				</li>
+
+				<p>Note to students planning to study abroad. If you take a neural networks course abroad (e.g. a course
+					at DIS), then it will fulfill the core neural networks requirement, but it will not serve as a
+					pre-req for CS443 at Colby. That means you may take neural networks abroad (assuming the specific
+					course is OK'd by the department), and then take CS343 and CS443 here.
+
+
+					<a name="comp-bio">
+					</a>
+				</p>
+				<h3><a name="comp-bio">Major in Computational Biology</a></h3>
 
 				<p>
-						Interested students should look at the <a target="_blank" href="https://cs.colby.edu/inc/csmajortimelines.pdf"> example CS Major timelines</a>. As is apparent from the timelines,	taking a CS 15X course in your first year is strongly recommended.  Students can take only one of the CS 15X courses.  CS 151, 152, and 153 all satisfy a Q (Quantitative) requirement for graduation, in addition to providing an introduction to the fundamental concepts of computer science.</p>
-
-				<a name="cs-ai">
-						<h3>Major in Computer Science with a Concentration in Artificial Intelligence</h3></a>
-
-				<p>
-						The Computer Science major with a concentration in Artificial Intelligence prepares students for graduate work or careers as tool builders in AI. 
-				</p><ul>
-						<li>Computer Science Core: identical to the Core Requirements for the CS Major
-						</li>
-						<li>Artificial Intelligence Math: one of
-							<ul>
-								<li>MA 253, in which case students should take CS 252, <i>or</i></li>
-								<li>MA 274, in which case students may take CS 252 or CS 251</li>
-							</ul>
-						</li>
-						<li>Artificial Intelligence Core
-							<ul>
-								<li>CS 310</li>
-								<li>Neural Networks (i.e. CS 343 at Colby)</li>
-							</ul>
-						</li>
-						<li>Artificial Intelligence Sequence: One of the following sequences:
-							<ul>
-								<li>Simulation: CS 346, CS 446</li>
-								<li>Interactive Systems: CS 353, CS 453</li>
-								<li>Neural Networks: CS 343, CS 443 (but if this is the sequence, either CS 321, CS 346, CS 353, or an AI course from abroad must also be taken to satisfy the AI Core requirement)</li>
-								<li>Other AI sequences by permission of the faculty</li>
-							</ul>
-						</li>
-
-					<p>Note to students planning to study abroad. If you take a neural networks course abroad (e.g. a course at DIS), then it will fulfill the core neural networks requirement, but it will not serve as a pre-req for CS443 at Colby. That means you may take neural networks abroad (assuming the specific course is OK'd by the department), and then take CS343 and CS443 here. 
-
-					
-				<a name="comp-bio">
-						</a></p><h3><a name="comp-bio">Major in Computational Biology</a></h3>
-
-				<p>
-						The Computational Biology major is intended for students interested in industry or post-graduate work in that
-						area. Computational biology is a broad term describing many areas where computation is used to model or analyze biological systems. These include: mathematical and computational modeling of cells, cell networks, individual organisms, and ecosystems; the analysis of genomes, their evolution, and the relationships between species and ecosystems; and understanding the expression of genomes in response to growth, stress, and other environmental factors.</p>
+					The Computational Biology major is intended for students interested in industry or post-graduate
+					work in that
+					area. Computational biology is a broad term describing many areas where computation is used to model
+					or analyze biological systems. These include: mathematical and computational modeling of cells, cell
+					networks, individual organisms, and ecosystems; the analysis of genomes, their evolution, and the
+					relationships between species and ecosystems; and understanding the expression of genomes in
+					response to growth, stress, and other environmental factors.</p>
 
 				<ul>
-						<li>Foundational Coursework (some courses may be satisfied by AP or other placement)
-								<ul>
-										<li>CS 151, CS 152, or CS 153</li>
-										<li>BI 163 and BI 164</li>
-										<li>MA 125 or MA 130</li>
-								</ul>
-						</li>
+					<li>Foundational Coursework (some courses may be satisfied by AP or other placement)
+						<ul>
+							<li>CS 151, CS 152, or CS 153</li>
+							<li>BI 163 and BI 164</li>
+							<li>MA 125 or MA 130</li>
+						</ul>
+					</li>
 
-						<li>Required CS courses
-								<ul>
-										<li>CS 231</li>
-										<li>CS 251/2</li>
-										<li>Two of: CS 333, CS341, CS 361, CS 365, CS 441, or other approved courses</li>
-								</ul>
-						</li>
+					<li>Required CS courses
+						<ul>
+							<li>CS 231</li>
+							<li>CS 251/2</li>
+							<li>Two of: CS 333, CS341, CS 361, CS 365, CS 441, or other approved courses</li>
+						</ul>
+					</li>
 
-						<li>Required Biology courses:
-								<ul>
-										<li>BI 278</li>
-										<li>BI 279</li>
-										<li>One of: BI 320, BI 371, BC 378, or other approved courses</li>
-								</ul>
-						</li>
+					<li>Required Biology courses:
+						<ul>
+							<li>BI 278</li>
+							<li>BI 279</li>
+							<li>One of: BI 320, BI 371, BC 378, or other approved courses</li>
+						</ul>
+					</li>
 
-						<li>Required Statistics course: SC 212</li>
+					<li>Required Statistics course: SC 212</li>
 
-						<li>Focus requirement: two additional courses in BI, CS, or SC
-								at the 300-level or above, chosen in consultation with their
-								advisor.</li>
+					<li>Focus requirement: two additional courses in BI, CS, or SC
+						at the 300-level or above, chosen in consultation with their
+						advisor.</li>
 				</ul>
 
 				<a name="env-comp">
-						<h3>Major in Environmental Computation</h3></a>
+					<h3>Major in Environmental Computation</h3>
+				</a>
 
 				<p>
-						The interdisciplinary major in environmental computation provides an introduction to environmental studies as a discipline as well as training in computational techniques used in environmental policy and science. Students become familiar with quantitative tools used to investigate environmental problems. The major is designed to provide students with proficiency in computational thinking, the analysis and understanding of environmental systems, challenges, and solutions, and in the design and implementation of algorithms for modeling and analysis. Students gain experience applying computational thinking and statistical methods to a diverse spectrum of topics in environmental studies and are introduced to the complexity and inter-relatedness of coupled human and natural systems and diverse computational environments. Diverse electives allow students to explore environmental topics in depth, including agriculture and food, conservation science, energy and climate, environmental humanities, marine and freshwater conservation, and public health.
+					The interdisciplinary major in environmental computation provides an introduction to environmental
+					studies as a discipline as well as training in computational techniques used in environmental policy
+					and science. Students become familiar with quantitative tools used to investigate environmental
+					problems. The major is designed to provide students with proficiency in computational thinking, the
+					analysis and understanding of environmental systems, challenges, and solutions, and in the design
+					and implementation of algorithms for modeling and analysis. Students gain experience applying
+					computational thinking and statistical methods to a diverse spectrum of topics in environmental
+					studies and are introduced to the complexity and inter-relatedness of coupled human and natural
+					systems and diverse computational environments. Diverse electives allow students to explore
+					environmental topics in depth, including agriculture and food, conservation science, energy and
+					climate, environmental humanities, marine and freshwater conservation, and public health.
 				</p>
 
 				<ul>
-						<li>Foundational Coursework (4 courses; some may be satisfied by AP or other placement)
-								<ul>
-										<li>CS 15X</li>
-										<li>CS 231</li>
-										<li>ES 118</li>
-										<li>One 200-level course (e.g. ES 233, ES 234, ES 242, ES 244, ES 265, ES 271, ES 276 or ES 283)</li>
-								</ul>
-						</li>
+					<li>Foundational Coursework (4 courses; some may be satisfied by AP or other placement)
+						<ul>
+							<li>CS 15X</li>
+							<li>CS 231</li>
+							<li>ES 118</li>
+							<li>One 200-level course (e.g. ES 233, ES 234, ES 242, ES 244, ES 265, ES 271, ES 276 or ES
+								283)</li>
+						</ul>
+					</li>
 
-						<li>Required Modeling and Analysis Courses (4 courses)
-								<ul>
-										<li>CS 251/2</li>
-										<li>One of CS 341, CS 346, CS 363, CS 365, or other approved CS course)</li>
-										<li>ES 212 or ES 214</li>
-										<li>SC 212 or MA 160</li>
-								</ul>
-						</li>
+					<li>Required Modeling and Analysis Courses (4 courses)
+						<ul>
+							<li>CS 251/2</li>
+							<li>One of CS 341, CS 346, CS 363, CS 365, or other approved CS course)</li>
+							<li>ES 212 or ES 214</li>
+							<li>SC 212 or MA 160</li>
+						</ul>
+					</li>
 
-						<li>Application Courses (5 courses)
-								<ul>
-										<li>At least one, and up to two CS courses at the 300 level or above.</li>
-										<li>At three, and up to four ES courses not also counted elsewhere to provide depth in an application area. For recommended application groups, see the catalog entry under Environmental Studies.</li>
-										<li>One mathematics and statistics course out of: SC 321, MA 253, MA 262, MA 311, or MA 332.</li>
-								</ul>
-						</li>
+					<li>Application Courses (5 courses)
+						<ul>
+							<li>At least one, and up to two CS courses at the 300 level or above.</li>
+							<li>At three, and up to four ES courses not also counted elsewhere to provide depth in an
+								application area. For recommended application groups, see the catalog entry under
+								Environmental Studies.</li>
+							<li>One mathematics and statistics course out of: SC 321, MA 253, MA 262, MA 311, or MA 332.
+							</li>
+						</ul>
+					</li>
 
-						<li>Culminating Experience
+					<li>Culminating Experience
+						<ul>
+							<li>ES 401, 402 (one credit for the year)</li>
+							<li>One capstone selected from the following in consulation with the student's advisor:
 								<ul>
-										<li>ES 401, 402 (one credit for the year)</li>
-										<li>One capstone selected from the following in consulation with the student's advisor:
-												<ul>
-														<li>A CS 4XX course (each has a CS 3XX prerequisite)</li>
-														<li>ES 493</li>
-														<li>ES 494</li>
-												</ul>
-										</li>
+									<li>A CS 4XX course (each has a CS 3XX prerequisite)</li>
+									<li>ES 493</li>
+									<li>ES 494</li>
 								</ul>
-						</li>
+							</li>
+						</ul>
+					</li>
 				</ul>
 
 				<a name="comp-psych">
-						<h3>Major in Computational Psychology</h3></a>
+					<h3>Major in Computational Psychology</h3>
+				</a>
 
 				<p>
-						The interdiscplinary major in computational psychology provides a strong foundation for students interested in applying advanced computational modeling an analysis techniques to problems in human pscyhology and cognitive development.
+					The interdiscplinary major in computational psychology provides a strong foundation for students
+					interested in applying advanced computational modeling an analysis techniques to problems in human
+					pscyhology and cognitive development.
 				</p>
 
 				<ul>
-						<li>Foundational Courses (3 courses: some may be satisfied by AP or other placement)
-								<ul>
-										<li>CS 15X</li>
-										<li>CS 231</li>
-										<li>PS 111</li>
-								</ul>
-						</li>
-						<li>Core Methods and Topics Courses (6 courses)
-								<ul>
-										<li>CS 251/2</li>
-										<li>PS 214</li>
-										<li>PS 215</li>
-										<li>At least three 200-level PS courses</li>
-								</ul>
-						</li>
-						<li>Applications Courses (3 courses)
-								<ul>
-										<li>One of CS 341, CS 343, CS 346, CS 363, CS 365</li>
-										<li>One additional 300- or 400-level CS course</li>
-										<li>One 300-level PS course with an associated course in collaborative research</li>
-								</ul>
-						</li>
-						<li>Culminating Experience (1 or 2 courses)
-								<ul>
-										<li>PS 416, or</li>
-										<li>PS 483 and PS 484 (by invitation), or</li>
-										<li>CS 483 and CS 484 (by invitation), or</li>
-										<li>A 400-level CS course</li>
-								</ul>
-						</li>
+					<li>Foundational Courses (3 courses: some may be satisfied by AP or other placement)
+						<ul>
+							<li>CS 15X</li>
+							<li>CS 231</li>
+							<li>PS 111</li>
+						</ul>
+					</li>
+					<li>Core Methods and Topics Courses (6 courses)
+						<ul>
+							<li>CS 251/2</li>
+							<li>PS 214</li>
+							<li>PS 215</li>
+							<li>At least three 200-level PS courses</li>
+						</ul>
+					</li>
+					<li>Applications Courses (3 courses)
+						<ul>
+							<li>One of CS 341, CS 343, CS 346, CS 363, CS 365</li>
+							<li>One additional 300- or 400-level CS course</li>
+							<li>One 300-level PS course with an associated course in collaborative research</li>
+						</ul>
+					</li>
+					<li>Culminating Experience (1 or 2 courses)
+						<ul>
+							<li>PS 416, or</li>
+							<li>PS 483 and PS 484 (by invitation), or</li>
+							<li>CS 483 and CS 484 (by invitation), or</li>
+							<li>A 400-level CS course</li>
+						</ul>
+					</li>
 				</ul>
 
 
 				<a name="ic-theater">
-						<h3>Major in IC Theater and Dance</h3></a>
+					<h3>Major in IC Theater and Dance</h3>
+				</a>
 
 				<p>
-						The theater and dance-interdisciplinary computation major focuses on the growing relationship between computation and performance scenography and the multiple applications of software technologies to stage design. It offers a sequenced, stage design-based curriculum while also providing students with exposure to the theory and practice of dance, acting, choreography, and directing. Students should begin by taking Theater and Dance 113 or 114, and Computer Science 151 in their first year, then Theater and Dance 135 and Computer Science 231 (fall) and 251/2 (spring) in their second year. The remaining requirements may be taken in any other semester in consultation with the major advisors in theater and dance and computer science.
+					The theater and dance-interdisciplinary computation major focuses on the growing relationship
+					between computation and performance scenography and the multiple applications of software
+					technologies to stage design. It offers a sequenced, stage design-based curriculum while also
+					providing students with exposure to the theory and practice of dance, acting, choreography, and
+					directing. Students should begin by taking Theater and Dance 113 or 114, and Computer Science 151 in
+					their first year, then Theater and Dance 135 and Computer Science 231 (fall) and 251/2 (spring) in
+					their second year. The remaining requirements may be taken in any other semester in consultation
+					with the major advisors in theater and dance and computer science.
 				</p>
 
 				<ul>
-						<li>CS Coursework (5 courses; CS 15X may be satisfied by placement)
-								<ul>
-										<li>CS 151 (preferred), CS 152, or CS 153</li>
-										<li>CS 231</li>
-										<li>CS 251/2</li>
-										<li>CS 351, CS 353 (or approved alternative)</li>
-										<li>CS 267, CS 269, CS 451, CS 453 (or approved alternative)</li>
-								</ul>
-						</li>
-						<li>Theater and Dance Coursework (5 courses)
-								<ul>
-										<li>TD 113 The Dramatic Experience or TD 114 The Dance Experience</li>
-										<li>TD 135 Introduction to Design</li>
-										<li>TD 171 Acting I or two of TD 115, TD 116, TD 117, TD 119</li>
-										<li>TD 281 Directing or TD 285 Choreography</li>
-										<li>TD 235 Intermediate Design or TD 365 Adv. Topics in Design</li>
-								</ul>
-						</li>
-						<li>Culminating Experience (1 course/4 credits): a capstone project designed in consultation with the major advisors in both departments.</li>
+					<li>CS Coursework (5 courses; CS 15X may be satisfied by placement)
+						<ul>
+							<li>CS 151 (preferred), CS 152, or CS 153</li>
+							<li>CS 231</li>
+							<li>CS 251/2</li>
+							<li>CS 351, CS 353 (or approved alternative)</li>
+							<li>CS 267, CS 269, CS 451, CS 453 (or approved alternative)</li>
+						</ul>
+					</li>
+					<li>Theater and Dance Coursework (5 courses)
+						<ul>
+							<li>TD 113 The Dramatic Experience or TD 114 The Dance Experience</li>
+							<li>TD 135 Introduction to Design</li>
+							<li>TD 171 Acting I or two of TD 115, TD 116, TD 117, TD 119</li>
+							<li>TD 281 Directing or TD 285 Choreography</li>
+							<li>TD 235 Intermediate Design or TD 365 Adv. Topics in Design</li>
+						</ul>
+					</li>
+					<li>Culminating Experience (1 course/4 credits): a capstone project designed in consultation with
+						the major advisors in both departments.</li>
 				</ul>
 
 				<a name="ic-music">
-						<h3>Major in IC Music</h3></a>
+					<h3>Major in IC Music</h3>
+				</a>
 
 				<p>
-						The music interdisciplinary computation major gives students the opportunity to pursue the creation of music using digital and advanced computational techniques. Students interested in this major should take the introductory CS and Music courses in their first year.</p>
+					The music interdisciplinary computation major gives students the opportunity to pursue the creation
+					of music using digital and advanced computational techniques. Students interested in this major
+					should take the introductory CS and Music courses in their first year.</p>
 
 				<ul>
-						<li>CS Coursework (5 courses; CS 15X may be satisfied by placement)
-								<ul>
-										<li>CS 151, CS 152, or CS 153</li>
-										<li>CS 231</li>
-										<li>CS 251/2</li>
-										<li>One of CS 267, CS 269, CS 453 or approved alternative</li>
-										<li>One of CS 351, CS 353, CS 363, CS 365 or approved alternatives</li>
-								</ul>
-						</li>
-						<li>Music Coursework (5 courses)
-								<ul>
-										<li>MU 111</li>
-										<li>MU 181</li>
-										<li>MU 182</li>
-										<li>MU 282</li>
-										<li>Two semesters of applied lessons (same instrument, for credit)</li>
-								</ul>
-						</li>
-						<li>Culminating Experience (4 credits/1 course): MU 491 or MU 492 capstone project, developed in consultation with the major advisors in both departments.</li>
+					<li>CS Coursework (5 courses; CS 15X may be satisfied by placement)
+						<ul>
+							<li>CS 151, CS 152, or CS 153</li>
+							<li>CS 231</li>
+							<li>CS 251/2</li>
+							<li>One of CS 267, CS 269, CS 453 or approved alternative</li>
+							<li>One of CS 351, CS 353, CS 363, CS 365 or approved alternatives</li>
+						</ul>
+					</li>
+					<li>Music Coursework (5 courses)
+						<ul>
+							<li>MU 111</li>
+							<li>MU 181</li>
+							<li>MU 182</li>
+							<li>MU 282</li>
+							<li>Two semesters of applied lessons (same instrument, for credit)</li>
+						</ul>
+					</li>
+					<li>Culminating Experience (4 credits/1 course): MU 491 or MU 492 capstone project, developed in
+						consultation with the major advisors in both departments.</li>
 				</ul>
 
 
 				<a name="cs-minor">
-						<h3>Minor in Computer Science</h3></a>
+					<h3>Minor in Computer Science</h3>
+				</a>
 
 
 				<p>
-						The minor in computer science is intended to give students the ability to apply computing and computation appropriately and effectively within their major discipline. The core and electives provide a background in both fundamental and applied CS, and the capstone experience explicitly ties together CS and the student's major discipline.</p>
+					The minor in computer science is intended to give students the ability to apply computing and
+					computation appropriately and effectively within their major discipline. The core and electives
+					provide a background in both fundamental and applied CS, and the capstone experience explicitly ties
+					together CS and the student's major discipline.</p>
 
 				<ul>
-						<p>Core Requirements</p>
-						<ul>
-								<li>CS 151, 152, or 153 Computational Thinking</li>
-								<li>CS 231 Data Structures and Algorithms</li>
-								<li>CS 251/2 Data Analysis and Visualization</li>
-						</ul>
-						<p>Electives</p>
-						<ul>
-								<li>
-										One 3 or 4 credit 200-level or higher CS course</li>
-								<li>
-										One 3 or 4 credit 300-level or higher CS course</li>
-						</ul>
-						<p>Capstone Experience</p>
-						<ul>
-								<li>
-										A course numbered 400 or above, <b>or</b></li>
+					<p>Core Requirements</p>
+					<ul>
+						<li>CS 151, 152, or 153 Computational Thinking</li>
+						<li>CS 231 Data Structures and Algorithms</li>
+						<li>CS 251/2 Data Analysis and Visualization</li>
+					</ul>
+					<p>Electives</p>
+					<ul>
+						<li>
+							One 3 or 4 credit 200-level or higher CS course</li>
+						<li>
+							One 3 or 4 credit 300-level or higher CS course</li>
+					</ul>
+					<p>Capstone Experience</p>
+					<ul>
+						<li>
+							A course numbered 400 or above, <b>or</b></li>
 
-								<li>
-										an independent study or capstone course of at least 4 credits in the
-										student's major department with a significant computing component, <b>or</b>
-								</li>
+						<li>
+							an independent study or capstone course of at least 4 credits in the
+							student's major department with a significant computing component, <b>or</b>
+						</li>
 
-								<li>
-										two 300 level courses.</li>
-						</ul>
+						<li>
+							two 300 level courses.</li>
+					</ul>
 				</ul>
 
 				<p>The independent study/capstone option must be pre-approved by a computer science advisor.</p>
 
 				<a name="data-science">
-						<h3>Minor in Data Science</h3></a>
+					<h3>Minor in Data Science</h3>
+				</a>
 
 				<p>
-						The data science minor equips students with the analytical tools and capacities needed to interact with real-world data in a research environment that is changing and growing very quickly.</p>
+					The data science minor equips students with the analytical tools and capacities needed to interact
+					with real-world data in a research environment that is changing and growing very quickly.</p>
 
 				<ul>
-						<li>Foundation Courses (3 courses: some may be satisfied by AP or other placement)
-								<ul>
-										<li>CS 15X</li>
-										<li>MA 160 or MA 165</li>
-										<li>SC 212</li>
-								</ul>
-						</li>
-						<li>Core Courses (3 courses)
-								<ul>
-										<li>CS 231</li>
-										<li>CS 251/2</li>
-										<li>SC 321</li>
-								</ul>
-						</li>
-						<li>Application Courses: one of the following
-								<ul>
-										<li>CS 341, CS 343, CS 346, CS 363, CS 365, or</li>
-										<li>MA 253, or</li>
-										<li>SC 306, SC 308, SC 310, or other approved course</li>
-								</ul>
-						</li>
+					<li>Foundation Courses (3 courses: some may be satisfied by AP or other placement)
+						<ul>
+							<li>CS 15X</li>
+							<li>MA 160 or MA 165</li>
+							<li>SC 212</li>
+						</ul>
+					</li>
+					<li>Core Courses (3 courses)
+						<ul>
+							<li>CS 231</li>
+							<li>CS 251/2</li>
+							<li>SC 321</li>
+						</ul>
+					</li>
+					<li>Application Courses: one of the following
+						<ul>
+							<li>CS 341, CS 343, CS 346, CS 363, CS 365, or</li>
+							<li>MA 253, or</li>
+							<li>SC 306, SC 308, SC 310, or other approved course</li>
+						</ul>
+					</li>
 				</ul>
 
 				<p>
-						A student majoring in economics or psychology who has completed the second semester of the respective statistics/methods sequence need not take Statistics 212. A student majoring in computer science, mathematical sciences, or mathematical sciences with a concentration in statistics may not minor in data science. A student minoring in data science may not minor in computer science nor in statistics.
+					A student majoring in economics or psychology who has completed the second semester of the
+					respective statistics/methods sequence need not take Statistics 212. A student majoring in computer
+					science, mathematical sciences, or mathematical sciences with a concentration in statistics may not
+					minor in data science. A student minoring in data science may not minor in computer science nor in
+					statistics.
 				</p>
 
 				<a name="cs-honors">
-						<h3>Honors in Computer Science</h3></a>
+					<h3>Honors in Computer Science</h3>
+				</a>
 
 				<p>
-						Honors in computer science is for students who wish to pursue a topic
-						more deeply than may be available in their regular coursework. Honors
-						projects can be significant software projects or research in some area
-						of computer science. Projects that have applications in or ties to
-						other disciplines at Colby are strongly encouraged.</p>
+					Honors in computer science is for students who wish to pursue a topic
+					more deeply than may be available in their regular coursework. Honors
+					projects can be significant software projects or research in some area
+					of computer science. Projects that have applications in or ties to
+					other disciplines at Colby are strongly encouraged.</p>
 
 				<p>
-						Students who with to pursue honors must have a grade point average of
-						3.6 in all computer science courses numbered 200 or higher and
-						discuss potential projects with a CS advisor in the spring of their
-						junior year.</p>
+					Students who with to pursue honors must have a grade point average of
+					3.6 in all computer science courses numbered 200 or higher and
+					discuss potential projects with a CS advisor in the spring of their
+					junior year.</p>
 
 				<p>
-						The honors project itself consists of two semesters of independent
-						study (CS 483-484), culminating in both a written paper and a
-						colloquium presentation. Students who successfully complete the
-						requirements and receive the recommendation of the department will
-						graduate "With Honors in Computer Science".</p>
+					The honors project itself consists of two semesters of independent
+					study (CS 483-484), culminating in both a written paper and a
+					colloquium presentation. Students who successfully complete the
+					requirements and receive the recommendation of the department will
+					graduate "With Honors in Computer Science".</p>
 
 				<a name="cs-is">
-						<h3>Independent Study in Computer Science</h3></a>
+					<h3>Independent Study in Computer Science</h3>
+				</a>
 
 				<p>
-						An independent study is a course in which a student conducts an independent project under the direction of a faculty sponsor. Independent studies are typically part of a faculty research project or a student honors project. If you are interested in an independent study, please read <a target="_blank" href="https://cs.colby.edu/inc/guideToIndependentStudiesInCS.pdf">this document</a> and contact a faculty member to begin a discussion.</p>
+					An independent study is a course in which a student conducts an independent project under the
+					direction of a faculty sponsor. Independent studies are typically part of a faculty research project
+					or a student honors project. If you are interested in an independent study, please read <a
+						target="_blank" href="https://cs.colby.edu/inc/guideToIndependentStudiesInCS.pdf">this
+						document</a> and contact a faculty member to begin a discussion.</p>
 
 				<p>&nbsp;</p>
 
 
-		</ul></div>
-</div>
-<script type="text/javascript" src="./curriculum_files/main.js"></script>
+			</ul>
+		</div>
+	</div>
+	<script type="text/javascript" src="./curriculum_files/main.js"></script>
 
-<div id="footer">
-	 <!--? 	date_default_timezone_set( "America/New_York" ); ?-->
-	<h4>© 2023 <a target="_blank" href="http://matthewmartin.me/">Matthew J. Martin</a> '18 and <a target="_blank" href="https://www.linkedin.com/in/adamcarlson18">Adam L. Carlson</a> '18</h4>
-</div>
+	<div id="footer">
+		<h4>© 2023 <a target="_blank" href="http://matthewmartin.me/">Matthew J. Martin</a> '18 and <a target="_blank"
+				href="https://www.linkedin.com/in/adamcarlson18">Adam L. Carlson</a> '18</h4>
+	</div>
 
 
-</body></html>
+</body>
+
+</html>

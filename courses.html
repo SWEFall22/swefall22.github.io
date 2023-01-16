@@ -1,71 +1,69 @@
+<html>
 
-<!-- saved from url=(0032)https://cs.colby.edu/courses.php -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>Colby Computer Science</title>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Courses | Colby Computer Science</title>
 	<link rel="icon" href="https://cs.colby.edu/img/favicon.png">
 	<link rel="stylesheet" type="text/css" href="./courses_files/content.css">
-		<link rel="stylesheet" type="text/css" href="./courses_files/header.css">
+	<link rel="stylesheet" type="text/css" href="./courses_files/header.css">
 	<link href="./courses_files/css" rel="stylesheet" type="text/css">
 	<meta name="viewport" content="width=device-width">
 	<script src="./courses_files/jquery-2.2.0.min.js"></script>
 
 
 </head>
+
 <body>
 	<div id="banner" name="top">
-	<!-- Background photo for banner taken by Matthew Martin -->
-	
+		<!-- Background photo for banner taken by Matthew Martin -->
+
 		<div id="header">
 			<script language="javascript">
-			function loginCMS () {
-				var history="ColbyPrevious=host&"+escape(window.location.host)+"&method&GET&protocol&"+escape(window.location.protocol.substring(0,window.location.protocol.length-1))+"&arguments&&local&0";
-				var port=window.location.port;
-				if ( ( window.location.protocol == 'https:' ) &&
-				( window.location.port == '443' ) ) { port=''; }
-				if ( ( window.location.protocol == 'http:' ) &&
-				( window.location.port == '80' ) ) { port=''; }
-				history=history+"&port&"+escape(port);
+				function loginCMS() {
+					var history = "ColbyPrevious=host&" + escape(window.location.host) + "&method&GET&protocol&" + escape(window.location.protocol.substring(0, window.location.protocol.length - 1)) + "&arguments&&local&0";
+					var port = window.location.port;
+					if ((window.location.protocol == 'https:') &&
+						(window.location.port == '443')) { port = ''; }
+					if ((window.location.protocol == 'http:') &&
+						(window.location.port == '80')) { port = ''; }
+					history = history + "&port&" + escape(port);
 
-				var query_string='';
-				if ( window.location.search.length > 0 ) {
-				query_string=window.location.search.substring(1,window.location.search.length);
+					var query_string = '';
+					if (window.location.search.length > 0) {
+						query_string = window.location.search.substring(1, window.location.search.length);
+					}
+					query_string = query_string + window.location.hash;
+					history = history + "&query_string&" + escape(query_string);
+					history = history + "&uri&" + escape(window.location.pathname);
+					history = history + "; path=/; domain=colby.edu";
+					document.cookie = history;
+					window.location = "https://www.colby.edu/ColbyMaster/login/";
 				}
-				query_string=query_string + window.location.hash;
-				history=history+"&query_string&"+escape(query_string);
-				history=history+"&uri&"+escape(window.location.pathname);
-				history=history+"; path=/; domain=colby.edu";
-				document.cookie=history;
-				window.location="https://www.colby.edu/ColbyMaster/login/";
-			}
 			</script>
 
 			<a href="http://colby.edu/" target="_blank">
 				<img id="logo" src="./courses_files/ColbyLogo_wide.png" alt="Colby College">
 			</a>
-			
 
-	 <h3>
-	 <a class="phonehidden" href="https://my.colby.edu/" target="_blank">myColby</a>
-	 <a class="phonehidden" href="http://www.colby.edu/directory/" target="_blank">Directory</a>
-	 <ul id="headerdropdown">
-	 <a href="http://www.colby.edu/visitors/" target="_blank"><li>Visitors</li></a>
-	 <a href="http://www.colby.edu/alumni" target="_blank"><li>Alumni</li></a>
-	 <a href="http://www.colby.edu/parents/" target="_blank"><li>Parents</li></a>
-	 <a href="http://www.colby.edu/afgift" target="_blank"><li>Make a Gift</li></a>
-	 </ul>
-	 <span class="phonehidden" id="moreheader">More</span>	 
 
-<!--
-				<a class="phonehidden" href="javascript:loginCMS()">myColby</a>
+			<h3>
+				<a class="phonehidden" href="https://my.colby.edu/" target="_blank">myColby</a>
 				<a class="phonehidden" href="http://www.colby.edu/directory/" target="_blank">Directory</a>
-				<a class="hiddenheader" style="display: none;" href="http://www.colby.edu/visitors/" target="_blank">Visitors</a>
-				<a class="hiddenheader" style="display: none;" href="http://www.colby.edu/alumni" target="_blank">Alumni</a>
-				<a class="hiddenheader" style="display: none;" href="http://www.colby.edu/parents/" target="_blank">Parents</a>
-				<a class="hiddenheader" style="display: none;" href="http://www.colby.edu/afgift" target="_blank">Make a Gift</a>
+				<ul id="headerdropdown">
+					<a href="http://www.colby.edu/visitors/" target="_blank">
+						<li>Visitors</li>
+					</a>
+					<a href="http://www.colby.edu/alumni" target="_blank">
+						<li>Alumni</li>
+					</a>
+					<a href="http://www.colby.edu/parents/" target="_blank">
+						<li>Parents</li>
+					</a>
+					<a href="http://www.colby.edu/afgift" target="_blank">
+						<li>Make a Gift</li>
+					</a>
+				</ul>
 				<span class="phonehidden" id="moreheader">More</span>
-				-->
-
-
 			</h3>
 
 			<div id="phonemenuicon">
@@ -73,28 +71,57 @@
 				<span></span>
 				<span></span>
 			</div>
-			<a href="http://www.colby.edu/search_cs/index.cfm" target="_blank"><div id="searchicon"></div></a>
+			<a href="http://www.colby.edu/search_cs/index.cfm" target="_blank">
+				<div id="searchicon"></div>
+			</a>
 		</div>
-		
+
 		<h1>Department of Computer Science</h1>
 		<h2>What do you want to create?</h2>
 
 		<div id="navbar">
 			<ul id="deptmenu">
-				<a href="https://cs.colby.edu/news.php"><li>News</li></a>
-				<a href="https://cs.colby.edu/faculty.php"><li>Faculty</li></a>
-				<a href="https://cs.colby.edu/connections.php"><li>Connections</li></a>
-				<a href="https://cs.colby.edu/projects.php"><li>Projects</li></a>
-				<a href="https://cs.colby.edu/writing.php"><li>Writing in CS</li></a>
+				<a href="https://cs.colby.edu/news.php">
+					<li>News</li>
+				</a>
+				<a href="https://cs.colby.edu/faculty.php">
+					<li>Faculty</li>
+				</a>
+				<a href="https://cs.colby.edu/connections.php">
+					<li>Connections</li>
+				</a>
+				<a href="https://cs.colby.edu/projects.php">
+					<li>Projects</li>
+				</a>
+				<a href="https://cs.colby.edu/writing.php">
+					<li>Writing in CS</li>
+				</a>
 			</ul>
 			<ul id="resourcemenu">
-				<a href="http://www.colby.edu/offices/" target="_blank"><li>Administration</li></a>
-				<a href="http://www.colby.edu/athletics/" target="_blank"><li>Athletics</li></a>
-				<a href="http://www.colby.edu/catalogue/" target="_blank"><li>Colby Catalogue</li></a>
-				<a href="http://www.colby.edu/academics/dual-degree" target="_blank"><li>Engineering Dual-Degree</li></a>
-                <a href="https://www.colby.edu/davisconnects/student-funding/" target="_blank"><li>Davis Connections Student Funding</li></a>
-				<a href="http://libguides.colby.edu/content.php?pid=7611&amp;sid=48409" target="_blank"><li>CS Library Resources</li></a>
-				<a href="http://www.colby.edu/registrar" target="_blank"><li>Colby Registrar</li></a>
+				<a href="http://www.colby.edu/offices/" target="_blank">
+					<li>Administration</li>
+				</a>
+				<a href="http://www.colby.edu/athletics/" target="_blank">
+					<li>Athletics</li>
+				</a>
+				<a href="http://www.colby.edu/catalogue/" target="_blank">
+					<li>Colby Catalogue</li>
+				</a>
+				<a href="http://www.colby.edu/academics/dual-degree" target="_blank">
+					<li>Engineering Dual-Degree</li>
+				</a>
+				<a href="https://www.colby.edu/davisconnects/student-funding/" target="_blank">
+					<li>Davis Connections Student Funding</li>
+				</a>
+				<a href="http://libguides.colby.edu/content.php?pid=7611&amp;sid=48409" target="_blank">
+					<li>CS Library Resources</li>
+				</a>
+				<a href="http://www.colby.edu/registrar" target="_blank">
+					<li>Colby Registrar</li>
+				</a>
+				<a href="http://hackers.colby.edu" target="_blank">
+					<li>Colby Hackers</li>
+				</a>
 			</ul>
 			<div class="navbutton">
 				<a href="https://cs.colby.edu/index.php">Home</a>
@@ -111,11 +138,6 @@
 			<div class="navbutton" id="resource">
 				<span>Resources</span>
 			</div>
-			<!-- 
-			<div class="navbutton">
-				<a href="hackers.php">Colby Hackers</a>
-			</div>
-			-->
 		</div>
 
 	</div>
@@ -123,544 +145,674 @@
 	<div id="phonemenu">
 		<div class="pmcol left-col">
 			<ul>
-				<a href="https://cs.colby.edu/index.php"><li>Home</li></a>
-				<a href="https://cs.colby.edu/courses.php"><li>Courses</li></a>
-				<a href="https://cs.colby.edu/curriculum.php"><li>Curriculum</li></a>
-				<a href="https://cs.colby.edu/hackers.php"><li>Colby Hackers</li></a>
-				<a href="https://cs.colby.edu/my.colby.edu"><li>myColby</li></a>
+				<a href="https://cs.colby.edu/index.php">
+					<li>Home</li>
+				</a>
+				<a href="https://cs.colby.edu/courses.php">
+					<li>Courses</li>
+				</a>
+				<a href="https://cs.colby.edu/curriculum.php">
+					<li>Curriculum</li>
+				</a>
+				<a href="https://cs.colby.edu/hackers.php">
+					<li>Colby Hackers</li>
+				</a>
+				<a href="https://cs.colby.edu/my.colby.edu">
+					<li>myColby</li>
+				</a>
 			</ul>
 		</div>
 		<div class="pmcol right-col">
 			<ul>
-				<a href="https://cs.colby.edu/news.php"><li>News</li></a>
-				<a href="https://cs.colby.edu/faculty.php"><li>Faculty</li></a>
-				<a href="https://cs.colby.edu/connections.php"><li>Connections</li></a>
-				<a href="https://cs.colby.edu/projects.php"><li>Projects</li></a>
-				<a href="https://cs.colby.edu/writing.php"><li>Writing in CS</li></a>
+				<a href="https://cs.colby.edu/news.php">
+					<li>News</li>
+				</a>
+				<a href="https://cs.colby.edu/faculty.php">
+					<li>Faculty</li>
+				</a>
+				<a href="https://cs.colby.edu/connections.php">
+					<li>Connections</li>
+				</a>
+				<a href="https://cs.colby.edu/projects.php">
+					<li>Projects</li>
+				</a>
+				<a href="https://cs.colby.edu/writing.php">
+					<li>Writing in CS</li>
+				</a>
 			</ul>
 		</div>
 	</div>
 
-<div id="content">
-	<div class="entry" id="subpage">
-		<h1>Computer Science Courses</h1>
+	<div id="content">
+		<div class="entry" id="subpage">
+			<h1>Computer Science Courses</h1>
 
-		<h2>2022-2023 Academic Year</h2>
+			<h2>2022-2023 Academic Year</h2>
 
-		<p>
-				We expect to offer at least the following courses in the 2022-23 academic year. Professor Hannen Wolfe will be on sabbatical.</p>
+			<p>
+				We expect to offer at least the following courses in the 2022-23 academic year. Professor Hannen Wolfe
+				will be on sabbatical.</p>
 
-		<h3>Fall 2022</h3>
+			<h3>Fall 2022</h3>
 
-		<p>
-				</p><ul>
-						<li>CS 151: Computational Thinking: Visual Media</li>
-						<li>CS 152: Computational Thinking: Science</li>
-						<li>CS 231: Data Structures and Algorithms</li>
-						<li>CS 232: Computer Organization</li>
-						<li>CS 321: Software Engineering (Al Madi) (sequence course 1)</li>
-						<li>CS 341: Systems Biology I (Taylor) (sequence course 1)</li>
-						<li>CS 343: Neural Networks (Layton) (sequence course 1)</li>
-						<li>CS 375: Analysis of Algorithms (Aaron)</li>
-                        <li>CS 378: Introduction to Computational Theory (Aaron)</li>
-                        <li>CS 436: Artificial Intelligence Seminar (Stent) (1-credit course)</li>
-				</ul>
-		<p></p>
+			<p>
+			</p>
+			<ul>
+				<li>CS 151: Computational Thinking: Visual Media</li>
+				<li>CS 152: Computational Thinking: Science</li>
+				<li>CS 231: Data Structures and Algorithms</li>
+				<li>CS 232: Computer Organization</li>
+				<li>CS 321: Software Engineering (Al Madi) (sequence course 1)</li>
+				<li>CS 341: Systems Biology I (Taylor) (sequence course 1)</li>
+				<li>CS 343: Neural Networks (Layton) (sequence course 1)</li>
+				<li>CS 375: Analysis of Algorithms (Aaron)</li>
+				<li>CS 378: Introduction to Computational Theory (Aaron)</li>
+				<li>CS 436: Artificial Intelligence Seminar (Stent) (1-credit course)</li>
+			</ul>
+			<p></p>
 
-		<h3>January 2023</h3>
+			<h3>January 2023</h3>
 
-		<p>
-				</p><ul>
+			<p>
+			</p>
+			<ul>
 				<li>CS 269: Game Design</li>
-				</ul>
-		<p></p>
-
-		<h3>Spring 2023</h3>
-
-		<p>
-				</p><ul>
-                        <li>CS 151: Computational Thinking: Visual Media (Doore, Al Madi)</li>
-                        <li>CS 152: Computational Thinking: Science (Harper)</li>
-                        <li>CS 231: Data Structures and Algorithms (Harper, Aaron)</li>
-                        <li>CS 251: Data Analysis and Visualization (Taylor, Stent)</li>
-                        <li>CS 252: Mathematical Data Analysis and Visualization (prerequisite: Linear Algebra)(Layton, Taylor)</li>
-                        <li>CS 310: Creating Future Worlds: Computing, Ethics, and Society (Doore)</li>
-                        <li>CS 333: Programming Languages (Li)</li>
-                        <li>CS 343: Neural Networks (Stent)</li>
-                        <li>CS 376: Algorithm Analysis and Design (Aaron) </li>
-                        <li>CS 421: Empirical Software Engineering (Al Madi)</li>
-                        <li>CS 441: Systems Biology II (Taylor)</li>
-                        <li>CS 443: Bio-Inspired Machine Learning (Layton)</li>
-				</ul>
-		<p></p>
-
-
-		<hr>
-
-		<h2>2023-2024 Academic Year</h2>
-
-		<p>
-				We expect to offer at least the following courses in the 2023-24 academic year. Professors Al Madi and Doore will be on sabbatical.</p>
-
-		<h3>Fall 2023</h3>
-
-		<p>
-				</p><ul>
-						<li>CS 125: Introduction to R</li>
-						<li>CS 151: Computational Thinking: Visual Media</li>
-						<li>CS 152: Computational Thinking: Science</li>
-						<li>CS 231: Data Structures and Algorithms</li>
-						<li>CS 232: Computer Organization</li>
-						<li>CS 333: Programming Languages</li>
-                        <li>CS 331: Computer Networks (Li) (sequence course 1)</li>
-						<li>CS 343: Neural Networks (Layton) (sequence course 1)</li>
-                        <li>CS 346: Computational Modeling and Simulation I (Aaron) (sequence course 1)</li>
-                        <!--<li>CS 353: Interactive Systems I (Wolfe) (sequence course 1)</li>-->
-						<li>CS 3XX: TBD (Bender) sequence course 1) </li>
-						<li>CS 375: Analysis of Algorithms</li>
-				</ul>
-		<p></p>
-
-		<h3>January 2024</h3>
-
-		<p>
-				</p><ul>
-						<li>TBD</li>
-				</ul>
-		<p></p>
-
-		<h3>Spring 2024</h3>
-
-		<p>
-				</p><ul>
-						<li>CS 151: Computational Thinking: Visual Media</li>
-						<li>CS 152: Computational Thinking: Science</li>
-						<li>CS 231: Data Structures and Algorithms</li>
-                        <li>CS 251: Data Analysis and Visualization </li>
-                        <li>CS 252: Mathematical Data Analysis and Visualization (prerequisite: Linear Algebra)</li>
-						<li>CS 333: Programming Languages</li>
-						<li>CS 376: Algorithm Design and Analysis (Aaron)</li>
-						<li>CS 431: Advanced Computer Networks (Li) (sequence course 2)</li>
-                        <!--<li>CS 453: Interactive Systems II (Wolfe) (sequence course 2)</li>-->
-						<li>CS 443: Bio-Inspired Machine Learning (Layton) (sequence course 2)</li>
-						<li>CS 4XX: TBD (Bender) (sequence course 2) </li>
-                        <li>CS 446: Computational Modeling and Simulation II (Aaron) (sequence course 2)</li>
-				</ul>
-		<p></p>
-
-		<hr>
-		<h1>Archive</h1>
-		<h2>2021-2022 Academic Year</h2>
-        <h3>Fall 2021</h3>
-
-        <p>
-                </p><ul>
-                        <li>CS 151: Computational Thinking: Visual Media (<a href="https://cs.colby.edu/courses/F21/cs151a">Wolfe</a>, <a href="https://cs.colby.edu/courses/F21/cs151b/">Bender</a>)</li>
-                        <li>CS 152: Computational Thinking: Science (Doore, Harper)</li>
-                        <li>CS 231: <a href="http://www.cs.colby.edu/nsalmadi/teaching/CS231/F21/">Data Structures and Algorithms</a> (Al Madi, Harper)</li>
-                        <li>CS 232: Computer Organization: <a href="https://cs.colby.edu/courses/F21/cs232">Lectures</a>, <a href="https://cs.colby.edu/courses/F21/cs232-labs">Labs</a> (Li, Taylor)</li>
-                        <li>CS 251: Data Analysis and Visualization: <a href="https://cs.colby.edu/courses/F21/cs251">Lectures</a>, <a href="https://cs.colby.edu/courses/F21/cs25XL">Labs</a> (Taylor, Wolfe)</li>
-                        <li>CS 333: <a href="https://cs.colby.edu/courses/F21/cs333">Programming Languages</a> (Taylor) </li>
-                        <li>CS 330: Real-World Database Design, Development, and Deployment I (Doore)</li>
-                        <li>CS 321: <a href="http://www.cs.colby.edu/nsalmadi/teaching/CS321/F21/">Software Engineering (Al Madi)</a></li>
-                        <li>CS 353: <a href="https://cs.colby.edu/courses/F21/cs353">Interactive Systems (Wolfe)</a></li>
-                        <li>CS 375: <a href="https://cs.colby.edu/courses/F21/cs375">Analysis of Algorithms (Bender)</a></li>
-                        <li>CS 431: <a href="https://cs.colby.edu/courses/F21/cs431">Advanced Computer Networks</a> (Li)</li>
-                </ul>
-        <p></p>
-
-        <h3>January 2022</h3>
-
-        <p>
-                </p><ul>
-                        <li>CS 269: <a href="https://cs.colby.edu/courses/J22/cs269">Game Design</a> (Maxwell)</li>
-                        <li>CS 325: <a href="https://cs.colby.edu/djskrien/CS325J22Syllabus.html">Web Programming</a> (Skrien)</li>
-                </ul>
-        <p></p>
-        <h3>Spring 2022</h3>
-
-        <p>
-                </p><ul>
-                        <li>CS 125: <a href="https://cs.colby.edu/courses/S22/cs125/">Introduction to R</a> (Taylor)</li>
-                        <li>CS 151: Computational Thinking: Visual Media (<a href="https://cs.colby.edu/courses/S22/cs151b/index.html">Wolfe</a>, Bender)</li>
-                        <li>CS 152: Computational Thinking: Science (Harper)</li>
-                        <li>CS 231: <a href="https://cs.colby.edu/courses/S22/cs231L/">Data Structures and Algorithms</a> (Wolfe, Harper, Bender)</li>
-                        <li>CS 251: <a href="https://cs.colby.edu/courses/S22/cs251/">Data Analysis and Visualization</a> (Taylor) </li>
-                        <li>CS 252: <a href="https://cs.colby.edu/courses/S22/cs251/">Mathematical Data Analysis and Visualization (prerequisite: Linear Algebra)</a> (Stent)</li>
-                        <li>CS 333: <a href="https://cs.colby.edu/courses/S22/cs333/">Programming Languages</a> (Taylor)</li>
-                        <li>MA/CS359: Finite Fields and Error Correcting Codes (Abdelghany) (elective)</li>
-                        <li>CS 361: <a href="https://moodle.colby.edu/course/view.php?id=23311">Object Oriented Design</a> (Skrien)</li>
-                        <li>CS 375: Analysis of Algorithms (Bender) </li>
-                        <li>CS 310: Creating Future Worlds: Computing, Ethics, and Society (Doore)</li>
-                        <li>CS 337: <a href="https://cs.colby.edu/nsalmadi/teaching/CS337/S22/">Operating Systems</a> (Al Madi)</li>
-                        <li>CS 430: Advanced Database Design, Development, and Deployment (Doore) </li>
-                        <li>CS 421:  <a href="https://cs.colby.edu/nsalmadi/teaching/CS421/S22/">Empirical Software Engineering</a> (Al Madi)</li>
-                </ul>
-        <p></p>
-
-		<hr>
-<h2>2020-2021 Academic Year</h2>
-
-		<h3>Fall 2020</h3>
-
-		<p>
-				</p><ul>
-                        <li><a href="https://cs.colby.edu/courses/F20/cs125">CS 125: Introduction to R (Taylor)</a></li>
-                        <li>CS 151A: Computational Thinking: Visual Media (Doore)</li>
-                        <li><a href="https://cs.colby.edu/courses/F20/cs151b">CS 151B: Computational Thinking: Visual Media (Layton)</a></li>
-
-                        <li>CS 151C1: Computational Thinking: Visual Media (Doore)</li>
-                        <li><a href="https://cs.colby.edu/nsalmadi/teaching/CS151/F20/">CS 151C2: Computational Thinking: Visual Media</a> (Al Madi)</li>
-                        <li><a href="https://cs.colby.edu/nsalmadi/teaching/CS231/F20/">CS 231: Data Structures and Algorithms</a> (Al Madi, <a href="https://cs.colby.edu/courses/F20/cs231-labs">Wolfe</a>)</li>
-                        <li>CS 232: Computer Organization (<a href="https://cs.colby.edu/courses/F20/cs232">lectures Li</a>, <a href="https://cs.colby.edu/courses/F20/cs232-labs">labs Taylor</a>)</li>
-                        <li><a href="https://cs.colby.edu/courses/F20/cs333">CS 333: Programming Languages (Li)</a></li>
-                        <li><a href="https://cs.colby.edu/courses/F20/cs341">CS 341: Systems Biology I (Taylor)</a></li>
-                        <li><a href="https://cs.colby.edu/courses/F20/cs343">CS 343: Neural Networks (Layton)</a></li>
-                        <li><a href="https://cs.colby.edu/courses/F20/cs353">CS 353: Interactive Systems I (Wolfe)</a></li>
-                        <li><a href="https://cs.colby.edu/courses/F20/cs376">CS 376: Algorithm Design and Analysis (Aaron)</a></li>
-                        <li><a href="https://cs.colby.edu/courses/F20/cs446">CS 446: Computational Modeling and Simulation II (Aaron)</a></li>
-				</ul>
-		<p></p>
-
-		<h3>January 2021</h3>
-
-		<p>
-				</p><ul>
-						<li>CS 297: Data Driven Decision-Making (Garfield)</li>
-				</ul>
-		<p></p>
-
-		<h3>Spring 2021</h3>
-
-		<p>
-				</p><ul>
-                        <li>CS 151A: Computational Thinking: Visual Media (Doore)</li>
-                        <li><a href="https://cs.colby.edu/courses/S21/cs151b">CS 151B: Computational Thinking: Visual Media</a> (Layton)</li>
-                        <li><a href="https://cs.colby.edu/nsalmadi/teaching/CS151/S21/">CS 151C: Computational Thinking: Visual Media</a>  (Al Madi)</li>
-                        <li><a href="https://cs.colby.edu/djskrien/cs231s21syllabus.html">CS 231: Data Structures and Algorithms</a> (Skrien, Al Madi)</li>
-                        <li><a href="https://cs.colby.edu/courses/S21/cs251">CS 251: Data Analysis and Visualization</a> (Taylor, Layton,<a href="https://cs.colby.edu/courses/S21/cs25XL/"> Wolfe</a>)</li>
-                        <li><a href="https://cs.colby.edu/courses/S21/cs251">CS 252: Mathematical Data Analysis and Visualization</a> (Layton,<a href="https://cs.colby.edu/courses/S21/cs25XL/"> Wolfe</a>)</li>
-                        <li>CS 298: Ethics of Computing (Doore)</li>
-                        <li><a href="https://cs.colby.edu/courses/S21/cs331">CS 331: Computer Networks</a> (Li)</li>
-                        <li><a href="https://cs.colby.edu/courses/S21/cs333">CS 333: Programming Languages</a> (Li)</li>
-                        <li><a href="https://cs.colby.edu/courses/S21/cs346">CS 346: Computational Modeling and Simulation</a> (Aaron)</li>
-                        <li><a href="https://cs.colby.edu/courses/S21/cs375">CS 375: Analysis of Algorithms</a> (Aaron)</li>
-                        <li><a href="https://cs.colby.edu/courses/S21/cs378">CS 378: Introduction to Computational Theory</a> (Aaron)</li>
-                        <li><a href="https://cs.colby.edu/srtaylor/courses/S21/cs441">CS 441: Systems Biology II</a> (Taylor)</li>
-                        <li><a href="https://cs.colby.edu/courses/S21/cs453">CS 453: Interactive Systems II</a> (Wolfe)</li>
-				</ul>
-		<p></p>
-		<hr>
-
-		<h2>2019-2020 Academic Year</h2>
-
-
-		<h3>Fall 2019</h3>
-
-		<p>
-			</p><ul>
-						<li><a href="https://cs.colby.edu/courses/F19/cs125">CS 125: Introduction to R</a> (Maxwell)</li>
-						<li><a href="https://cs.colby.edu/courses/F19/cs151">CS 151: Computational Thinking: Visual Media</a> 
-								<a class="lablink" href="https://cs.colby.edu/courses/F19/cs151-labs">(Labs)</a> (Wolfe, Maxwell)</li>
-						<li>CS 152: Computational Thinking: Science 
-								<a class="lablink" href="https://cs.colby.edu/courses/F19/cs152-labs">(Labs)</a> (Eaton, Maxwell)</li>
-						<li><a href="https://cs.colby.edu/courses/F19/cs231">CS 231: Data Structures and Algorithms</a> 
-								<a class="lablink" href="https://cs.colby.edu/courses/F19/cs231-labs">(Labs)</a> (Wolfe, Maxwell)</li>
-						<li>CS 232: Computer Organization
-								<a class="lablink" href="https://cs.colby.edu/courses/F19/cs232-labs">(Labs)</a>  (Eaton, Maxwell)</li>
-						<li><a href="https://cs.colby.edu/courses/F19/cs331">CS 331: Computer Networks</a> (Li)</li>
-						<li><a href="https://cs.colby.edu/courses/F19/cs333">CS 333: Programming Languages</a> (Li)</li>
-						<li><a href="https://cs.colby.edu/courses/F19/cs343">CS 343: Neural Networks</a> (Layton)</li>
-						<li><a href="https://cs.colby.edu/courses/F19/cs375">CS 375: Analysis of Algorithms</a> (Aaron)</li>
-						<li><a href="https://cs.colby.edu/courses/F19/cs378">CS 378: Introduction to Theory of Computation</a> (Aaron)</li>
-						<li><a href="https://cs.colby.edu/courses/F19/cs497">CS 497: Advanced Perception</a> (Maxwell)</li>
-				</ul>
-		<p></p>
-
-		<h3>January 2019</h3>
-
-		<p>
-				</p><ul>
-						<li><a href="https://cs.colby.edu/courses/J20/cs269">CS 269: Computer Game Design</a> (Maxwell)</li>
-				</ul>
-		<p></p>
-
-		<h3>Spring 2020</h3>
-
-		<p>
-				</p><ul>
-						<li><a href="https://cs.colby.edu/courses/S20/cs151">CS 151: Computational Thinking: Visual Media</a>
-								<a href="https://cs.colby.edu/courses/S20/cs151-labs" class="lablink">(Labs)</a> (Wolfe, Maxwell)</li>
-						<li>CS 152: Computational Thinking: Science
-								<a href="https://cs.colby.edu/courses/S20/cs152-labs" class="lablink">(Labs)</a> (Eaton, Maxwell)</li>
-						<li>CS 231: Data Structures and Algorithms
-								<a href="https://cs.colby.edu/courses/S20/cs231-labs" class="lablink">(Labs)</a> (Skrien, Maxwell)</li>
-						<li>CS 251: Data Analysis and Visualization (Eaton, <a href="https://cs.colby.edu/courses/S20/cs251">Layton</a>, Wolfe)</li>
-						<li><a href="https://cs.colby.edu/courses/S20/cs333">CS 333: Programming Languages</a> (Li)</li>
-						<li><a href="https://cs.colby.edu/courses/S20/cs346">CS 346: Computational Modeling and Simulation</a> (Aaron)</li>
-						<li><a href="https://cs.colby.edu/courses/S20/cs375">CS 375: Analysis of Algorithms</a> (Aaron)</li>
-						<li><a href="https://cs.colby.edu/courses/S20/cs431">CS 431: Advanced Computer Networks</a> (Li)</li>
-						<li><a href="https://cs.colby.edu/courses/S20/cs443">CS 443: Computational Neuroscience</a> (Layton)</li>
-				</ul>
-		<p></p>
-
-		<hr>
-
-		<h2>2018-2019 Academic Year</h2>
-
-
-		<p>
-				</p><h3>Fall 2018</h3>
-				<ul>
-						<li><a href="https://cs.colby.edu/courses/F18/cs151">CS 151: Computational Thinking: Visual Media</a>
-								<a href="https://cs.colby.edu/courses/F18/cs151-labs">(Labs)</a> (Layton, Taylor)</li>
-						<li>CS 152: Computational Thinking: Science
-								<a href="https://cs.colby.edu/courses/F18/cs152-labs">(Labs)</a> (Codabux, Aaron)</li>
-						<li>CS 153: Computational Thinking: Smart Systems
-								<a href="https://cs.colby.edu/courses/F18/cs153-labs">(Labs)</a> (Eaton, Maxwell)</li>
-						<li><a href="https://cs.colby.edu/courses/F18/cs197">CS 197: Introduction to R</a> (Maxwell)</li>
-						<li><a href="https://cs.colby.edu/courses/F18/cs231">CS 231: Data Structures and Algorithms</a> (Layton, Codabux, Maxwell, Aaron)</li>
-						<li><a href="https://cs.colby.edu/courses/F18/cs232">CS 232: Computer Organization</a> (Maxwell, Taylor)</li>
-						<li><a href="https://cs.colby.edu/courses/F18/cs333">CS 333: Programming Languages</a> (Taylor)</li>
-						<li>CS 342: Embedded Systems (Eaton)</li>
-						<li>CS 361: Object-Oriented Design (Skrien)</li>
-						<li><a href="https://cs.colby.edu/courses/F18/cs375">CS 375: Analysis of Algorithms</a> (Aaron)</li>
-						<li><a href="https://cs.colby.edu/courses/F18/cs451">CS 451: Advanced Computer Graphics</a> (Maxwell)</li>
-				</ul>
-		<p></p>
-
-
-		<p>
-				</p><h3>January 2019</h3>
-				<ul>
-						<li><a href="https://cs.colby.edu/courses/J19/cs267">CS 267: Interactive Digital Media</a> (Maxwell)</li>
-						<li>CS 325: Web Programming (Skrien)</li>
-				</ul>
-		<p></p>
-
-
-		<p>
-				</p><h3>Spring 2019</h3>
-				<ul>
-						<li>CS 151: Computational Thinking: Visual Media
-								<a href="https://cs.colby.edu/courses/S19/cs151-labs">(Labs)</a> (Eaton, Layton)</li>
-						<li>CS 152: Computational Thinking: Science
-								<a href="https://cs.colby.edu/courses/S19/cs152-labs">(Labs)</a> (Codabux, Aaron)</li>
-						<li><a href="https://cs.colby.edu/courses/S19/cs231">CS 231: Data Structures and Algorithms</a> (Codabux, Taylor, Maxwell, Layton, Aaron)</li>
-						<li><a href="https://cs.colby.edu/courses/S19/cs251">CS 251B: Data Analysis and Visualization</a>
-								<a href="https://cs.colby.edu/courses/S19/cs251-labs">(Labs)</a> (Taylor, Layton, Maxwell, Codabux)</li>
-						<li><a href="https://cs.colby.edu/courses/S19/cs333">CS 333: Programming Languages</a> (Taylor)</li>
-						<li><a href="https://cs.colby.edu/courses/S19/cs365">CS 365: Computer Vision</a> (Maxwell)</li>
-						<li><a href="https://cs.colby.edu/courses/S19/cs375">CS 375: Analysis of Algorithms</a></li>
-						<li>CS 442: Computational Physiology (Eaton)</li>
-						<li>CS 461: Object-Oriented Systems (Skrien)</li>
-				</ul>
-		<p></p>
-
-		<hr>
-
-		<h2>2017-2018 Academic Year</h2>
-
-		<p>
-				</p><h3>Fall 2017</h3>
-				<ul>
-						<li><a href="https://cs.colby.edu/courses/F17/cs151">CS 151: Computational Thinking: Visual Media</a>
-								(Eaton, Maxwell)</li>
-						<li>CS 152: Computational Thinking: Science
-								<a class="lablink" href="https://cs.colby.edu/courses/F17/cs152-labs">(Labs)</a> (Skrien, Eaton)</li>
-						<li><a href="https://cs.colby.edu/courses/F17/cs231">CS 231: Data Structures and Algorithms</a>
-								<a href="https://cs.colby.edu/courses/F17/cs231-labs" class="lablink">(Labs)</a>  (Taylor, Codabux, Eaton)</li>
-						<li><a href="https://cs.colby.edu/courses/F17/cs232">CS 232: Computer Organization</a>
-								<a href="https://cs.colby.edu/courses/F17/cs232-labs" class="lablink">(Labs)</a>  (Li/Maxwell)</li>
-						<li><a href="https://cs.colby.edu/courses/F17/cs333">CS 333: Programming Languages</a> (Li)</li>
- 						<li><a href="https://cs.colby.edu/courses/F17/cs341">CS 341: Systems Biology I</a> (Taylor)</li>
-						<li>CS 397: Software Engineering I (Codabux)</li>
-						<li>CS 378: Introduction to the Theory of Computation (Skrien)</li>
-				</ul>
-		<p></p>
-
-		<p>
-				</p><h3>January 2018</h3>
-				<ul>
-  					<li>CS 325: Web Development (Skrien)</li>
-				</ul>
-		<p></p>
-
-		<p>
-				</p><h3>Spring 2018</h3>
-				<ul>
-						<li>CS 151: Computational Thinking: Visual Media
-								<a href="https://cs.colby.edu/courses/S18/cs151-labs" class="lablink">(Labs)</a> (Skrien, Eaton)</li>
-						<li>CS 152: Computational Thinking: Science
-								<a href="https://cs.colby.edu/courses/S18/cs152-labs" class="lablink">(Labs)</a> (Codabux, Eaton)</li>
-						<li><a href="https://cs.colby.edu/courses/S18/cs231">CS 231: Data Structures and Algorithms</a> <a href="https://cs.colby.edu/courses/S18/cs231-labs" class="lablink">(Labs)</a> (Li, Maxwell)</li>
-						<li><a href="https://cs.colby.edu/courses/S18/cs251">CS 251: Data Analysis and Visualization</a> (Taylor, Eaton, Maxwell, Codabux)</li>
-						<li><a href="https://cs.colby.edu/courses/S18/cs333">CS 333: Programming Languages</a> (Maxwell)</li>
-						<li><a href="https://cs.colby.edu/courses/S18/cs336">CS 336: Parallel and Distributed Systems</a> (Taylor)</li>
-						<li><a href="https://cs.colby.edu/courses/S18/cs351">CS 351: Computer Graphics</a> (Maxwell)</li>
-						<li>CS 375: Analysis of Algorithms (Skrien)</li>
-						<li><a href="https://cs.colby.edu/courses/S18/cs441">CS 441: Systems Biology II</a> (Taylor)</li>
-						<li>CS 498: Software Engineering II (Codabux)</li>
-				</ul>
-		<p></p>
-		
-		<hr>
-
-		<h2>2016-2017 Academic Year</h2>
-
-		<p>
-				</p><h3>Fall 2016</h3>
-				<ul>
-						<li>CS 151: Computational Thinking: Visual Media
-								<a href="https://cs.colby.edu/courses/F16/cs151-labs" class="lablink">(Labs)</a>  (Skrien/Maxwell)</li>
-						<li><a href="https://cs.colby.edu/courses/F16/cs152">CS 152: Computational Thinking: Science</a>
-								<a href="https://cs.colby.edu/courses/F16/cs152-labs" class="lablink">(Labs)</a>  (Taylor/Maxwell)</li>
-						<li><a href="https://cs.colby.edu/courses/F16/cs231">CS 231: Data Structures and Algorithms</a>
-								<a href="https://cs.colby.edu/courses/F16/cs231-labs" class="lablink">(Labs)</a>  (Maxwell/Taylor)</li>
-						<li><a href="https://cs.colby.edu/courses/F16/cs232">CS 232: Computer Organization</a>
-								<a href="https://cs.colby.edu/courses/F16/cs232-labs" class="lablink">(Labs)</a>  (Li/Taylor)</li>
-						<li><a href="https://cs.colby.edu/courses/F16/cs331">CS 331: Computer Networks</a>  (Li)</li>
-						<li><a href="https://cs.colby.edu/courses/F16/cs333">CS 333: Programming Languages</a>  (Li)</li>
-						<li>CS 361: Object-Oriented Design  (Skrien)</li>
-				</ul>
-		<p></p>
-
-		<p>
-				</p><h3>January 2017</h3>
-				<ul>
-						<li><a href="https://cs.colby.edu/courses/J17/cs269">CS 269: Computer Game Design</a>  (Maxwell)</li>
-				</ul>
-		<p></p>
-
-		<p>
-				</p><h3>Spring 2017</h3>
-				<ul>
-						<li><a href="https://cs.colby.edu/courses/S17/cs151">CS 151: Computational Thinking: Visual Media</a>
-								<a href="https://cs.colby.edu/courses/S17/cs151-labs" class="lablink">(Labs)</a>  (Taylor/Li)</li>
-						<li>CS 152: Computational Thinking: Science
-								<a href="https://cs.colby.edu/courses/S17/cs152-labs" class="lablink">(Labs)</a>  (Skrien/Taylor)</li>
-						<li>CS 231: Data Structures and Algorithms
-								<a href="https://cs.colby.edu/courses/S17/cs231-labs" class="lablink">(Labs)</a> (Codabux/Li)</li>
-						<li><a href="https://cs.colby.edu/courses/S17/cs251">CS 251: Data Analysis and Visualization</a>
-								(Taylor/Codabux/Maxwell)</li>
-						<li>CS 325: Web Programming (Codabux)</li>
-						<li><a href="https://cs.colby.edu/courses/S17/cs351">CS 351: Computer Graphics</a>  (Maxwell)</li>
-						<li><a href="https://cs.colby.edu/courses/S17/cs363">CS 363: Robotics</a>  (Maxwell)</li>
-						<li>CS 375: Analysis of Algorithms (Skrien)</li>
-						<li><a href="https://cs.colby.edu/courses/S17/cs431">CS 431: Advanced Computer Networks</a>  (Li)</li>
-						<li>CS 461: Object-Oriented Systems (Skrien)</li>
-				</ul>
-		<p></p>
-		<hr>
-
-		<h2>2015-2016 Academic Year</h2>
-
-		<p>
-			</p><h3>Fall 2015</h3>
-			<ul>
-				<li>CS 151: <a href="https://cs.colby.edu/courses/F15/cs151/">Computational Thinking: Visual Media Applications</a> 
-					(<a href="https://cs.colby.edu/courses/F15/cs151-labs">Labs</a>)  (Maxwell/Taylor)</li>
-				<li>CS 152: <a href="https://cs.colby.edu/courses/F15/cs151s/">Computational Thinking: Science Applications</a> 
-					(<a href="https://cs.colby.edu/courses/F15/cs151s-labs">Labs</a>)  (Maxwell/Taylor)</li>
-				<li>CS 231: <a href="https://cs.colby.edu/courses/F15/cs231/">Data Structures and Algorithms</a>
-					(<a href="https://cs.colby.edu/courses/F15/cs231L/">Labs</a>)  (Skrien/Li)</li>
-				<li>CS 333: <a href="https://cs.colby.edu/courses/F15/cs333/">Programming Languages</a>  (Li)</li>
-				<li>CS 341: <a href="https://cs.colby.edu/courses/F15/cs341/">System Biology I</a>  (Taylor)</li>
-				<li>CS 378: <a href="https://cs.colby.edu/courses/F15/cs378/">Introduction to Computational Theory</a>  (Skrien), <em>requires MA 274</em></li>
 			</ul>
-		<p></p>
+			<p></p>
 
-		<p>
-			</p><h3>January 2016</h3>
+			<h3>Spring 2023</h3>
 
+			<p>
+			</p>
 			<ul>
-				<li>CS 267: <a href="https://cs.colby.edu/courses/J16/cs267/">Interactive Digital Media</a>  (Maxwell)</li>
+				<li>CS 151: Computational Thinking: Visual Media (Doore, Al Madi)</li>
+				<li>CS 152: Computational Thinking: Science (Harper)</li>
+				<li>CS 231: Data Structures and Algorithms (Harper, Aaron)</li>
+				<li>CS 251: Data Analysis and Visualization (Taylor, Stent)</li>
+				<li>CS 252: Mathematical Data Analysis and Visualization (prerequisite: Linear Algebra)(Layton, Taylor)
+				</li>
+				<li>CS 310: Creating Future Worlds: Computing, Ethics, and Society (Doore)</li>
+				<li>CS 333: Programming Languages (Li)</li>
+				<li>CS 343: Neural Networks (Stent)</li>
+				<li>CS 376: Algorithm Analysis and Design (Aaron) </li>
+				<li>CS 421: Empirical Software Engineering (Al Madi)</li>
+				<li>CS 441: Systems Biology II (Taylor)</li>
+				<li>CS 443: Bio-Inspired Machine Learning (Layton)</li>
 			</ul>
-		<p></p>
+			<p></p>
 
-		<p>
-			</p><h3>Spring 2016</h3>
+
+			<hr>
+
+			<h2>2023-2024 Academic Year</h2>
+
+			<p>
+				We expect to offer at least the following courses in the 2023-24 academic year. Professors Al Madi and
+				Doore will be on sabbatical.</p>
+
+			<h3>Fall 2023</h3>
+
+			<p>
+			</p>
+			<ul>
+				<li>CS 125: Introduction to R</li>
+				<li>CS 151: Computational Thinking: Visual Media</li>
+				<li>CS 152: Computational Thinking: Science</li>
+				<li>CS 231: Data Structures and Algorithms</li>
+				<li>CS 232: Computer Organization</li>
+				<li>CS 333: Programming Languages</li>
+				<li>CS 331: Computer Networks (Li) (sequence course 1)</li>
+				<li>CS 343: Neural Networks (Layton) (sequence course 1)</li>
+				<li>CS 346: Computational Modeling and Simulation I (Aaron) (sequence course 1)</li>
+				<li>CS 3XX: TBD (Bender) sequence course 1) </li>
+				<li>CS 375: Analysis of Algorithms</li>
+			</ul>
+			<p></p>
+
+			<h3>January 2024</h3>
+
+			<p>
+			</p>
+			<ul>
+				<li>TBD</li>
+			</ul>
+			<p></p>
+
+			<h3>Spring 2024</h3>
+
+			<p>
+			</p>
+			<ul>
+				<li>CS 151: Computational Thinking: Visual Media</li>
+				<li>CS 152: Computational Thinking: Science</li>
+				<li>CS 231: Data Structures and Algorithms</li>
+				<li>CS 251: Data Analysis and Visualization </li>
+				<li>CS 252: Mathematical Data Analysis and Visualization (prerequisite: Linear Algebra)</li>
+				<li>CS 333: Programming Languages</li>
+				<li>CS 376: Algorithm Design and Analysis (Aaron)</li>
+				<li>CS 431: Advanced Computer Networks (Li) (sequence course 2)</li>
+				<li>CS 443: Bio-Inspired Machine Learning (Layton) (sequence course 2)</li>
+				<li>CS 4XX: TBD (Bender) (sequence course 2) </li>
+				<li>CS 446: Computational Modeling and Simulation II (Aaron) (sequence course 2)</li>
+			</ul>
+			<p></p>
+
+			<hr>
+			<h1>Archive</h1>
+			<h2>2021-2022 Academic Year</h2>
+			<h3>Fall 2021</h3>
+
+			<p>
+			</p>
+			<ul>
+				<li>CS 151: Computational Thinking: Visual Media (<a
+						href="https://cs.colby.edu/courses/F21/cs151a">Wolfe</a>, <a
+						href="https://cs.colby.edu/courses/F21/cs151b/">Bender</a>)</li>
+				<li>CS 152: Computational Thinking: Science (Doore, Harper)</li>
+				<li>CS 231: <a href="http://www.cs.colby.edu/nsalmadi/teaching/CS231/F21/">Data Structures and
+						Algorithms</a> (Al Madi, Harper)</li>
+				<li>CS 232: Computer Organization: <a href="https://cs.colby.edu/courses/F21/cs232">Lectures</a>, <a
+						href="https://cs.colby.edu/courses/F21/cs232-labs">Labs</a> (Li, Taylor)</li>
+				<li>CS 251: Data Analysis and Visualization: <a
+						href="https://cs.colby.edu/courses/F21/cs251">Lectures</a>, <a
+						href="https://cs.colby.edu/courses/F21/cs25XL">Labs</a> (Taylor, Wolfe)</li>
+				<li>CS 333: <a href="https://cs.colby.edu/courses/F21/cs333">Programming Languages</a> (Taylor) </li>
+				<li>CS 330: Real-World Database Design, Development, and Deployment I (Doore)</li>
+				<li>CS 321: <a href="http://www.cs.colby.edu/nsalmadi/teaching/CS321/F21/">Software Engineering (Al
+						Madi)</a></li>
+				<li>CS 353: <a href="https://cs.colby.edu/courses/F21/cs353">Interactive Systems (Wolfe)</a></li>
+				<li>CS 375: <a href="https://cs.colby.edu/courses/F21/cs375">Analysis of Algorithms (Bender)</a></li>
+				<li>CS 431: <a href="https://cs.colby.edu/courses/F21/cs431">Advanced Computer Networks</a> (Li)</li>
+			</ul>
+			<p></p>
+
+			<h3>January 2022</h3>
+
+			<p>
+			</p>
+			<ul>
+				<li>CS 269: <a href="https://cs.colby.edu/courses/J22/cs269">Game Design</a> (Maxwell)</li>
+				<li>CS 325: <a href="https://cs.colby.edu/djskrien/CS325J22Syllabus.html">Web Programming</a> (Skrien)
+				</li>
+			</ul>
+			<p></p>
+			<h3>Spring 2022</h3>
+
+			<p>
+			</p>
+			<ul>
+				<li>CS 125: <a href="https://cs.colby.edu/courses/S22/cs125/">Introduction to R</a> (Taylor)</li>
+				<li>CS 151: Computational Thinking: Visual Media (<a
+						href="https://cs.colby.edu/courses/S22/cs151b/index.html">Wolfe</a>, Bender)</li>
+				<li>CS 152: Computational Thinking: Science (Harper)</li>
+				<li>CS 231: <a href="https://cs.colby.edu/courses/S22/cs231L/">Data Structures and Algorithms</a>
+					(Wolfe, Harper, Bender)</li>
+				<li>CS 251: <a href="https://cs.colby.edu/courses/S22/cs251/">Data Analysis and Visualization</a>
+					(Taylor) </li>
+				<li>CS 252: <a href="https://cs.colby.edu/courses/S22/cs251/">Mathematical Data Analysis and
+						Visualization (prerequisite: Linear Algebra)</a> (Stent)</li>
+				<li>CS 333: <a href="https://cs.colby.edu/courses/S22/cs333/">Programming Languages</a> (Taylor)</li>
+				<li>MA/CS359: Finite Fields and Error Correcting Codes (Abdelghany) (elective)</li>
+				<li>CS 361: <a href="https://moodle.colby.edu/course/view.php?id=23311">Object Oriented Design</a>
+					(Skrien)</li>
+				<li>CS 375: Analysis of Algorithms (Bender) </li>
+				<li>CS 310: Creating Future Worlds: Computing, Ethics, and Society (Doore)</li>
+				<li>CS 337: <a href="https://cs.colby.edu/nsalmadi/teaching/CS337/S22/">Operating Systems</a> (Al Madi)
+				</li>
+				<li>CS 430: Advanced Database Design, Development, and Deployment (Doore) </li>
+				<li>CS 421: <a href="https://cs.colby.edu/nsalmadi/teaching/CS421/S22/">Empirical Software
+						Engineering</a> (Al Madi)</li>
+			</ul>
+			<p></p>
+
+			<hr>
+			<h2>2020-2021 Academic Year</h2>
+
+			<h3>Fall 2020</h3>
+
+			<p>
+			</p>
+			<ul>
+				<li><a href="https://cs.colby.edu/courses/F20/cs125">CS 125: Introduction to R (Taylor)</a></li>
+				<li>CS 151A: Computational Thinking: Visual Media (Doore)</li>
+				<li><a href="https://cs.colby.edu/courses/F20/cs151b">CS 151B: Computational Thinking: Visual Media
+						(Layton)</a></li>
+
+				<li>CS 151C1: Computational Thinking: Visual Media (Doore)</li>
+				<li><a href="https://cs.colby.edu/nsalmadi/teaching/CS151/F20/">CS 151C2: Computational Thinking: Visual
+						Media</a> (Al Madi)</li>
+				<li><a href="https://cs.colby.edu/nsalmadi/teaching/CS231/F20/">CS 231: Data Structures and
+						Algorithms</a> (Al Madi, <a href="https://cs.colby.edu/courses/F20/cs231-labs">Wolfe</a>)</li>
+				<li>CS 232: Computer Organization (<a href="https://cs.colby.edu/courses/F20/cs232">lectures Li</a>, <a
+						href="https://cs.colby.edu/courses/F20/cs232-labs">labs Taylor</a>)</li>
+				<li><a href="https://cs.colby.edu/courses/F20/cs333">CS 333: Programming Languages (Li)</a></li>
+				<li><a href="https://cs.colby.edu/courses/F20/cs341">CS 341: Systems Biology I (Taylor)</a></li>
+				<li><a href="https://cs.colby.edu/courses/F20/cs343">CS 343: Neural Networks (Layton)</a></li>
+				<li><a href="https://cs.colby.edu/courses/F20/cs353">CS 353: Interactive Systems I (Wolfe)</a></li>
+				<li><a href="https://cs.colby.edu/courses/F20/cs376">CS 376: Algorithm Design and Analysis (Aaron)</a>
+				</li>
+				<li><a href="https://cs.colby.edu/courses/F20/cs446">CS 446: Computational Modeling and Simulation II
+						(Aaron)</a></li>
+			</ul>
+			<p></p>
+
+			<h3>January 2021</h3>
+
+			<p>
+			</p>
+			<ul>
+				<li>CS 297: Data Driven Decision-Making (Garfield)</li>
+			</ul>
+			<p></p>
+
+			<h3>Spring 2021</h3>
+
+			<p>
+			</p>
+			<ul>
+				<li>CS 151A: Computational Thinking: Visual Media (Doore)</li>
+				<li><a href="https://cs.colby.edu/courses/S21/cs151b">CS 151B: Computational Thinking: Visual Media</a>
+					(Layton)</li>
+				<li><a href="https://cs.colby.edu/nsalmadi/teaching/CS151/S21/">CS 151C: Computational Thinking: Visual
+						Media</a> (Al Madi)</li>
+				<li><a href="https://cs.colby.edu/djskrien/cs231s21syllabus.html">CS 231: Data Structures and
+						Algorithms</a> (Skrien, Al Madi)</li>
+				<li><a href="https://cs.colby.edu/courses/S21/cs251">CS 251: Data Analysis and Visualization</a>
+					(Taylor, Layton,<a href="https://cs.colby.edu/courses/S21/cs25XL/"> Wolfe</a>)</li>
+				<li><a href="https://cs.colby.edu/courses/S21/cs251">CS 252: Mathematical Data Analysis and
+						Visualization</a> (Layton,<a href="https://cs.colby.edu/courses/S21/cs25XL/"> Wolfe</a>)</li>
+				<li>CS 298: Ethics of Computing (Doore)</li>
+				<li><a href="https://cs.colby.edu/courses/S21/cs331">CS 331: Computer Networks</a> (Li)</li>
+				<li><a href="https://cs.colby.edu/courses/S21/cs333">CS 333: Programming Languages</a> (Li)</li>
+				<li><a href="https://cs.colby.edu/courses/S21/cs346">CS 346: Computational Modeling and Simulation</a>
+					(Aaron)</li>
+				<li><a href="https://cs.colby.edu/courses/S21/cs375">CS 375: Analysis of Algorithms</a> (Aaron)</li>
+				<li><a href="https://cs.colby.edu/courses/S21/cs378">CS 378: Introduction to Computational Theory</a>
+					(Aaron)</li>
+				<li><a href="https://cs.colby.edu/srtaylor/courses/S21/cs441">CS 441: Systems Biology II</a> (Taylor)
+				</li>
+				<li><a href="https://cs.colby.edu/courses/S21/cs453">CS 453: Interactive Systems II</a> (Wolfe)</li>
+			</ul>
+			<p></p>
+			<hr>
+
+			<h2>2019-2020 Academic Year</h2>
+
+
+			<h3>Fall 2019</h3>
+
+			<p>
+			</p>
+			<ul>
+				<li><a href="https://cs.colby.edu/courses/F19/cs125">CS 125: Introduction to R</a> (Maxwell)</li>
+				<li><a href="https://cs.colby.edu/courses/F19/cs151">CS 151: Computational Thinking: Visual Media</a>
+					<a class="lablink" href="https://cs.colby.edu/courses/F19/cs151-labs">(Labs)</a> (Wolfe, Maxwell)
+				</li>
+				<li>CS 152: Computational Thinking: Science
+					<a class="lablink" href="https://cs.colby.edu/courses/F19/cs152-labs">(Labs)</a> (Eaton, Maxwell)
+				</li>
+				<li><a href="https://cs.colby.edu/courses/F19/cs231">CS 231: Data Structures and Algorithms</a>
+					<a class="lablink" href="https://cs.colby.edu/courses/F19/cs231-labs">(Labs)</a> (Wolfe, Maxwell)
+				</li>
+				<li>CS 232: Computer Organization
+					<a class="lablink" href="https://cs.colby.edu/courses/F19/cs232-labs">(Labs)</a> (Eaton, Maxwell)
+				</li>
+				<li><a href="https://cs.colby.edu/courses/F19/cs331">CS 331: Computer Networks</a> (Li)</li>
+				<li><a href="https://cs.colby.edu/courses/F19/cs333">CS 333: Programming Languages</a> (Li)</li>
+				<li><a href="https://cs.colby.edu/courses/F19/cs343">CS 343: Neural Networks</a> (Layton)</li>
+				<li><a href="https://cs.colby.edu/courses/F19/cs375">CS 375: Analysis of Algorithms</a> (Aaron)</li>
+				<li><a href="https://cs.colby.edu/courses/F19/cs378">CS 378: Introduction to Theory of Computation</a>
+					(Aaron)</li>
+				<li><a href="https://cs.colby.edu/courses/F19/cs497">CS 497: Advanced Perception</a> (Maxwell)</li>
+			</ul>
+			<p></p>
+
+			<h3>January 2019</h3>
+
+			<p>
+			</p>
+			<ul>
+				<li><a href="https://cs.colby.edu/courses/J20/cs269">CS 269: Computer Game Design</a> (Maxwell)</li>
+			</ul>
+			<p></p>
+
+			<h3>Spring 2020</h3>
+
+			<p>
+			</p>
+			<ul>
+				<li><a href="https://cs.colby.edu/courses/S20/cs151">CS 151: Computational Thinking: Visual Media</a>
+					<a href="https://cs.colby.edu/courses/S20/cs151-labs" class="lablink">(Labs)</a> (Wolfe, Maxwell)
+				</li>
+				<li>CS 152: Computational Thinking: Science
+					<a href="https://cs.colby.edu/courses/S20/cs152-labs" class="lablink">(Labs)</a> (Eaton, Maxwell)
+				</li>
+				<li>CS 231: Data Structures and Algorithms
+					<a href="https://cs.colby.edu/courses/S20/cs231-labs" class="lablink">(Labs)</a> (Skrien, Maxwell)
+				</li>
+				<li>CS 251: Data Analysis and Visualization (Eaton, <a
+						href="https://cs.colby.edu/courses/S20/cs251">Layton</a>, Wolfe)</li>
+				<li><a href="https://cs.colby.edu/courses/S20/cs333">CS 333: Programming Languages</a> (Li)</li>
+				<li><a href="https://cs.colby.edu/courses/S20/cs346">CS 346: Computational Modeling and Simulation</a>
+					(Aaron)</li>
+				<li><a href="https://cs.colby.edu/courses/S20/cs375">CS 375: Analysis of Algorithms</a> (Aaron)</li>
+				<li><a href="https://cs.colby.edu/courses/S20/cs431">CS 431: Advanced Computer Networks</a> (Li)</li>
+				<li><a href="https://cs.colby.edu/courses/S20/cs443">CS 443: Computational Neuroscience</a> (Layton)
+				</li>
+			</ul>
+			<p></p>
+
+			<hr>
+
+			<h2>2018-2019 Academic Year</h2>
+
+
+			<p>
+			</p>
+			<h3>Fall 2018</h3>
+			<ul>
+				<li><a href="https://cs.colby.edu/courses/F18/cs151">CS 151: Computational Thinking: Visual Media</a>
+					<a href="https://cs.colby.edu/courses/F18/cs151-labs">(Labs)</a> (Layton, Taylor)
+				</li>
+				<li>CS 152: Computational Thinking: Science
+					<a href="https://cs.colby.edu/courses/F18/cs152-labs">(Labs)</a> (Codabux, Aaron)
+				</li>
+				<li>CS 153: Computational Thinking: Smart Systems
+					<a href="https://cs.colby.edu/courses/F18/cs153-labs">(Labs)</a> (Eaton, Maxwell)
+				</li>
+				<li><a href="https://cs.colby.edu/courses/F18/cs197">CS 197: Introduction to R</a> (Maxwell)</li>
+				<li><a href="https://cs.colby.edu/courses/F18/cs231">CS 231: Data Structures and Algorithms</a> (Layton,
+					Codabux, Maxwell, Aaron)</li>
+				<li><a href="https://cs.colby.edu/courses/F18/cs232">CS 232: Computer Organization</a> (Maxwell, Taylor)
+				</li>
+				<li><a href="https://cs.colby.edu/courses/F18/cs333">CS 333: Programming Languages</a> (Taylor)</li>
+				<li>CS 342: Embedded Systems (Eaton)</li>
+				<li>CS 361: Object-Oriented Design (Skrien)</li>
+				<li><a href="https://cs.colby.edu/courses/F18/cs375">CS 375: Analysis of Algorithms</a> (Aaron)</li>
+				<li><a href="https://cs.colby.edu/courses/F18/cs451">CS 451: Advanced Computer Graphics</a> (Maxwell)
+				</li>
+			</ul>
+			<p></p>
+
+
+			<p>
+			</p>
+			<h3>January 2019</h3>
+			<ul>
+				<li><a href="https://cs.colby.edu/courses/J19/cs267">CS 267: Interactive Digital Media</a> (Maxwell)
+				</li>
+				<li>CS 325: Web Programming (Skrien)</li>
+			</ul>
+			<p></p>
+
+
+			<p>
+			</p>
+			<h3>Spring 2019</h3>
 			<ul>
 				<li>CS 151: Computational Thinking: Visual Media
-					(<a href="https://cs.colby.edu/courses/S16/cs151-labs">Labs</a>)  (Skrien/Li)</li>
-				<li>CS 232: <a href="https://cs.colby.edu/courses/S16/cs232/">Computer Organization</a> 
-					(<a href="https://cs.colby.edu/courses/S16/cs232-labs">Labs</a>)  (Li/Maxwell)</li>
-				<li>CS 251: <a href="https://cs.colby.edu/courses/S16/cs251/">Data Analysis and Visualization</a> 
-					(<a href="https://cs.colby.edu/courses/S16/cs251-labs">Labs</a>)  (Taylor/Maxwell)</li>
-				<li>CS 336: <a href="https://cs.colby.edu/courses/S16/cs336/">Parallel and Distributed Processing</a>  (Taylor)</li>
-				<li>CS 365: <a href="https://cs.colby.edu/courses/S16/cs365/">Computer Vision</a>  (Maxwell)</li>
-				<li>CS 441: <a href="https://cs.colby.edu/courses/S16/cs441/">Systems Biology II</a>  (Taylor)</li>
+					<a href="https://cs.colby.edu/courses/S19/cs151-labs">(Labs)</a> (Eaton, Layton)
+				</li>
+				<li>CS 152: Computational Thinking: Science
+					<a href="https://cs.colby.edu/courses/S19/cs152-labs">(Labs)</a> (Codabux, Aaron)
+				</li>
+				<li><a href="https://cs.colby.edu/courses/S19/cs231">CS 231: Data Structures and Algorithms</a>
+					(Codabux, Taylor, Maxwell, Layton, Aaron)</li>
+				<li><a href="https://cs.colby.edu/courses/S19/cs251">CS 251B: Data Analysis and Visualization</a>
+					<a href="https://cs.colby.edu/courses/S19/cs251-labs">(Labs)</a> (Taylor, Layton, Maxwell, Codabux)
+				</li>
+				<li><a href="https://cs.colby.edu/courses/S19/cs333">CS 333: Programming Languages</a> (Taylor)</li>
+				<li><a href="https://cs.colby.edu/courses/S19/cs365">CS 365: Computer Vision</a> (Maxwell)</li>
+				<li><a href="https://cs.colby.edu/courses/S19/cs375">CS 375: Analysis of Algorithms</a></li>
+				<li>CS 442: Computational Physiology (Eaton)</li>
+				<li>CS 461: Object-Oriented Systems (Skrien)</li>
 			</ul>
-		<p></p>
+			<p></p>
 
-		<hr>
+			<hr>
+
+			<h2>2017-2018 Academic Year</h2>
+
+			<p>
+			</p>
+			<h3>Fall 2017</h3>
+			<ul>
+				<li><a href="https://cs.colby.edu/courses/F17/cs151">CS 151: Computational Thinking: Visual Media</a>
+					(Eaton, Maxwell)</li>
+				<li>CS 152: Computational Thinking: Science
+					<a class="lablink" href="https://cs.colby.edu/courses/F17/cs152-labs">(Labs)</a> (Skrien, Eaton)
+				</li>
+				<li><a href="https://cs.colby.edu/courses/F17/cs231">CS 231: Data Structures and Algorithms</a>
+					<a href="https://cs.colby.edu/courses/F17/cs231-labs" class="lablink">(Labs)</a> (Taylor, Codabux,
+					Eaton)
+				</li>
+				<li><a href="https://cs.colby.edu/courses/F17/cs232">CS 232: Computer Organization</a>
+					<a href="https://cs.colby.edu/courses/F17/cs232-labs" class="lablink">(Labs)</a> (Li/Maxwell)
+				</li>
+				<li><a href="https://cs.colby.edu/courses/F17/cs333">CS 333: Programming Languages</a> (Li)</li>
+				<li><a href="https://cs.colby.edu/courses/F17/cs341">CS 341: Systems Biology I</a> (Taylor)</li>
+				<li>CS 397: Software Engineering I (Codabux)</li>
+				<li>CS 378: Introduction to the Theory of Computation (Skrien)</li>
+			</ul>
+			<p></p>
+
+			<p>
+			</p>
+			<h3>January 2018</h3>
+			<ul>
+				<li>CS 325: Web Development (Skrien)</li>
+			</ul>
+			<p></p>
+
+			<p>
+			</p>
+			<h3>Spring 2018</h3>
+			<ul>
+				<li>CS 151: Computational Thinking: Visual Media
+					<a href="https://cs.colby.edu/courses/S18/cs151-labs" class="lablink">(Labs)</a> (Skrien, Eaton)
+				</li>
+				<li>CS 152: Computational Thinking: Science
+					<a href="https://cs.colby.edu/courses/S18/cs152-labs" class="lablink">(Labs)</a> (Codabux, Eaton)
+				</li>
+				<li><a href="https://cs.colby.edu/courses/S18/cs231">CS 231: Data Structures and Algorithms</a> <a
+						href="https://cs.colby.edu/courses/S18/cs231-labs" class="lablink">(Labs)</a> (Li, Maxwell)</li>
+				<li><a href="https://cs.colby.edu/courses/S18/cs251">CS 251: Data Analysis and Visualization</a>
+					(Taylor, Eaton, Maxwell, Codabux)</li>
+				<li><a href="https://cs.colby.edu/courses/S18/cs333">CS 333: Programming Languages</a> (Maxwell)</li>
+				<li><a href="https://cs.colby.edu/courses/S18/cs336">CS 336: Parallel and Distributed Systems</a>
+					(Taylor)</li>
+				<li><a href="https://cs.colby.edu/courses/S18/cs351">CS 351: Computer Graphics</a> (Maxwell)</li>
+				<li>CS 375: Analysis of Algorithms (Skrien)</li>
+				<li><a href="https://cs.colby.edu/courses/S18/cs441">CS 441: Systems Biology II</a> (Taylor)</li>
+				<li>CS 498: Software Engineering II (Codabux)</li>
+			</ul>
+			<p></p>
+
+			<hr>
+
+			<h2>2016-2017 Academic Year</h2>
+
+			<p>
+			</p>
+			<h3>Fall 2016</h3>
+			<ul>
+				<li>CS 151: Computational Thinking: Visual Media
+					<a href="https://cs.colby.edu/courses/F16/cs151-labs" class="lablink">(Labs)</a> (Skrien/Maxwell)
+				</li>
+				<li><a href="https://cs.colby.edu/courses/F16/cs152">CS 152: Computational Thinking: Science</a>
+					<a href="https://cs.colby.edu/courses/F16/cs152-labs" class="lablink">(Labs)</a> (Taylor/Maxwell)
+				</li>
+				<li><a href="https://cs.colby.edu/courses/F16/cs231">CS 231: Data Structures and Algorithms</a>
+					<a href="https://cs.colby.edu/courses/F16/cs231-labs" class="lablink">(Labs)</a> (Maxwell/Taylor)
+				</li>
+				<li><a href="https://cs.colby.edu/courses/F16/cs232">CS 232: Computer Organization</a>
+					<a href="https://cs.colby.edu/courses/F16/cs232-labs" class="lablink">(Labs)</a> (Li/Taylor)
+				</li>
+				<li><a href="https://cs.colby.edu/courses/F16/cs331">CS 331: Computer Networks</a> (Li)</li>
+				<li><a href="https://cs.colby.edu/courses/F16/cs333">CS 333: Programming Languages</a> (Li)</li>
+				<li>CS 361: Object-Oriented Design (Skrien)</li>
+			</ul>
+			<p></p>
+
+			<p>
+			</p>
+			<h3>January 2017</h3>
+			<ul>
+				<li><a href="https://cs.colby.edu/courses/J17/cs269">CS 269: Computer Game Design</a> (Maxwell)</li>
+			</ul>
+			<p></p>
+
+			<p>
+			</p>
+			<h3>Spring 2017</h3>
+			<ul>
+				<li><a href="https://cs.colby.edu/courses/S17/cs151">CS 151: Computational Thinking: Visual Media</a>
+					<a href="https://cs.colby.edu/courses/S17/cs151-labs" class="lablink">(Labs)</a> (Taylor/Li)
+				</li>
+				<li>CS 152: Computational Thinking: Science
+					<a href="https://cs.colby.edu/courses/S17/cs152-labs" class="lablink">(Labs)</a> (Skrien/Taylor)
+				</li>
+				<li>CS 231: Data Structures and Algorithms
+					<a href="https://cs.colby.edu/courses/S17/cs231-labs" class="lablink">(Labs)</a> (Codabux/Li)
+				</li>
+				<li><a href="https://cs.colby.edu/courses/S17/cs251">CS 251: Data Analysis and Visualization</a>
+					(Taylor/Codabux/Maxwell)</li>
+				<li>CS 325: Web Programming (Codabux)</li>
+				<li><a href="https://cs.colby.edu/courses/S17/cs351">CS 351: Computer Graphics</a> (Maxwell)</li>
+				<li><a href="https://cs.colby.edu/courses/S17/cs363">CS 363: Robotics</a> (Maxwell)</li>
+				<li>CS 375: Analysis of Algorithms (Skrien)</li>
+				<li><a href="https://cs.colby.edu/courses/S17/cs431">CS 431: Advanced Computer Networks</a> (Li)</li>
+				<li>CS 461: Object-Oriented Systems (Skrien)</li>
+			</ul>
+			<p></p>
+			<hr>
+
+			<h2>2015-2016 Academic Year</h2>
+
+			<p>
+			</p>
+			<h3>Fall 2015</h3>
+			<ul>
+				<li>CS 151: <a href="https://cs.colby.edu/courses/F15/cs151/">Computational Thinking: Visual Media
+						Applications</a>
+					(<a href="https://cs.colby.edu/courses/F15/cs151-labs">Labs</a>) (Maxwell/Taylor)</li>
+				<li>CS 152: <a href="https://cs.colby.edu/courses/F15/cs151s/">Computational Thinking: Science
+						Applications</a>
+					(<a href="https://cs.colby.edu/courses/F15/cs151s-labs">Labs</a>) (Maxwell/Taylor)</li>
+				<li>CS 231: <a href="https://cs.colby.edu/courses/F15/cs231/">Data Structures and Algorithms</a>
+					(<a href="https://cs.colby.edu/courses/F15/cs231L/">Labs</a>) (Skrien/Li)</li>
+				<li>CS 333: <a href="https://cs.colby.edu/courses/F15/cs333/">Programming Languages</a> (Li)</li>
+				<li>CS 341: <a href="https://cs.colby.edu/courses/F15/cs341/">System Biology I</a> (Taylor)</li>
+				<li>CS 378: <a href="https://cs.colby.edu/courses/F15/cs378/">Introduction to Computational Theory</a>
+					(Skrien), <em>requires MA 274</em></li>
+			</ul>
+			<p></p>
+
+			<p>
+			</p>
+			<h3>January 2016</h3>
+
+			<ul>
+				<li>CS 267: <a href="https://cs.colby.edu/courses/J16/cs267/">Interactive Digital Media</a> (Maxwell)
+				</li>
+			</ul>
+			<p></p>
+
+			<p>
+			</p>
+			<h3>Spring 2016</h3>
+			<ul>
+				<li>CS 151: Computational Thinking: Visual Media
+					(<a href="https://cs.colby.edu/courses/S16/cs151-labs">Labs</a>) (Skrien/Li)</li>
+				<li>CS 232: <a href="https://cs.colby.edu/courses/S16/cs232/">Computer Organization</a>
+					(<a href="https://cs.colby.edu/courses/S16/cs232-labs">Labs</a>) (Li/Maxwell)</li>
+				<li>CS 251: <a href="https://cs.colby.edu/courses/S16/cs251/">Data Analysis and Visualization</a>
+					(<a href="https://cs.colby.edu/courses/S16/cs251-labs">Labs</a>) (Taylor/Maxwell)</li>
+				<li>CS 336: <a href="https://cs.colby.edu/courses/S16/cs336/">Parallel and Distributed Processing</a>
+					(Taylor)</li>
+				<li>CS 365: <a href="https://cs.colby.edu/courses/S16/cs365/">Computer Vision</a> (Maxwell)</li>
+				<li>CS 441: <a href="https://cs.colby.edu/courses/S16/cs441/">Systems Biology II</a> (Taylor)</li>
+			</ul>
+			<p></p>
+
+			<hr>
 
 
-		<h2>2014-2015 Academic Year</h2>
+			<h2>2014-2015 Academic Year</h2>
 
-		<h3>Fall 2014</h3>
+			<h3>Fall 2014</h3>
 
-		<p>
-			</p><ul>
-				<li>CS 151: Computational Thinking (<a href="https://cs.colby.edu/courses/F14/cs151-labs/">Labs</a>) (Skrien/Taylor)</li>
-				<li>CS 231: Data Structures and Algorithms (<a href="https://cs.colby.edu/courses/F14/cs231-labs/">Labs</a>) (Skrien/Taylor)</li>
+			<p>
+			</p>
+			<ul>
+				<li>CS 151: Computational Thinking (<a href="https://cs.colby.edu/courses/F14/cs151-labs/">Labs</a>)
+					(Skrien/Taylor)</li>
+				<li>CS 231: Data Structures and Algorithms (<a
+						href="https://cs.colby.edu/courses/F14/cs231-labs/">Labs</a>) (Skrien/Taylor)</li>
 				<li>CS 333: <a href="https://cs.colby.edu/courses/F14/cs333">Programming Languages</a> (Taylor)</li>
 				<li>CS 351: <a href="https://cs.colby.edu/courses/F14/cs351">Computer Graphics</a> (Maxwell)</li>
 				<li>CS 375: Analysis of Algorithms (Skrien)</li>
 			</ul>
-		<p></p>
+			<p></p>
 
-		<h3>January 2015</h3>
+			<h3>January 2015</h3>
 
-		<p>
-			</p><ul>
+			<p>
+			</p>
+			<ul>
 				<li><a href="https://cs.colby.edu/courses/J15/cs369">CS 269/369 Computer Game Design</a> (Maxwell)</li>
 			</ul>
-		<p></p>
+			<p></p>
 
-		<h3>Spring 2015</h3>
+			<h3>Spring 2015</h3>
 
-		<p>
-			</p><ul>
-				<li><a href="https://cs.colby.edu/courses/S15/cs151/">CS 151: Computational Thinking</a> 
+			<p>
+			</p>
+			<ul>
+				<li><a href="https://cs.colby.edu/courses/S15/cs151/">CS 151: Computational Thinking</a>
 					(<a href="https://cs.colby.edu/courses/S15/cs151-labs">Labs</a>) (Taylor/Maxwell)</li>
 				<li><a href="https://cs.colby.edu/courses/S15/cs232">CS 232: Computer Organization</a> (Maxwell)</li>
 				<li><a href="https://cs.colby.edu/courses/S15/cs251/">CS 251: Data Analysis and Visualization</a>
 					(<a href="https://cs.colby.edu/courses/S15/cs251-labs">Labs</a>) (Taylor/Maxwell)</li>
 				<li>CS 321: Computer Networks and Security(Siff)</li>
 				<li>
-					<a href="https://cs.colby.edu/courses/S15/cs451">CS 451: Advanced Computer Graphics</a> (Maxwell)</li>
+					<a href="https://cs.colby.edu/courses/S15/cs451">CS 451: Advanced Computer Graphics</a> (Maxwell)
+				</li>
 			</ul>
-		<p></p>
+			<p></p>
 
-		<hr>
+			<hr>
 
-		<h2>2013-2014 Academic Year</h2>
+			<h2>2013-2014 Academic Year</h2>
 
-		<h3>Fall 2013</h3>
+			<h3>Fall 2013</h3>
 
-		<p>
-			</p><ul>
+			<p>
+			</p>
+			<ul>
 				<li>CS 151: Computational Thinking</li>
-				<li>CS 231: Data Structures and Algorithms(<a href="https://cs.colby.edu/courses/F13/cs231/">lecture</a>)</li>
+				<li>CS 231: Data Structures and Algorithms(<a
+						href="https://cs.colby.edu/courses/F13/cs231/">lecture</a>)</li>
 				<li>CS 333: Programming Languages</li>
 				<li>CS 361: Object-Oriented Design I</li>
 				<li>CS 378: Introduction to Computational Theory</li>
 			</ul>
-		<p></p>
+			<p></p>
 
-		<h3>January 2014</h3>
+			<h3>January 2014</h3>
 
-		<p>
-			</p><ul>
+			<p>
+			</p>
+			<ul>
 				<li>No CS courses</li>
 			</ul>
-		<p></p>
+			<p></p>
 
-		<h3>Spring 2014</h3>
+			<h3>Spring 2014</h3>
 
-		<p>
-			</p><ul>
+			<p>
+			</p>
+			<ul>
 				<li>CS 151: Computational Thinking</li>
 				<li>CS 232: Computer Organization (<a href="https://cs.colby.edu/courses/S14/cs232-labs">lab</a>)</li>
 				<li>CS 251: Data Analysis and Visualization</li>
@@ -668,16 +820,17 @@
 				<li>CS 336: Parallel and Distributed Systems</li>
 				<li>CS 461: Object-Oriented Design II</li>
 			</ul>
-		<p></p>
+			<p></p>
 
-		<hr>
+			<hr>
 
-		<h2>2012-2013 Academic Year</h2>
+			<h2>2012-2013 Academic Year</h2>
 
-		<h3>Fall 2012</h3>
+			<h3>Fall 2012</h3>
 
-		<p>
-			</p><ul>
+			<p>
+			</p>
+			<ul>
 				<li><a href="https://cs.colby.edu/courses/F12/cs151">
 						CS 151: Computational Thinking</a> &nbsp;
 					(<a href="https://cs.colby.edu/courses/F12/cs151-labs">Lab link</a>) (Taylor/Maxwell) </li>
@@ -688,40 +841,46 @@
 						CS 341: Systems Biology I</a> (Taylor)</li>
 				<li>CS 375: Analysis of Algorithms (Skrien)</li>
 			</ul>
-		<p></p>
+			<p></p>
 
-		<h3>January 2013</h3>
+			<h3>January 2013</h3>
 
-		<p>
-			</p><ul>
+			<p>
+			</p>
+			<ul>
 				<li><a href="https://cs.colby.edu/courses/J13/cs369">
 						CS269 Computer Game Design (Maxwell)</a></li>
 			</ul>
-		<p></p>
+			<p></p>
 
-		<h3>Spring 2013</h3>
+			<h3>Spring 2013</h3>
 
-		<p>
-			</p><ul>
+			<p>
+			</p>
+			<ul>
 				<li>CS 151: Computational Thinking &nbsp;
-					<a href="https://cs.colby.edu/courses/S13/cs151-labs/">(Lab link)</a> (Skrien/Taylor)</li>
+					<a href="https://cs.colby.edu/courses/S13/cs151-labs/">(Lab link)</a> (Skrien/Taylor)
+				</li>
 				<li>CS 232: Computer Organization &nbsp;
-					<a href="https://cs.colby.edu/courses/S13/cs232-labs">(Lab link)</a>  (Skrien/Maxwell)</li>
+					<a href="https://cs.colby.edu/courses/S13/cs232-labs">(Lab link)</a> (Skrien/Maxwell)
+				</li>
 				<li> <a href="https://cs.colby.edu/courses/S13/cs251/">CS 251: Data Analysis and Visualization</a>
-					<a href="https://cs.colby.edu/courses/S13/cs251-labs">(Lab link)</a> (Taylor/Maxwell)</li>
+					<a href="https://cs.colby.edu/courses/S13/cs251-labs">(Lab link)</a> (Taylor/Maxwell)
+				</li>
 				<li> <a href="https://cs.colby.edu/courses/S13/cs363">CS 363: Robotics</a> (Maxwell)</li>
 				<li> <a href="https://cs.colby.edu/courses/S13/cs441/">CS 441: Systems Biology</a> (Taylor)</li>
 			</ul>
-		<p></p>
+			<p></p>
 
-		<hr>
+			<hr>
 
-		<h2>2011-2012 Academic Year</h2>
+			<h2>2011-2012 Academic Year</h2>
 
-		<h3>Fall 2011</h3>
+			<h3>Fall 2011</h3>
 
-		<p>
-			</p><ul>
+			<p>
+			</p>
+			<ul>
 				<li><a href="https://cs.colby.edu/courses/F11/cs151">
 						CS 151: Computational Thinking</a> &nbsp;
 					(<a href="https://cs.colby.edu/courses/F11/cs151-labs">Lab link</a>) (Maxwell/Eastwood) </li>
@@ -733,114 +892,132 @@
 				<li>CS 378: Introduction to Computational Theory (Skrien)</li>
 				<li>CS 397: Computer Networks and Security (Siff)</li>
 			</ul>
-		<p></p>
+			<p></p>
 
-		<h3>January 2012</h3>
+			<h3>January 2012</h3>
 
-		<p>
-			</p><ul>
+			<p>
+			</p>
+			<ul>
 				<li>CS283/BI283 Bioinformatics (McClellan)</li>
 				<li><a href="https://cs.colby.edu/courses/J12/cs297">CS297 Interactive Digital Media (Maxwell)</a></li>
 			</ul>
-		<p></p>
+			<p></p>
 
-		<h3>Spring 2012</h3>
+			<h3>Spring 2012</h3>
 
-		<p>
-			</p><ul>
+			<p>
+			</p>
+			<ul>
 				<li>
 					CS 151: Computational Thinking &nbsp;
 					<a href="https://cs.colby.edu/courses/S12/cs151-labs">(Lab link)</a>
-					(Skrien/Eastwood)</li>
+					(Skrien/Eastwood)
+				</li>
 				<li>
 					<a href="https://cs.colby.edu/courses/S12/cs232">
-						CS 232: Computer Organization</a> &nbsp; 
-					(<a href="https://cs.colby.edu/courses/S12/cs232-labs">Lab link)</a>  (Eastwood/Maxwell)</li>
+						CS 232: Computer Organization</a> &nbsp;
+					(<a href="https://cs.colby.edu/courses/S12/cs232-labs">Lab link)</a> (Eastwood/Maxwell)
+				</li>
 				<li>
 					<a href="https://cs.colby.edu/courses/S12/cs251">
-						CS 251: Data Analysis and Visualization</a> (Maxwell)</li>
+						CS 251: Data Analysis and Visualization</a> (Maxwell)
+				</li>
 				<li>CS 356: Compiler Construction (Skrien)</li>
 				<li>
 					<a href="https://cs.colby.edu/courses/S12/cs365">
-						CS 365: Computer Vision</a> (Eastwood)</li>
+						CS 365: Computer Vision</a> (Eastwood)
+				</li>
 				<li>
 					<a href="https://cs.colby.edu/courses/S12/cs451">
-						CS 451: Advanced Computer Graphics</a> (Maxwell)</li>
+						CS 451: Advanced Computer Graphics</a> (Maxwell)
+				</li>
 			</ul>
-		<p></p>
+			<p></p>
 
-		<hr>
+			<hr>
 
-		<h2>2010-2011 Academic Year</h2>
+			<h2>2010-2011 Academic Year</h2>
 
 
-		<h3>Fall 2010</h3>
+			<h3>Fall 2010</h3>
 
-		<p>
-			</p><ul>
+			<p>
+			</p>
+			<ul>
 				<li>
 					<a href="https://cs.colby.edu/courses/F10/cs151">
-						CS 151 Computational Thinking</a>  (Maxwell/Eastwood) &nbsp; 
+						CS 151 Computational Thinking</a> (Maxwell/Eastwood) &nbsp;
 					(<a href="https://cs.colby.edu/courses/F10/cs151-labs">lab link</a>)
 				</li>
 				<li>
 					CS 231 Data Structures and Algorithms (Skrien/Eastwood)</li>
 				<li>
 					<a href="https://cs.colby.edu/courses/F10/cs333">
-						CS 333 Programming Languages</a> (Maxwell)</li>
+						CS 333 Programming Languages</a> (Maxwell)
+				</li>
 				<li>
 					CS 361 Object-Oriented Design I (Skrien)</li>
 				<li>
 					CS 375 Analysis of Algorithms (Skrien)</li>
 			</ul>
-		<p></p>
+			<p></p>
 
-		<h3>January 2011</h3>
+			<h3>January 2011</h3>
 
-		<p>
-			</p><ul>
+			<p>
+			</p>
+			<ul>
 				<li>
 					<a href="https://cs.colby.edu/courses/J11/cs369">
-						CS 269J/369J Computer Game Design</a> (Maxwell)</li> 
+						CS 269J/369J Computer Game Design</a> (Maxwell)
+				</li>
 			</ul>
-		<p></p>
+			<p></p>
 
-		<h3>Spring 2011</h3>
+			<h3>Spring 2011</h3>
 
-		<p>
-			</p><ul>
+			<p>
+			</p>
+			<ul>
 				<li>
 					<a href="https://cs.colby.edu/courses/S11/cs151">
-						CS 151: Computational Thinking</a>  (Taylor/Maxwell) &nbsp;
+						CS 151: Computational Thinking</a> (Taylor/Maxwell) &nbsp;
 					<a href="https://cs.colby.edu/courses/S11/cs151-labs">
-						(Labs)</a></li>
+						(Labs)</a>
+				</li>
 				<li>
 					CS 232: Computer Organization (Skrien)</li>
 				<li>
 					<a href="https://cs.colby.edu/courses/S11/cs251">
-						CS 251: Data Analysis and Visualization</a> (Maxwell)</li>
+						CS 251: Data Analysis and Visualization</a> (Maxwell)
+				</li>
 				<li>
 					<a href="https://cs.colby.edu/courses/S11/cs336">
-						CS 336: Parallel and Distributed Computing</a> (Taylor)</li>
+						CS 336: Parallel and Distributed Computing</a> (Taylor)
+				</li>
 				<li>
 					<a href="https://cs.colby.edu/courses/S11/cs398">
-						CS 398: Computational Photography</a> (Eastwood)</li>
+						CS 398: Computational Photography</a> (Eastwood)
+				</li>
 				<li>
 					CS 461: Object-Oriented Design II (Skrien)</li>
 			</ul>
-		<p></p>
+			<p></p>
 
-		<hr>
+			<hr>
 
-		<h2>2009-2010 Academic Year</h2>
+			<h2>2009-2010 Academic Year</h2>
 
-		<h3>Fall 2009</h3>
+			<h3>Fall 2009</h3>
 
-		<p>
-			</p><ul>
+			<p>
+			</p>
+			<ul>
 				<li>CS 151: Computational Thinking (Taylor/Skrien)</li>
 				<li>CS 231: Data Structures and Algorithms (Eastwood/Maxwell) &nbsp;
-					<a href="https://cs.colby.edu/courses/F09/cs231-labs">(labs)</a></li>
+					<a href="https://cs.colby.edu/courses/F09/cs231-labs">(labs)</a>
+				</li>
 				<li>CS 298: Web Programming (Skrien)</li>
 				<li><a href="https://cs.colby.edu/courses/F09/cs333">
 						CS 333: Programming Languages</a> (Maxwell)</li>
@@ -849,23 +1026,26 @@
 				<li><a href="https://cs.colby.edu/courses/F09/cs363">
 						CS 363: Robotics</a> (Maxwell)</li>
 			</ul>
-		<p></p>
+			<p></p>
 
-		<h3>January 2010</h3>
+			<h3>January 2010</h3>
 
-		<p>
-			</p><ul>
+			<p>
+			</p>
+			<ul>
 				<li>CS 297J: Bioinformatics (McClellan)</li>
 			</ul>
-		<p></p>
+			<p></p>
 
-		<h3>Spring 2010</h3>
+			<h3>Spring 2010</h3>
 
-		<p>
-			</p><ul>
+			<p>
+			</p>
+			<ul>
 				<li><a href="https://cs.colby.edu/courses/S10/cs151">
 						CS 151: Computational Thinking</a> (Taylor/Maxwell) &nbsp;
-					<a href="https://cs.colby.edu/courses/S10/cs151-labs">(labs)</a></li>
+					<a href="https://cs.colby.edu/courses/S10/cs151-labs">(labs)</a>
+				</li>
 				<li><a href="https://cs.colby.edu/courses/S10/cs198-music">
 						CS 198: Computer Music</a> (Hallstrom/Maxwell)</li>
 				<li>CS 232: Computer Organization (Skrien)</li>
@@ -877,16 +1057,17 @@
 				<li><a href="https://cs.colby.edu/courses/S10/cs441">
 						CS 441: Systems Biology II</a> (Taylor)</li>
 			</ul>
-		<p></p>
+			<p></p>
 
-		<hr>
+			<hr>
 
-		<h2>2008-2009 Academic Year</h2>
+			<h2>2008-2009 Academic Year</h2>
 
-		<h3>Fall 2008</h3>
+			<h3>Fall 2008</h3>
 
-		<p>
-			</p><ul>
+			<p>
+			</p>
+			<ul>
 				<li>CS 151: Computational Thinking (Skrien/Taylor)</li>
 				<li>CS 231: Data Structures and Algorithms (Skrien/Taylor)</li>
 				<li><a href="https://cs.colby.edu/courses/F08/cs336">
@@ -895,22 +1076,26 @@
 						CS 351: Computer Graphics</a> (Maxwell)</li>
 				<li>CS 375: Analysis of Algorithms (Skrien)</li>
 			</ul>
-		<p></p>
+			<p></p>
 
-		<h3>January 2008</h3>
+			<h3>January 2008</h3>
 
-		<p>
-			</p><ul>
+			<p>
+			</p>
+			<ul>
 				<li>CS 269/369: Computer Game Design
-			</li></ul>
-		<p></p>
+				</li>
+			</ul>
+			<p></p>
 
-		<h3>Spring 2009</h3>
+			<h3>Spring 2009</h3>
 
-		<p>
-			</p><ul>
+			<p>
+			</p>
+			<ul>
 				<li>CS 151: Computational Thinking (Taylor/Maxwell) &nbsp;
-					<a href="https://cs.colby.edu/courses/S09/cs151-labs">(labs)</a></li>
+					<a href="https://cs.colby.edu/courses/S09/cs151-labs">(labs)</a>
+				</li>
 				<li>CS 232: Computer Organization (TBA)</li>
 				<li><a href="https://cs.colby.edu/courses/S09/cs251">
 						CS 251: Data Analysis and Visualization</a> (Maxwell)</li>
@@ -918,17 +1103,18 @@
 				<li><a href="https://cs.colby.edu/courses/S09/cs451">
 						CS 270/451: Advanced Graphics: 3D Video Game Design</a> (Maxwell)</li>
 			</ul>
-		<p></p>
+			<p></p>
 
-		<hr>
+			<hr>
 
 
-		<h2>2007-2008 Academic Year</h2>
+			<h2>2007-2008 Academic Year</h2>
 
-		<h3>Fall 2007</h3>
+			<h3>Fall 2007</h3>
 
-		<p>
-			</p><ul>
+			<p>
+			</p>
+			<ul>
 				<li>CS 151: Elementary Algorithms and Structured Programming (Russell)</li>
 				<li><a href="https://cs.colby.edu/courses/F07/cs231">
 						CS 231: Data Structures and Algorithms</a> (Maxwell)</li>
@@ -937,12 +1123,13 @@
 				<li><a href="https://cs.colby.edu/courses/F07/cs397">
 						CS 397: Computer Vision</a> (Maxwell)</li>
 			</ul>
-		<p></p>
+			<p></p>
 
-		<h3>Spring 2008</h3>
+			<h3>Spring 2008</h3>
 
-		<p>
-			</p><ul>
+			<p>
+			</p>
+			<ul>
 				<li><a href="https://cs.colby.edu/courses/S08/cs151">
 						CS 151: Computational Thinking</a> (Maxwell)</li>
 				<li>CS 231: Data Structures and Algorithms (Skrien)</li>
@@ -951,17 +1138,19 @@
 				<li>CS 361: Object-Oriented Design (Skrien)</li>
 				<li>CS 398: Cryptography (Russell)</li>
 			</ul>
-		<p></p>
-		
+			<p></p>
+
+		</div>
+
+	</div>
+	<script type="text/javascript" src="./courses_files/main.js"></script>
+
+	<div id="footer">
+		<h4>© 2023 <a target="_blank" href="http://matthewmartin.me/">Matthew J. Martin</a> '18 and <a target="_blank"
+				href="https://www.linkedin.com/in/adamcarlson18">Adam L. Carlson</a> '18</h4>
 	</div>
 
-</div>
-<script type="text/javascript" src="./courses_files/main.js"></script>
 
-<div id="footer">
-	 <!--? 	date_default_timezone_set( "America/New_York" ); ?-->
-	<h4>© 2023 <a target="_blank" href="http://matthewmartin.me/">Matthew J. Martin</a> '18 and <a target="_blank" href="https://www.linkedin.com/in/adamcarlson18">Adam L. Carlson</a> '18</h4>
-</div>
+</body>
 
-
-</body></html>
+</html>

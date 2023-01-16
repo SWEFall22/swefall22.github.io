@@ -1,73 +1,71 @@
+<html>
 
-<!-- saved from url=(0036)https://cs.colby.edu/connections.php -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>Colby Computer Science</title>
 	<link rel="icon" href="https://cs.colby.edu/img/favicon.png">
 	<link rel="stylesheet" type="text/css" href="./connections_files/content.css">
-	
-			<link rel="stylesheet" type="text/css" href="./connections_files/indexoverride.css">
-				<link rel="stylesheet" type="text/css" href="./connections_files/header.css">
+
+	<link rel="stylesheet" type="text/css" href="./connections_files/indexoverride.css">
+	<link rel="stylesheet" type="text/css" href="./connections_files/header.css">
 	<link href="./connections_files/css" rel="stylesheet" type="text/css">
 	<meta name="viewport" content="width=device-width">
 	<script src="./connections_files/jquery-2.2.0.min.js"></script>
 
 
 </head>
+
 <body>
 	<div id="banner" name="top">
-	<!-- Background photo for banner taken by Matthew Martin -->
-	
+		<!-- Background photo for banner taken by Matthew Martin -->
+
 		<div id="header">
 			<script language="javascript">
-			function loginCMS () {
-				var history="ColbyPrevious=host&"+escape(window.location.host)+"&method&GET&protocol&"+escape(window.location.protocol.substring(0,window.location.protocol.length-1))+"&arguments&&local&0";
-				var port=window.location.port;
-				if ( ( window.location.protocol == 'https:' ) &&
-				( window.location.port == '443' ) ) { port=''; }
-				if ( ( window.location.protocol == 'http:' ) &&
-				( window.location.port == '80' ) ) { port=''; }
-				history=history+"&port&"+escape(port);
+				function loginCMS() {
+					var history = "ColbyPrevious=host&" + escape(window.location.host) + "&method&GET&protocol&" + escape(window.location.protocol.substring(0, window.location.protocol.length - 1)) + "&arguments&&local&0";
+					var port = window.location.port;
+					if ((window.location.protocol == 'https:') &&
+						(window.location.port == '443')) { port = ''; }
+					if ((window.location.protocol == 'http:') &&
+						(window.location.port == '80')) { port = ''; }
+					history = history + "&port&" + escape(port);
 
-				var query_string='';
-				if ( window.location.search.length > 0 ) {
-				query_string=window.location.search.substring(1,window.location.search.length);
+					var query_string = '';
+					if (window.location.search.length > 0) {
+						query_string = window.location.search.substring(1, window.location.search.length);
+					}
+					query_string = query_string + window.location.hash;
+					history = history + "&query_string&" + escape(query_string);
+					history = history + "&uri&" + escape(window.location.pathname);
+					history = history + "; path=/; domain=colby.edu";
+					document.cookie = history;
+					window.location = "https://www.colby.edu/ColbyMaster/login/";
 				}
-				query_string=query_string + window.location.hash;
-				history=history+"&query_string&"+escape(query_string);
-				history=history+"&uri&"+escape(window.location.pathname);
-				history=history+"; path=/; domain=colby.edu";
-				document.cookie=history;
-				window.location="https://www.colby.edu/ColbyMaster/login/";
-			}
 			</script>
 
 			<a href="http://colby.edu/" target="_blank">
 				<img id="logo" src="./connections_files/ColbyLogo_wide.png" alt="Colby College">
 			</a>
-			
 
-	 <h3>
-	 <a class="phonehidden" href="https://my.colby.edu/" target="_blank">myColby</a>
-	 <a class="phonehidden" href="http://www.colby.edu/directory/" target="_blank">Directory</a>
-	 <ul id="headerdropdown">
-	 <a href="http://www.colby.edu/visitors/" target="_blank"><li>Visitors</li></a>
-	 <a href="http://www.colby.edu/alumni" target="_blank"><li>Alumni</li></a>
-	 <a href="http://www.colby.edu/parents/" target="_blank"><li>Parents</li></a>
-	 <a href="http://www.colby.edu/afgift" target="_blank"><li>Make a Gift</li></a>
-	 </ul>
-	 <span class="phonehidden" id="moreheader">More</span>	 
 
-<!--
-				<a class="phonehidden" href="javascript:loginCMS()">myColby</a>
+			<h3>
+				<a class="phonehidden" href="https://my.colby.edu/" target="_blank">myColby</a>
 				<a class="phonehidden" href="http://www.colby.edu/directory/" target="_blank">Directory</a>
-				<a class="hiddenheader" style="display: none;" href="http://www.colby.edu/visitors/" target="_blank">Visitors</a>
-				<a class="hiddenheader" style="display: none;" href="http://www.colby.edu/alumni" target="_blank">Alumni</a>
-				<a class="hiddenheader" style="display: none;" href="http://www.colby.edu/parents/" target="_blank">Parents</a>
-				<a class="hiddenheader" style="display: none;" href="http://www.colby.edu/afgift" target="_blank">Make a Gift</a>
+				<ul id="headerdropdown">
+					<a href="http://www.colby.edu/visitors/" target="_blank">
+						<li>Visitors</li>
+					</a>
+					<a href="http://www.colby.edu/alumni" target="_blank">
+						<li>Alumni</li>
+					</a>
+					<a href="http://www.colby.edu/parents/" target="_blank">
+						<li>Parents</li>
+					</a>
+					<a href="http://www.colby.edu/afgift" target="_blank">
+						<li>Make a Gift</li>
+					</a>
+				</ul>
 				<span class="phonehidden" id="moreheader">More</span>
-				-->
-
-
 			</h3>
 
 			<div id="phonemenuicon">
@@ -75,28 +73,57 @@
 				<span></span>
 				<span></span>
 			</div>
-			<a href="http://www.colby.edu/search_cs/index.cfm" target="_blank"><div id="searchicon"></div></a>
+			<a href="http://www.colby.edu/search_cs/index.cfm" target="_blank">
+				<div id="searchicon"></div>
+			</a>
 		</div>
-		
+
 		<h1>Department of Computer Science</h1>
 		<h2>What do you want to create?</h2>
 
 		<div id="navbar">
 			<ul id="deptmenu">
-				<a href="https://cs.colby.edu/news.php"><li>News</li></a>
-				<a href="https://cs.colby.edu/faculty.php"><li>Faculty</li></a>
-				<a href="https://cs.colby.edu/connections.php"><li>Connections</li></a>
-				<a href="https://cs.colby.edu/projects.php"><li>Projects</li></a>
-				<a href="https://cs.colby.edu/writing.php"><li>Writing in CS</li></a>
+				<a href="https://cs.colby.edu/news.php">
+					<li>News</li>
+				</a>
+				<a href="https://cs.colby.edu/faculty.php">
+					<li>Faculty</li>
+				</a>
+				<a href="https://cs.colby.edu/connections.php">
+					<li>Connections</li>
+				</a>
+				<a href="https://cs.colby.edu/projects.php">
+					<li>Projects</li>
+				</a>
+				<a href="https://cs.colby.edu/writing.php">
+					<li>Writing in CS</li>
+				</a>
 			</ul>
 			<ul id="resourcemenu">
-				<a href="http://www.colby.edu/offices/" target="_blank"><li>Administration</li></a>
-				<a href="http://www.colby.edu/athletics/" target="_blank"><li>Athletics</li></a>
-				<a href="http://www.colby.edu/catalogue/" target="_blank"><li>Colby Catalogue</li></a>
-				<a href="http://www.colby.edu/academics/dual-degree" target="_blank"><li>Engineering Dual-Degree</li></a>
-                <a href="https://www.colby.edu/davisconnects/student-funding/" target="_blank"><li>Davis Connections Student Funding</li></a>
-				<a href="http://libguides.colby.edu/content.php?pid=7611&amp;sid=48409" target="_blank"><li>CS Library Resources</li></a>
-				<a href="http://www.colby.edu/registrar" target="_blank"><li>Colby Registrar</li></a>
+				<a href="http://www.colby.edu/offices/" target="_blank">
+					<li>Administration</li>
+				</a>
+				<a href="http://www.colby.edu/athletics/" target="_blank">
+					<li>Athletics</li>
+				</a>
+				<a href="http://www.colby.edu/catalogue/" target="_blank">
+					<li>Colby Catalogue</li>
+				</a>
+				<a href="http://www.colby.edu/academics/dual-degree" target="_blank">
+					<li>Engineering Dual-Degree</li>
+				</a>
+				<a href="https://www.colby.edu/davisconnects/student-funding/" target="_blank">
+					<li>Davis Connections Student Funding</li>
+				</a>
+				<a href="http://libguides.colby.edu/content.php?pid=7611&amp;sid=48409" target="_blank">
+					<li>CS Library Resources</li>
+				</a>
+				<a href="http://www.colby.edu/registrar" target="_blank">
+					<li>Colby Registrar</li>
+				</a>
+				<a href="http://hackers.colby.edu" target="_blank">
+					<li>Colby Hackers</li>
+				</a>
 			</ul>
 			<div class="navbutton">
 				<a href="https://cs.colby.edu/index.php">Home</a>
@@ -113,11 +140,6 @@
 			<div class="navbutton" id="resource">
 				<span>Resources</span>
 			</div>
-			<!-- 
-			<div class="navbutton">
-				<a href="hackers.php">Colby Hackers</a>
-			</div>
-			-->
 		</div>
 
 	</div>
@@ -125,20 +147,40 @@
 	<div id="phonemenu">
 		<div class="pmcol left-col">
 			<ul>
-				<a href="https://cs.colby.edu/index.php"><li>Home</li></a>
-				<a href="https://cs.colby.edu/courses.php"><li>Courses</li></a>
-				<a href="https://cs.colby.edu/curriculum.php"><li>Curriculum</li></a>
-				<a href="https://cs.colby.edu/hackers.php"><li>Colby Hackers</li></a>
-				<a href="https://cs.colby.edu/my.colby.edu"><li>myColby</li></a>
+				<a href="https://cs.colby.edu/index.php">
+					<li>Home</li>
+				</a>
+				<a href="https://cs.colby.edu/courses.php">
+					<li>Courses</li>
+				</a>
+				<a href="https://cs.colby.edu/curriculum.php">
+					<li>Curriculum</li>
+				</a>
+				<a href="https://cs.colby.edu/hackers.php">
+					<li>Colby Hackers</li>
+				</a>
+				<a href="https://cs.colby.edu/my.colby.edu">
+					<li>myColby</li>
+				</a>
 			</ul>
 		</div>
 		<div class="pmcol right-col">
 			<ul>
-				<a href="https://cs.colby.edu/news.php"><li>News</li></a>
-				<a href="https://cs.colby.edu/faculty.php"><li>Faculty</li></a>
-				<a href="https://cs.colby.edu/connections.php"><li>Connections</li></a>
-				<a href="https://cs.colby.edu/projects.php"><li>Projects</li></a>
-				<a href="https://cs.colby.edu/writing.php"><li>Writing in CS</li></a>
+				<a href="https://cs.colby.edu/news.php">
+					<li>News</li>
+				</a>
+				<a href="https://cs.colby.edu/faculty.php">
+					<li>Faculty</li>
+				</a>
+				<a href="https://cs.colby.edu/connections.php">
+					<li>Connections</li>
+				</a>
+				<a href="https://cs.colby.edu/projects.php">
+					<li>Projects</li>
+				</a>
+				<a href="https://cs.colby.edu/writing.php">
+					<li>Writing in CS</li>
+				</a>
 			</ul>
 		</div>
 	</div>
@@ -154,67 +196,81 @@
 			<p><b>Kyle Burke:</b> Visiting Assistant Professor</p>
 
 			<p><b>
-			Brian Eastwood:</b> HHMI Postdoctoral Fellow and Visiting Assistant Professor</p>
+					Brian Eastwood:</b> HHMI Postdoctoral Fellow and Visiting Assistant Professor</p>
 
 			<p><b><a href="http://www.geneseo.edu/CMS/display.php?page=13575&amp;dpt=csci">
-			   Scott Russell:</a></b> Visiting Assistant Professor, russell at geneseo dot edu</p>
+						Scott Russell:</a></b> Visiting Assistant Professor, russell at geneseo dot edu</p>
 
 			<p><b>
-			Clare Bates Congdon:</b>Assistant Professor, congdon at gmail dot com</p>
+					Clare Bates Congdon:</b>Assistant Professor, congdon at gmail dot com</p>
 
 			<p>
-			<b>John Augustine:</b> Visiting Assistant Professor</p>
+				<b>John Augustine:</b> Visiting Assistant Professor
+			</p>
 
 			<p>
-			<b>J. Adam Fischbach:</b> Visiting Assistant Professor</p>
+				<b>J. Adam Fischbach:</b> Visiting Assistant Professor
+			</p>
 
 			<p>
-			<a href="http://cs.wellesley.edu/~dbilar">
-			<b>Daniel Bilar:</b></a> Visiting Assistant Professor</p>
-
-			<p> 
-			<b>Randolph M. Jones:</b> Assistant Professor, rjones at soartech dot com</p>
+				<a href="http://cs.wellesley.edu/~dbilar">
+					<b>Daniel Bilar:</b></a> Visiting Assistant Professor
+			</p>
 
 			<p>
-			<a href="http://pages.vassar.edu/mlsmith">
-			<b>Marc L. Smith:</b></a> Assistant Professor </p>
+				<b>Randolph M. Jones:</b> Assistant Professor, rjones at soartech dot com
+			</p>
 
 			<p>
-			<b>Humphrey Sorensen:</b> Visiting Professor</p>
+				<a href="http://pages.vassar.edu/mlsmith">
+					<b>Marc L. Smith:</b></a> Assistant Professor
+			</p>
 
 			<p>
-			<b>Jim Hoag:</b> Visiting Lecturer, jhoag at sjcme.edu</p>
+				<b>Humphrey Sorensen:</b> Visiting Professor
+			</p>
 
 			<p>
-			<a href="http://tomandmaria.com/">
-			<b>Maria Haigh:</b></a> Visiting Lecturer</p>
+				<b>Jim Hoag:</b> Visiting Lecturer, jhoag at sjcme.edu
+			</p>
 
 			<p>
-			<b>Lisa A. Walton:</b> Visiting Lecturer</p>
+				<a href="http://tomandmaria.com/">
+					<b>Maria Haigh:</b></a> Visiting Lecturer
+			</p>
 
 			<p>
-			<a href="http://cs.union.edu/~fernandc/">
-			<b>Chris Fernandes:</b></a> Visiting Assistant Professor, cfernand at union dot edu</p>
+				<b>Lisa A. Walton:</b> Visiting Lecturer
+			</p>
 
 			<p>
-			<a href="http://allendowney.com/">
-			<b>Allen B. Downey:</b></a> Assistant Professor, downey at allendowney dot com</p>
+				<a href="http://cs.union.edu/~fernandc/">
+					<b>Chris Fernandes:</b></a> Visiting Assistant Professor, cfernand at union dot edu
+			</p>
 
 			<p>
-			<b>Batya Friedman:</b> Associate Professor, batya at u dot washington dot edu</p>
+				<a href="http://allendowney.com/">
+					<b>Allen B. Downey:</b></a> Assistant Professor, downey at allendowney dot com
+			</p>
+
+			<p>
+				<b>Batya Friedman:</b> Associate Professor, batya at u dot washington dot edu
+			</p>
 
 		</div>
-		
+
 	</div>
 
 	<script type="text/javascript" src="./connections_files/main.js"></script>
 	<script type="text/javascript">
-	
+
 	</script>
 	<div id="footer">
-	 <!--? 	date_default_timezone_set( "America/New_York" ); ?-->
-	<h4>© 2023 <a target="_blank" href="http://matthewmartin.me/">Matthew J. Martin</a> '18 and <a target="_blank" href="https://www.linkedin.com/in/adamcarlson18">Adam L. Carlson</a> '18</h4>
-</div>
+		<h4>© 2023 <a target="_blank" href="http://matthewmartin.me/">Matthew J. Martin</a> '18 and <a target="_blank"
+				href="https://www.linkedin.com/in/adamcarlson18">Adam L. Carlson</a> '18</h4>
+	</div>
 
 
-</body></html>
+</body>
+
+</html>
