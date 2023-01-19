@@ -1,0 +1,387 @@
+* {
+		margin: 0px;
+		padding: 0px;
+}
+html {
+		height: 100%;
+		width: 100%;
+}
+body {
+		height: 100%;
+		width: 100%;
+}
+
+p {
+		font-size: .9em;
+		color: #000000;
+		font-family: "Open Sans",Helvetica,Arial,sans-serif;
+		font-weight: 300;
+}
+
+h1 {
+		font-size: 2.2em;
+		font-family: "Open Sans",Helvetica,Arial,sans-serif;
+		font-weight: 300;
+}
+
+h2 {
+		font-size: 1.5em;
+		font-family: "Open Sans",Helvetica,Arial,sans-serif;
+		font-weight: 300;
+}
+
+h3 {
+		font-size: 1em;
+		font-family: "Open Sans",Helvetica,Arial,sans-serif;
+		font-weight: 300;
+}
+
+a {
+		text-decoration: none;
+		font-size: 1em;
+		font-family: "Open Sans",Helvetica,Arial,sans-serif;
+}
+
+li {
+		font-size: .9em;
+		font-family: "Open Sans",Helvetica,Arial,sans-serif;
+}
+
+#banner {
+		background-image: url('../static/banner08.jpg');
+		background-size: cover;
+		width: 100%;
+		height: 30%;
+		position: relative;
+}
+
+#banner h1 {
+		text-align: center;
+		color: #FFFFFF;
+}
+
+#banner h2 {
+		text-align: center;
+		color: #FFFFFF;
+}
+
+#header {
+		height: 75px;
+		width: 65%;
+		background-color: #000;
+		opacity: .6;
+		position: relative;
+		left: 50%;
+		margin-left: -32.5%;
+		z-index: 100;
+}
+
+#header a {
+		color: #FFFFFF;
+}
+
+#phonemenuicon, #phonemenu {
+		display: none;
+}
+
+#logo {
+		float: left;
+		margin-left: 25px;
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+}
+
+#header h3 {
+		float: right;
+		margin: auto 50px auto 0px;
+		line-height: 75px;
+		color: #FFFFFF;
+		font-size: 0.8em;
+}
+
+#header h3 a {
+		margin-right: 30px;
+		color: #FFFFFF;
+}
+
+#header h3 a:hover {
+		text-decoration: underline;
+}
+
+#moreheader {
+		cursor: pointer;
+/* 	font-size: 0.8em;*/
+}
+
+#searchicon {
+		position: absolute;
+		background: url("../img/search-icon-white.png") no-repeat scroll center center;
+		background-color: #000;
+		height: 36px;
+		width:36px;
+		border-radius:18px;
+		top: 20px;
+		right:-10%;
+}
+
+#navbar {
+		width: 100%;
+		height: 50px;
+		background-color: #333;
+		clear: both;
+		bottom: 0;
+		position: absolute;
+		display: block;
+}
+
+.underline{
+		text-decoration: underline;
+}
+
+#navbar #deptmenu {
+		background: #333;
+		position: absolute;
+		width: 16.6667%;
+		top: 100%;
+		left: 50%;
+		z-index: 4;
+		list-style-type: none;
+		opacity: 1;
+		display: none;
+}
+
+#navbar #resourcemenu {
+		background: #333;
+		position: absolute;
+		width: 16.6667%;
+		top: 100%;
+		left: 66.666667%;
+		display: none;
+		z-index: 4;
+		list-style-type: none;
+		opacity: 1;
+}
+
+
+#navbar li {
+		color: #FFF;
+		text-align: center;
+		padding: 10px;
+		font-size: 1em;
+		opacity: 1;
+}
+
+#navbar li:hover {
+		cursor: pointer;
+		background-color: #000;
+}
+
+.navbutton {
+		width: 16.66667%;
+		height: 100%;
+		float: left;
+		display: table;
+}
+
+.navbutton:hover {
+		background-color: #000;
+		cursor: pointer;
+}
+
+.navbutton a {
+		text-align: center;
+		display: table-cell;
+		vertical-align: middle;
+		color: white;
+}
+
+.navbutton span {
+		text-align: center;
+		display: table-cell;
+		vertical-align: middle;
+		color: #FFFFFF;
+		font-family: "Open Sans",Helvetica,Arial,sans-serif;
+}
+
+#header #headerdropdown {
+		display: none;
+		position: absolute;
+		width: 150px; /* didn't really want to hard code a pixel width, but a percentage looks silly as you resize the width of the page since the three items "myColby", "directory", and "More" have an absolute width */
+		list-style-type: none;
+		background-color: #000;
+		right: 0;
+		text-align: center;
+		line-height: normal;
+		z-index: 5;
+}
+
+#header #headerdropdown li {
+		line-height: normal;
+		padding: 10px 0 10px 0;
+		display: inline-block;
+		width: 100%;
+}
+
+#header #headerdropdown li a {
+		margin: 0;
+}
+
+@media only screen and (max-width: 700px) {
+
+		h1 {
+				font-size: 1.5em;
+		}
+
+		h2 {
+				font-size: 1.2em;
+		}
+		
+		h3 {
+				font-size: 1.1em;
+		}
+
+		#banner h1 {
+				position: relative;
+				top: 13px;
+				padding-top: 0;
+				font-size: 1.1em;
+				
+		}
+
+		#banner h2 {
+				position: relative;
+				padding-top: 0;
+				top: 26px;
+				font-size: .9em;
+		}
+
+		.phonehidden {
+				display: none;
+		}
+
+		#banner {
+				height: 20%;
+		}
+
+		#navbar {
+				display: none;
+		}
+
+		#header {
+				width: 100%;
+				height: 35%;
+				left: 0px;
+				margin: 0px;
+		}
+
+		#phonemenuicon {
+				background-color: black;
+				width: 9%;
+				height: 50%;
+				margin-right: 20px;
+				position:absolute;
+				top: 25%;
+				right: 0;
+				display: inline-block;
+		}
+
+		#phonemenuicon span {
+				background-color: white;
+				display: inline-block;
+				position: absolute;
+				width: 20px;
+				left: 25%;
+				height: 8%;
+				border-radius: 20px;
+		}
+
+		#phonemenuicon span:nth-child(1){
+				top:30%;
+		}	
+
+		#phonemenuicon span:nth-child(2){
+				top:46%;
+		}	
+
+		#phonemenuicon span:nth-child(3){
+				bottom: 30%;
+		}
+		
+		#searchicon {
+				position: absolute;
+				background: url("../img/search-icon-white.png") no-repeat scroll center center;
+				height: 20px;
+				width: 20px;
+				border-radius:10px;
+				top: 32%;
+				right: 15%;
+		}
+
+		#phonemenu {
+				display: none;
+				overflow: hidden;
+				background: #333333; 
+		}
+
+		.pmcol {
+				display: inline-block;
+				width: 50%;
+				float: left;
+		}
+
+		.left-col {
+				text-align: right;
+		}
+
+		.left-col ul {
+				border-right: 1px solid white;
+				padding-right: 10px;
+				
+		}
+
+		.right-col {
+				text-align: left;
+		}
+
+		.right-col ul {
+				padding-left: 10px;
+		}
+
+		.pmcol ul {
+				list-style-type: none;
+				margin-top: 10px;
+				margin-bottom: 10px;
+		}
+
+		.pmcol li {
+				color: white;
+				font-size: .8em;
+		}
+
+		#logo {
+		/*height: 100%;
+			width: 25%;*/
+		}
+		
+		#header a[href="http://colby.edu"]{
+				position: absolute;
+				left: 0;
+				top: 0px;
+				display: inline-block;
+				
+				height: 100%;
+				width: 50%;
+		}
+		
+		
+		
+		#logo {
+				position: relative;
+				padding: 0px;
+				margin: 10px 0 0 5px;
+				float: none;
+				
+		}
+
+}
